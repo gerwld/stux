@@ -1,15 +1,18 @@
 import React, { FC } from "react";
-import { JourneyBlock } from "./JourneySection";
+import { TestimonialBlock } from "./TestimonialSection";
 import style from "./style.module.css";
+import TextWithBreaks from "@/components/TextWithFragments";
 
-const Block: FC<JourneyBlock> = ({ iconUrl, desc, value }) => {
+const Block: FC<TestimonialBlock> = ({ iconUrl, desc, name }) => {
   return (
     <article className={style.block}>
-      <h3 className={style.value}>{value}</h3>
-      <p className={style.desc}>{desc}</p>
-      <div className={style.icon}>
-        <img src={iconUrl} alt={desc} />
+      <div className={style.author}>
+        <div className={style.icon}>
+          <img src={iconUrl} alt={name} />
+        </div>
+        <h3 className={style.name}>{name}</h3>
       </div>
+      <p className={style.desc}><TextWithBreaks text={desc}/></p>
     </article>
   );
 };

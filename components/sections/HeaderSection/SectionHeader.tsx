@@ -5,12 +5,13 @@ interface SectionHeaderProps {
   title: string;
   dashTitle: string;
   desc?: string;
+  parentClassName?: string | null
 }
 
-const SectionHeader: FC<SectionHeaderProps> = ({ title, dashTitle, desc }) => {
+const SectionHeader: FC<SectionHeaderProps> = ({ title, dashTitle, desc, parentClassName }) => {
   if(!title) return "";
   return (
-    <div className={'content_wrapper ' + style.header}>
+    <div className={'content_wrapper ' + style.header + ' ' + parentClassName}>
       <span className={style.dash} id={dashTitle.split(" ").join("_")}>
         {dashTitle}
       </span>
