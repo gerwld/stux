@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { JourneyBlock } from "./JourneySection";
 import style from "./style.module.css";
+import Image from "next/image";
 
 const Block: FC<JourneyBlock> = ({ iconUrl, desc, value }) => {
   return (

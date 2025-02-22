@@ -13,7 +13,7 @@ type Link = {
 const Header = () => {
   const route = usePathname();
 
-  const [links, setLinks] = useState<Link[]>([
+  const [links] = useState<Link[]>([
     {href: "/", title: 'Home', n18: 'header_home'},
     {href: "/products", title: 'All Products', n18: 'header_home'},
     {href: "https://google.com", title: 'Request Feature', n18: 'header_home'},

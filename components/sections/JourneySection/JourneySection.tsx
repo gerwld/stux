@@ -11,7 +11,7 @@ export interface JourneyBlock {
 }
 
 const JourneySection = () => {
-  const [posts, setPosts] = useState<JourneyBlock[]>([
+  const [posts] = useState<JourneyBlock[]>([
     {desc:'Active weekly users', value: '30 000+', iconUrl: '/icons/jos/1.svg'},
     {desc:'Monthly Installations', value: '4k+', iconUrl: '/icons/jos/2.svg'},
     {desc:'User reviews', value: '2200+', iconUrl: '/icons/jos/3.svg'},

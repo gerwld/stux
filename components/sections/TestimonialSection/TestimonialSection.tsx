@@ -11,7 +11,7 @@ export interface TestimonialBlock {
 }
 
 const TestimonialSection = () => {
-  const [posts, setPosts] = useState<TestimonialBlock[]>([
+  const [posts] = useState<TestimonialBlock[]>([
     { name: 'ZachHere', iconUrl: '/images/pfp/1.jpg', desc:'Very good extension. I like the ability to grayscale. One feature that would make this extension better would be the ability to disable suggested posts from the main page. They are very bothering for me'},
     { name: 'Barbora Viski', iconUrl: '/images/pfp/2.jpg', desc:'Hate falling into the shortform content trap.<br> Love the apps that allow me to forget it exists.'},
     {name: 'Cristiano Nunes', iconUrl: '/images/pfp/3.jpg', desc:'This extension is incredibly useful! It has significantly improved my productivity by removing unnecessary distractions, helping focus on what truly matters.'},
@@ -24,10 +24,10 @@ const TestimonialSection = () => {
   const PER_COLUMN = Math.ceil(posts.length / COLUMNS_COUNT);
 
   const columnsWithContent = Array.from({ length: COLUMNS_COUNT }, (_, i) => {
-    let lastIndex = PER_COLUMN * (i + 1);
-    let firstIndex = PER_COLUMN * i;
+    const lastIndex = PER_COLUMN * (i + 1);
+    const firstIndex = PER_COLUMN * i;
     
-    let columnPosts = posts.slice(firstIndex, lastIndex); // gets posts for this column
+    const columnPosts = posts.slice(firstIndex, lastIndex); // gets posts for this column
 
     return (
     <div className={style.column} key={`tscolumn_${i}`}>

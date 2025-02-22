@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CTASection = () => {
   return (
@@ -16,7 +17,7 @@ const CTASection = () => {
         <img className={style.preview} src="/images/latest-supporters.png" alt="Preview" />
 
         <Link className={style.button} href="https://ko-fi.com/patrykjaworski">
-          <img src="/icons/kofi.svg"/>
+          <img src="/icons/kofi.svg" alt="Ko-fi"/>
           <span>Support on Ko-Fi</span>
         </Link>
       </div>

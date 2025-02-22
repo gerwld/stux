@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 type Link = {
   href: string,
@@ -13,7 +14,7 @@ type Link = {
 const Footer = () => {
   const route = usePathname();
 
-  const [links, setLinks] = useState<Link[]>([
+  const [links] = useState<Link[]>([
     {href: "https://github.com", title: 'Github', n18: 'footer_home'},
     {href: "/", title: 'Releases', n18: 'footer_home'},
     {href: "/products", title: 'Contribute', n18: 'footer_home'},
