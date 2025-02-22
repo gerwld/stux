@@ -1,0 +1,127 @@
+:root {
+  --background: #1A1C2D;
+  --text-color-main: #ffffff;
+  --active-text-color: #5982FF;
+  --mv-header: 65px;
+  --content-gap: 10px;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-color-main);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content_wrapper {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--content-gap);
+  padding-right: var(--content-gap);
+}
+
+
+/* lang select button */
+
+.lang_select {
+  position: absolute;
+  right: 20px;
+  top: calc(var(--mv-header, 60px) / 2 - 20px );
+}
+
+.lang_set_wrapper {
+  position: relative;
+
+  max-width: 150px;
+  max-height: 40px;
+  margin: 0;
+
+  background: var(--background);
+  border-radius: 20px;
+  border: 1px solid #282836;
+  overflow: hidden;
+  z-index: 100000; 
+  cursor: pointer;
+}
+
+.lang_set_wrapper,
+.lang_set_wrapper * {
+  cursor: pointer;
+}
+
+html .lang_set_wrapper {
+  z-index: 100000; 
+}
+
+.lang_set:focus {
+  outline: none;
+}
+
+.lang_set_wrapper .lang_ic {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+  --lang-ic: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuMjQ5MzggOS4yMzE3NUw1LjY1MTI1IDExSDQuMTI1TDYuNjg1MjUgNC4xMjVIOC40NTA3NUwxMSAxMUg5LjM5NTM4TDguNzk3MjUgOS4yMzE3NUg2LjI0OTM4Wk04LjQ5NjEyIDguMjE5NzVMNy41NjI1IDUuNDM5NUg3LjQ5NTEzTDYuNTYxNSA4LjIxOTc1SDguNDk2MTJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMCAyLjc1QzAgMi4wMjA2NSAwLjI4OTczMSAxLjMyMTE4IDAuODA1NDU2IDAuODA1NDU2QzEuMzIxMTggMC4yODk3MzEgMi4wMjA2NSAwIDIuNzUgMEwxMi4zNzUgMEMxMy4xMDQzIDAgMTMuODAzOCAwLjI4OTczMSAxNC4zMTk1IDAuODA1NDU2QzE0LjgzNTMgMS4zMjExOCAxNS4xMjUgMi4wMjA2NSAxNS4xMjUgMi43NVY2Ljg3NUgxOS4yNUMxOS45NzkzIDYuODc1IDIwLjY3ODggNy4xNjQ3MyAyMS4xOTQ1IDcuNjgwNDZDMjEuNzEwMyA4LjE5NjE4IDIyIDguODk1NjUgMjIgOS42MjVWMTkuMjVDMjIgMTkuOTc5MyAyMS43MTAzIDIwLjY3ODggMjEuMTk0NSAyMS4xOTQ1QzIwLjY3ODggMjEuNzEwMyAxOS45NzkzIDIyIDE5LjI1IDIySDkuNjI1QzguODk1NjUgMjIgOC4xOTYxOCAyMS43MTAzIDcuNjgwNDYgMjEuMTk0NUM3LjE2NDczIDIwLjY3ODggNi44NzUgMTkuOTc5MyA2Ljg3NSAxOS4yNVYxNS4xMjVIMi43NUMyLjAyMDY1IDE1LjEyNSAxLjMyMTE4IDE0LjgzNTMgMC44MDU0NTYgMTQuMzE5NUMwLjI4OTczMSAxMy44MDM4IDAgMTMuMTA0MyAwIDEyLjM3NVYyLjc1Wk0yLjc1IDEuMzc1QzIuMzg1MzMgMS4zNzUgMi4wMzU1OSAxLjUxOTg3IDEuNzc3NzMgMS43Nzc3M0MxLjUxOTg3IDIuMDM1NTkgMS4zNzUgMi4zODUzMyAxLjM3NSAyLjc1VjEyLjM3NUMxLjM3NSAxMi43Mzk3IDEuNTE5ODcgMTMuMDg5NCAxLjc3NzczIDEzLjM0NzNDMi4wMzU1OSAxMy42MDUxIDIuMzg1MzMgMTMuNzUgMi43NSAxMy43NUgxMi4zNzVDMTIuNzM5NyAxMy43NSAxMy4wODk0IDEzLjYwNTEgMTMuMzQ3MyAxMy4zNDczQzEzLjYwNTEgMTMuMDg5NCAxMy43NSAxMi43Mzk3IDEzLjc1IDEyLjM3NVYyLjc1QzEzLjc1IDIuMzg1MzMgMTMuNjA1MSAyLjAzNTU5IDEzLjM0NzMgMS43Nzc3M0MxMy4wODk0IDEuNTE5ODcgMTIuNzM5NyAxLjM3NSAxMi4zNzUgMS4zNzVIMi43NVpNMTIuNTY0NyAxNS4xMTgxQzEyLjgyOTcgMTUuNTMxNSAxMy4xMTg0IDE1LjkxOTMgMTMuNDMxIDE2LjI4MTRDMTIuNDAyNSAxNy4wNzIgMTEuMTMwNiAxNy42NTc4IDkuNjI1IDE4LjA1NzlDOS44Njk3NSAxOC4zNTYzIDEwLjI0NTEgMTguOTMxIDEwLjM4ODEgMTkuMjVDMTEuOTM1IDE4Ljc1NjQgMTMuMjQ4MSAxOC4wODk1IDE0LjM1NjQgMTcuMTk1N0MxNS40MjQ4IDE4LjExMDEgMTYuNzQ3NSAxOC43OTc2IDE4LjM4NTEgMTkuMjE5N0MxOC41NjggMTguODcwNSAxOC45NTQ0IDE4LjI5NDQgMTkuMjUgMTcuOTk2QzE3LjcwMzEgMTcuNjQ4MSAxNi40MjE2IDE3LjA0MTcgMTUuMzcyNSAxNi4yMzA1QzE2LjMwODkgMTUuMjAzNCAxNy4wNTI3IDEzLjk2MDQgMTcuNjAxNCAxMi40Mzk2SDE5LjI1VjExSDE1LjEyNVYxMi40Mzk2SDE2LjE3NjlDMTUuNzM5NiAxMy42MDAxIDE1LjE1OTQgMTQuNTY1NCAxNC40Mjc5IDE1LjM2ODRDMTQuMjI1NyAxNS4xNTMyIDE0LjAzNTIgMTQuOTI3NCAxMy44NTczIDE0LjY5MTlDMTMuNDY4OSAxNC45NCAxMy4wMjQ1IDE1LjA4NjYgMTIuNTY0NyAxNS4xMTgxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+  background-image: var(--lang-ic);
+  background-size: auto 100%;
+  
+  background-repeat: no-repeat;
+  background-color: var(--background-contrast) !important;
+  font-size: 0rem !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: var(--background)!important;
+  box-shadow: -2px 0 5px 5px var(--background)!important;
+  background-position: 0 0!important;
+  border-radius: 3px;
+}
+
+.lang_set {
+  height: 40px;
+  max-height: 40px;
+  
+  padding-left: 15px;
+  padding-right: 5px;
+  border: none;
+  background: var(--background);
+  color: #fff;
+  font-size: 1em;
+  font-weight: inherit;
+
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.lang_set:focus {
+  outline: none;
+}
+
+.rel {
+  position: relative;
+}
