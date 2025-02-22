@@ -36,7 +36,8 @@
 
 .img_preview {
     display: block;
-    
+    user-select: none;
+    pointer-events: none;
 }
 
 .img_preview img {

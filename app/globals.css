@@ -16,7 +16,7 @@ body {
 body {
   color: var(--text-color-main);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Switzer', Arial, Helvetica, sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,7 @@ a {
 }
 
 .lang_set_wrapper {
-  --background: #2B3654;
+  --background: #1b1e2f;
   position: relative;
 
   max-width: 150px;
@@ -60,7 +60,7 @@ a {
 
   background: #2B3654;
   border-radius: 20px;
-  border: 1px solid #455376;
+  border: 1px solid #252b3d;
   overflow: hidden;
   z-index: 100000; 
   cursor: pointer;

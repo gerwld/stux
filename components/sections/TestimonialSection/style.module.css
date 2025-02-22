@@ -1,0 +1,38 @@
+.block {
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.icon {
+    order: -1;
+    width: 90px;
+    height: 90px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.2em 0;
+}
+
+.desc {
+color: #75799A;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}

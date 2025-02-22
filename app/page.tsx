@@ -1,5 +1,5 @@
 import Hero from '@/components/Hero/Hero'
-import Navbar from '@/components/Navbar/Navbar'
+import JourneySection from '@/components/sections/JourneySection/JourneySection'
 import React from 'react'
 
 const MainPage = () => {
@@ -7,7 +7,7 @@ const MainPage = () => {
     <>
     <Hero/>
     <main>
-
+    <JourneySection/>
     </main>
     <footer>
 
