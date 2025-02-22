@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer/Footer'
 import Hero from '@/components/Hero/Hero'
 import CTASection from '@/components/sections/CTASection/CTASection'
 import JourneySection from '@/components/sections/JourneySection/JourneySection'
@@ -13,9 +14,7 @@ const MainPage = () => {
     <TestimonialSection/>
     <CTASection/>
     </main>
-    <footer>
-
-    </footer>
+    <Footer/>
     </>
   )
 }
