@@ -1,12 +1,11 @@
-import Header from '@/components/Header/Header'
+import Hero from '@/components/Hero/Hero'
+import Navbar from '@/components/Navbar/Navbar'
 import React from 'react'
 
 const MainPage = () => {
   return (
     <>
-    <header>
-      <Header/>
-    </header>
+    <Hero/>
     <main>
 
     </main>

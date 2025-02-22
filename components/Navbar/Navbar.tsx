@@ -15,13 +15,16 @@ const Header = () => {
 
   const [links, setLinks] = useState<Link[]>([
     {href: "/", title: 'Home', n18: 'header_home'},
-    {href: "/products", title: 'Home2', n18: 'header_home'},
-    {href: "https://google.com", title: 'Home3', n18: 'header_home'},
-    {href: "https://github.com", title: 'Home4', n18: 'header_home'},
-    {href: "https://google.com/", title: 'Home5', n18: 'header_home'},
+    {href: "/products", title: 'All Products', n18: 'header_home'},
+    {href: "https://google.com", title: 'Request Feature', n18: 'header_home'},
+    {href: "https://github.com", title: 'Github', n18: 'header_home'},
+    {href: "https://google.com/", title: 'Donate', n18: 'header_home'},
   ])
   return (
-    <header className={style.header}>
+    <>
+    <div className={style.gap_fix}/>
+    
+    <div className={style.header}>
       <div className={`content_wrapper ${style.header_content}`}>
 
       <nav className={style.nav}>
@@ -60,7 +63,8 @@ const Header = () => {
       </div>
 
       </div>
-    </header>
+    </div>
+    </>
   );
 };
 

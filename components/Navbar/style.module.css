@@ -1,10 +1,14 @@
+.gap_fix {
+    padding-top: var(--mv-header, 65px);
+    padding-top: calc(var(--mv-header, 65px) + var(--content-gap, 10px));
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-
     padding-top: 22px;
 }
 
@@ -21,11 +25,10 @@
     justify-content: center;
     min-height: var(--mv-header, 65px);
     max-width: fit-content;
-    /* margin: 22px auto; */
     padding: 0 1.2rem;
 
-    background-color: rgba(46, 55, 89, 0.3);
-    border: 1px solid #6A7AA3;
+    background-color: #2c3654;
+    border: 1px solid #455376;
     border-radius: 50px;
 
 }
