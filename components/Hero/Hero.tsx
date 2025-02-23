@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import style from "./style.module.css";
 import Link from "next/link";
-import Image from "next/image";
+
 
 const Hero = () => {
   return (
@@ -10,8 +10,8 @@ const Hero = () => {
       <div className={style.wrapper_texture}>
       <Navbar />
       <div className={style.content}>
-        <h1 className={style.title}>Enhance Your Daily <br/>Experience With Our Solutions</h1>
-        <p className={style.desc}>From browser extensions and CLI tools to libraries and mobile applications, <br/>our products always focus on attention to detail and user experience.</p>
+        <h1 className={style.title}>Enhance Your Daily <br/>Experience With Our Products</h1>
+        <p className={style.desc}>From browser extensions and CLI tools to libraries and mobile applications, <br/>our solutions always focus on attention to detail and user experience.</p>
         <div className={style.img_preview}>
           <img src="/hero-preview.svg" alt="Preview" />
         </div>

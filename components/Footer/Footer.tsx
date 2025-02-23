@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+
 
 type Link = {
   href: string,

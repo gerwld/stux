@@ -7,9 +7,10 @@ import Navbar from "@/components/Navbar/Navbar";
 import PageTitle from "@/components/PageTitle";
 import React from "react";
 import style from "./style.module.css";
+import HeaderGradient from "@/components/HeaderGradient";
 
 export const products: Product[] = [
-  { logoSrc: "/images/logos/igp.svg", title: "IGPlus", desc: "Disable Instagram Shorts, hide Reels, recommendations  comments, trends, and other unnecessary elements, allowing you to focus on...", url: "/igplus" },
+  { logoSrc: "/images/logos/igp.svg", title: "IGPlus", desc: "Disable Instagram Reels, hide Stories, recommendations  comments, trends, and other unnecessary elements, allowing you to focus on...", url: "/igplus" },
   { logoSrc: "/images/logos/memento.svg", title: "Memento.", desc: "Customizable start page extension for browsers. Features include uploading custom backgrounds, drag-and-drop toolbar widgets.", url: "/memento" },
   { logoSrc: "/images/logos/ch.svg", title: "ChessHelper", desc: "Chess.com extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...", url: "/chesshelper" },
   { logoSrc: "/images/logos/sp.svg", title: "SpoPlus for Spotify", desc: 'Hide Spotify "Now Playing" View, bring back classic heart button, disable albums, change themes, fonts, disable videos to reduce bandwidth usage... ', url: "/spoplus" },
@@ -22,6 +23,7 @@ export const products: Product[] = [
 const ProductsPage = () => {
   return (
     <>
+      <HeaderGradient withTexture/>
       <Navbar />
       <main className="content_wrapper">
         <PageTitle title="Our Products" />

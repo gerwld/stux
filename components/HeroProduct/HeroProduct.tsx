@@ -23,7 +23,7 @@ const HeroProduct = () => {
             <h1 className={style.title}>IGPlus</h1>
             <span className={style.version}>v.3.0.1 Stable</span>
           </div>
-          <p className={style.desc}>Disable Instagram Shorts, videos, comments, suggestions wall, vanity metrics, homepage recommendations, trending... and many more.</p>
+          <p className={style.desc}>Disable Instagram Reels, videos, comments, suggestions wall, vanity metrics, homepage recommendations, trending... and many more.</p>
           <div className={style.btn_sect}>
             <Link href="/products" className={style.btn_1}>Download</Link>
             <button className={style.wrongbrowser_btn}>Not your browser?</button>

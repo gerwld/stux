@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { TestimonialBlock } from "./TestimonialSection";
 import style from "./style.module.css";
 import TextWithFragment from "@/components/TextWithFragments";
-import Image from "next/image";
+
 
 const Block: FC<TestimonialBlock> = ({ iconUrl, desc, name }) => {
   return (
