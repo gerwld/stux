@@ -1,0 +1,89 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1.2rem;
+    flex: 0 0 31%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    border-radius: 26px;
+    background-color: rgba(36, 39, 60, 0.8);
+    background-color: rgba(36, 39, 60, 0.4);
+    border: 1px solid #30334a;
+}
+
+.block:nth-child(3n) {
+    margin-right: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 12px;
+}
+
+.preview_img {
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.preview_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.desc {
+    flex: 1;
+    margin: 0.5rem 0 1rem;
+    color: #787DA4;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.details_btn,
+.install_btn  {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.details_btn *,
+.install_btn * {
+    user-select: none;
+    pointer-events: none;
+}
+
+.install_btn {
+    font-size: 1.02rem;
+    font-weight: 400;
+    padding: 0.5em 0.8em;
+    border-radius: 30px;
+    background-color: rgba(71, 74, 106, 0.6);
+    margin-bottom: 0.1em;
+}
+
+.details_btn {
+    font-weight: 500;
+}
+
+
+.details_btn img {
+    height: 0.94em;
+    margin-left: 0.5em;
+}
+
+.install_btn img {
+    height: 1em;
+    margin-right: 0.5rem;
+}

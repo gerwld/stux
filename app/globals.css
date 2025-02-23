@@ -41,6 +41,13 @@ a {
   padding-right: var(--content-gap);
 }
 
+/* page title  */
+.page_title {
+  font-size: 2.8rem;
+  margin: max(1.8em, 10vh) 0;
+  text-align: center;
+}
+
 
 /* lang select button */
 
@@ -51,14 +58,13 @@ a {
 }
 
 .lang_set_wrapper {
-  --background: #1b1e2f;
+  --background: rgba(27, 30, 47, 0.6);
   position: relative;
 
   max-width: 150px;
   max-height: 38px;
   margin: 0;
 
-  background: #2B3654;
   border-radius: 20px;
   border: 1px solid #252b3d;
   overflow: hidden;

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import SectionHeader from "@/components/sections/HeaderSection/SectionHeader";
+import SectionHeader from "@/components/sections/SectionHeader/SectionHeader";
 import style from "./style.module.css";
 import Block from "./Block";
 
