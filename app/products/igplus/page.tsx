@@ -5,6 +5,7 @@ import CTASection from "@/components/sections/CTASection/CTASection";
 import TestimonialSection from "@/components/sections/TestimonialSection/TestimonialSection";
 import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
+import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
 const IGPlusPage = () => {
 
@@ -14,6 +15,7 @@ const IGPlusPage = () => {
       <main>
         <FeaturesSection/>
         <TestimonialSection/>
+        <MoreSection excludeTitle="IGPlus"/>
         <CTASection/>
       </main>
       <Footer />
