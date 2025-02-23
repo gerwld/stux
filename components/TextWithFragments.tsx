@@ -1,10 +1,10 @@
 import React from "react";
 
-interface TextWithBreaksProps {
+interface TextWithFragmentProps {
     text: string;
   }
   
-  const TextWithBreaks: React.FC<TextWithBreaksProps> = ({ text }) => {
+  const TextWithFragment: React.FC<TextWithFragmentProps> = ({ text }) => {
     return (
       <>
         {text.split(/<br\s*\/?>/).map((line, index) => (
@@ -17,5 +17,5 @@ interface TextWithBreaksProps {
     );
   };
   
-  export default TextWithBreaks;
+  export default TextWithFragment;
   

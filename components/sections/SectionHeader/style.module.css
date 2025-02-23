@@ -7,8 +7,8 @@
     display: inline-block;
     padding: 0 1em;
 
-    background-color: #3C4A6A;
-    color: #BBD6FF;
+    background-color:  var(--dash-background,#3C4A6A);
+    color: var(--dash-text-color, #BBD6FF);
 
     font-size: 15px;
     font-weight: 500;

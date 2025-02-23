@@ -6,6 +6,10 @@
     background-position: 0% 0%;
 }
 
+:global(.schema-purple) .wrapper {
+    background-image: url('/images/cta-background-purple.png');
+}
+
 .content {
     max-width: 1000px;
     height: 450px;
@@ -33,12 +37,12 @@
 }
 
 .title span {
-    color: #B9D1FF;
+    color: var(--active-color-main,#B9D1FF);
 }
 
 .desc {
     color: #A2A7CD;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 2.2em;
     max-width: 520px;
@@ -53,7 +57,7 @@
 
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: #3F5780;
+    background-color: var(--button-background-main, #3F5780);
     border-radius: 50px;
 }
 

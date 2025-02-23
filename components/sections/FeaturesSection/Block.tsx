@@ -1,17 +1,16 @@
 import React, { FC } from "react";
-import { TestimonialBlock } from "./TestimonialSection";
+import { FeaturesBlock } from "./FeaturesSection";
 import style from "./style.module.css";
 import TextWithFragment from "@/components/TextWithFragments";
-import Image from "next/image";
 
-const Block: FC<TestimonialBlock> = ({ iconUrl, desc, name }) => {
+const Block: FC<FeaturesBlock> = ({ iconUrl, desc, name }) => {
   return (
     <article className={style.block}>
-      <div className={style.author}>
+      <div className={style.header}>
         <div className={style.icon}>
           <img src={iconUrl} alt={name} />
         </div>
-        <h3 className={style.name}>{name}</h3>
+        <h3 className={style.title}><TextWithFragment text={name}/></h3>
       </div>
       <p className={style.desc}><TextWithFragment text={desc}/></p>
     </article>

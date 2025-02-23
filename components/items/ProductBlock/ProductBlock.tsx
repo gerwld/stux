@@ -27,7 +27,7 @@ const ProductBlock: FC<Product> = ({ logoSrc, title, desc, url }) => {
         {desc}
       </p>
 
-      <Link href={url} className={style.details_btn}>
+      <Link href={`/products${url}`} className={style.details_btn}>
         <span>View Details</span>
         <img src="/icons/right-arrow.svg" alt="ic" />
       </Link>

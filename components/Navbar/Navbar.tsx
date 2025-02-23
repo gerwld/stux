@@ -32,7 +32,7 @@ const Header = () => {
           <Link 
           key={link.href} 
           href={link.href}
-          className={route == link.href ? style.active : ""}
+          className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}
           >{link.title}</Link>)}
       </nav>
       <div className="lang_select">

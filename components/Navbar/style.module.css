@@ -17,6 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    max-width: 1240px;
 }
 
 .nav {
@@ -26,17 +28,15 @@
     min-height: var(--mv-header, 65px);
     max-width: fit-content;
     padding: 0 1.2rem;
-
-    background-color: #2c3654;
    
-    background-color: #282f4847;
+    background-color: var(--header-background, rgba(40, 47, 72, 0.3));
     backdrop-filter: blur(10px);
     
 /* active state
     background-color: #282f48d9;
     box-shadow: 0 2px 12px 3px #1c202e; */
 
-    border: 1px solid #404b68;
+    border: 1px solid var(--header-border-color, #404b68);
     border-radius: 50px;
     z-index: 100001;
 }

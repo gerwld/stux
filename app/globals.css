@@ -2,9 +2,19 @@
   --background: #1A1C2D;
   --text-color-main: #ffffff;
   --text-color-sec: #A4A8C9;
-  --active-text-color: #5982FF;
+  --active-text-color: #6d8fff;
+
   --mv-header: 60px;
   --content-gap: 10px;
+
+  --dash-background: #3C4A6A;
+  --dash-text-color: #BBD6FF;
+
+  --header-background: rgba(255, 255, 255, 0.030);
+  --header-border-color: rgba(255, 255, 255, 0.072);
+
+  --button-background-main: #3f5780;
+  --active-color-main: #b9d1ff;
 }
 
 html,
@@ -34,7 +44,7 @@ a {
 }
 
 .content_wrapper {
-  max-width: 1240px;
+  max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--content-gap);
@@ -44,7 +54,7 @@ a {
 /* page title  */
 .page_title {
   font-size: 2.8rem;
-  margin: max(1.8em, 10vh) 0;
+  margin: max(1.5em, 8vh) 0;
   text-align: center;
 }
 
