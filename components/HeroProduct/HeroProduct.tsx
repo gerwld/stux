@@ -1,10 +1,13 @@
 import React, { FC } from "react";
 import HeaderGradient from "@/components/HeaderGradient";
 import Navbar from "@/components/Navbar/Navbar";
+import DButton from "@/components/DButton/DButton";
 import Link from "next/link";
 
 import style from "./style.module.css";
 import "@/app/inriasans.css";
+import { productLinks } from "@/app/products/preloaded";
+
 
 
 const HeroProduct = () => {
@@ -25,8 +28,7 @@ const HeroProduct = () => {
           </div>
           <p className={style.desc}>Disable Instagram Reels, videos, comments, suggestions wall, vanity metrics, homepage recommendations, trending... and many more.</p>
           <div className={style.btn_sect}>
-            <Link href="/products" className={style.btn_1}>Download</Link>
-            <button className={style.wrongbrowser_btn}>Not your browser?</button>
+            <DButton links={productLinks["IGPLUS"]}/>
           </div>
         </div>
         

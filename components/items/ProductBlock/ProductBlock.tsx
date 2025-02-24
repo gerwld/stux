@@ -8,6 +8,7 @@ export interface Product {
   title: string;
   desc: string;
   url: string;
+  id: string;
 }
 
 const ProductBlock: FC<Product> = ({ logoSrc, title, desc, url }) => {
