@@ -1,13 +1,15 @@
 .schema-purple {
     --active-text-color: #9980ff;
-
-    
     --dash-background: #3b3963;
     --dash-text-color: #bdbaff;
-
     --header-background: rgba(255, 255, 255, 0.032);
     --header-border-color: rgba(255, 255, 255, 0.072);
-
     --button-background-main: #484089;
     --active-color-main: #beb9ff;
+}
+
+.schema-purple .embla {
+    --detail-medium-contrast: #41366d;
+    --detail-medium-second: #7c7ab4;
+    --detail-medium-third: #56557f;
 }

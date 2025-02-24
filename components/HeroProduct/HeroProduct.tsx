@@ -2,15 +2,20 @@ import React, { FC } from "react";
 import HeaderGradient from "@/components/HeaderGradient";
 import Navbar from "@/components/Navbar/Navbar";
 import DButton from "@/components/DButton/DButton";
+import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 import Link from "next/link";
 
 import style from "./style.module.css";
 import "@/app/inriasans.css";
 import { productLinks } from "@/app/products/preloaded";
+import { EmblaOptionsType } from "embla-carousel";
 
 
 
 const HeroProduct = () => {
+
+  const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
+  const SLIDES = Array.from(Array(5).keys())
 
   return (
     <header className={style.wrapper}>
@@ -33,9 +38,7 @@ const HeroProduct = () => {
         </div>
         
         <div className={style.content_group2}>
-          <div className={style.gallery}>
-            <img src="/" alt=""/>
-          </div>
+            <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
 
       </div>

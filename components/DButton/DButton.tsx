@@ -5,6 +5,7 @@ import { ProductLink } from "@/app/products/preloaded";
 import { BrowserType, useBrowserType } from "@/hooks/useBrowserType";
 import toTitleCase from "@/tools/toTitleCase";
 import clsx from "clsx";
+import SelectBrowserModal from "./SelectBrowserModal";
 
 type DButtonProps = {
   links: ProductLink;
@@ -27,7 +28,7 @@ const DButton: FC<DButtonProps> = ({ links }) => {
           <span>{isE ? "Microsoft Edge" : toTitleCase(browser)}</span>
         </div>
       </Link>
-      <button className={style.wrongbrowser_btn}>Not your browser?</button>
+      <SelectBrowserModal blockScroll={true}/>
     </div>
   );
 };
