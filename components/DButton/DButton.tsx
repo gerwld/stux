@@ -1,14 +1,14 @@
 import React, { FC } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
-import { ProductLink } from "@/app/products/preloaded";
+import { ProductDetails } from "@/app/products/preloaded";
 import { BrowserType, useBrowserType } from "@/hooks/useBrowserType";
 import toTitleCase from "@/tools/toTitleCase";
 import clsx from "clsx";
 import SelectBrowserModal from "./SelectBrowserModal";
 
 type DButtonProps = {
-  links: ProductLink;
+  links: ProductDetails;
 };
 
 const DButton: FC<DButtonProps> = ({ links }) => {

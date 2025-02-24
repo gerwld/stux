@@ -2,16 +2,12 @@
 import React, { FC } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
+import { Product } from "@/app/products/preloaded";
 
-export interface Product {
-  logoSrc: string;
-  title: string;
-  desc: string;
-  url: string;
-  id: string;
-}
 
-const ProductBlock: FC<Product> = ({ logoSrc, title, desc, url }) => {
+
+const ProductBlock: FC<Omit<Product, "details">> = ({ logoSrc, title, desc, alias }) => {
+  
   return (
     <article className={style.block}>
       <div className={style.header}>
@@ -29,7 +25,7 @@ const ProductBlock: FC<Product> = ({ logoSrc, title, desc, url }) => {
         {desc}
       </p>
 
-      <Link href={`/products${url}`} className={style.details_btn}>
+      <Link href={`/products/${alias?.toLowerCase()}`} className={style.details_btn}>
         <span>View Details</span>
         <img src="/icons/right-arrow.svg" alt="ic" />
       </Link>

@@ -1,3 +1,5 @@
+
+/* PURPLE */
 .schema-purple {
     --active-text-color: #9980ff;
     --dash-background: #3b3963;
@@ -7,7 +9,6 @@
     --button-background-main: #484089;
     --active-color-main: #beb9ff;
 }
-
 .schema-purple .embla {
     --detail-medium-contrast: #41366d;
     --detail-medium-second: #7c7ab4;

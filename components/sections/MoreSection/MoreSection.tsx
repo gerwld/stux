@@ -2,23 +2,23 @@
 import React, { useEffect, useState } from "react";
 import SectionHeader from "@/components/sections/SectionHeader/SectionHeader";
 import style from "./style.module.css";
-import ProductBlock, { Product } from "@/components/items/ProductBlock/ProductBlock";
-import { products } from "@/app/products/preloaded";
+import ProductBlock from "@/components/items/ProductBlock/ProductBlock";
+import { Product, products } from "@/app/products/preloaded";
 import Link from "next/link";
 
-const getRandomItems = (array: Product[], count: number, excludeTitle: string) => {
-  const filteredArray = array.filter(item => item.title !== excludeTitle);
+const getRandomItems = (array: Product[], count: number, excludeAlias: string) => {
+  const filteredArray = array.filter(item => item.alias?.toLowerCase() !== excludeAlias.toLowerCase());
   const shuffled = [...filteredArray].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
 
-const MoreSection:React.FC<{ excludeTitle: string }> = ({excludeTitle}) => {
+const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
 
   const [data, setData] = useState<Product[]>([]);
 
-  useEffect(() => {
-    setData(getRandomItems(products, 3, excludeTitle)); // 3 random products in "Other Extensions" section
-  }, [excludeTitle]);
+  useEffect(() => {    
+    setData(getRandomItems(products, 3, excludeAlias)); // 3 random products in "Other Extensions" section
+  }, [excludeAlias]);
   
   return (
     <section className={`content_wrapper ${style.section}`}>
@@ -31,11 +31,12 @@ const MoreSection:React.FC<{ excludeTitle: string }> = ({excludeTitle}) => {
       <div className={style.content}>
       {data.map((p) => (
             <ProductBlock
+              id={p.id}
               key={p.logoSrc}
-              logoSrc={p.logoSrc}
+              logoSrc={`/images/logos/${p.alias}.svg`}
               desc={p.desc}
               title={p.title}
-              url={p.url}
+              alias={p.alias}
             />
           ))}
       </div>

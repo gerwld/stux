@@ -20,11 +20,12 @@ const ProductsPage = () => {
         <section className={style.content}>
           {products.map((p) => (
             <ProductBlock
-              key={p.logoSrc}
-              logoSrc={p.logoSrc}
+              key={p.id}
+              id={p.id}
+              alias={p.alias}
+              logoSrc={`/images/logos/${p.alias}.svg`}
               desc={p.desc}
               title={p.title}
-              url={p.url}
             />
           ))}
           {/* <ProductBlock/> */}

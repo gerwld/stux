@@ -33,6 +33,10 @@
   --admonition-note-rgb-value: 46, 109, 188;
   --admonition-warning-rgb-value: 255, 196, 9;
   --admonition-danger-rgb-value: 220, 38, 38;
+
+  --detail-medium-contrast: #55647f;
+  --detail-medium-second: #7a8db4;
+  --detail-medium-third: #55647f;
 }
 
 .embla {

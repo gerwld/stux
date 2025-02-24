@@ -8,10 +8,10 @@ import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSecti
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
 const IGPlusPage = () => {
-  const PRODUCT_KEY = "IGPLUS";
+  const PRODUCT_KEY = "SPOPLUS";
 
   return (
-    <div className="schema-purple">
+    <div className="schema-green">
       <HeroProduct productAlias={PRODUCT_KEY}/>
       <main>
         <FeaturesSection/>

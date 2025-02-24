@@ -3,37 +3,41 @@ import HeaderGradient from "@/components/HeaderGradient";
 import Navbar from "@/components/Navbar/Navbar";
 import DButton from "@/components/DButton/DButton";
 import EmblaCarousel from "@/components/carousel/EmblaCarousel";
-import Link from "next/link";
 
 import style from "./style.module.css";
 import "@/app/inriasans.css";
-import { productLinks } from "@/app/products/preloaded";
+import { Product, products } from "@/app/products/preloaded";
 import { EmblaOptionsType } from "embla-carousel";
 
 
+type HeroProductProps = {
+  productAlias: Product["alias"]
+}
 
-const HeroProduct = () => {
+const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
+  const ITEM = products.find(p => p.alias === productAlias);
+  
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
   const SLIDES = Array.from(Array(5).keys())
 
   return (
     <header className={style.wrapper}>
-      <HeaderGradient keyProp="igplus"/>
+      <HeaderGradient keyProp={ITEM!.colorScheme}/>
       <Navbar />
       <div className={`content_wrapper ${style.content}`}>
         
         <div className={style.content_group1}>
           <div className={style.title_group}>
             <div className={style.title_logo}>
-              <img src="/images/logos/igp.svg" alt="Logo"/>
+              <img src={`/images/logos/${ITEM?.alias}.svg`} alt="Logo"/>
             </div>
-            <h1 className={style.title}>IGPlus</h1>
-            <span className={style.version}>v.3.0.1 Stable</span>
+            <h1 className={style.title}>{ITEM?.title.split(" ")[0]}</h1>
+            {ITEM?.version ? <span className={style.version}>v.{ITEM.version}</span> : ''}
           </div>
-          <p className={style.desc}>Disable Instagram Reels, videos, comments, suggestions wall, vanity metrics, homepage recommendations, trending... and many more.</p>
+          <p className={style.desc}>{ITEM?.desc}</p>
           <div className={style.btn_sect}>
-            <DButton links={productLinks["IGPLUS"]}/>
+            <DButton links={ITEM!.details}/>
           </div>
         </div>
         

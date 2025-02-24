@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
@@ -17,9 +17,8 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props
-  const progressNode = useRef<HTMLDivElement>(null)
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: true, delay: 3000, stopOnMouseEnter: true })
+    Autoplay({ playOnInit: true, delay: 5500, stopOnMouseEnter: true })
   ])
 
   const {
