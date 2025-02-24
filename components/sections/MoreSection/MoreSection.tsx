@@ -18,7 +18,7 @@ const MoreSection:React.FC<{ excludeTitle: string }> = ({excludeTitle}) => {
 
   useEffect(() => {
     setData(getRandomItems(products, 3, excludeTitle)); // 3 random products in "Other Extensions" section
-  }, []);
+  }, [excludeTitle]);
   
   return (
     <section className={`content_wrapper ${style.section}`}>

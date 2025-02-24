@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import HeaderGradient from "./HeaderGradient";
 
 type PageTitleProps = {
   title: string;
