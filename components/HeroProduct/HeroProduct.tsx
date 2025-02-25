@@ -19,7 +19,9 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
-  const SLIDES = Array.from(Array(5).keys())
+  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/en/${i}.png`);
+  console.log(SLIDES);
+  
 
   return (
     <header className={style.wrapper}>

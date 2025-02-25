@@ -28,7 +28,8 @@ const HeaderGradient:FC<Props> = ({keyProp = "MAIN", withTexture}) => {
         background: colors[keyProp] || colors["MAIN"],
         zIndex: -2,
         pointerEvents: "none",
-        userSelect: "none"
+        userSelect: "none",
+        opacity: 0.9
     }}/>
     {withTexture ?  
     <div style={{

@@ -8,7 +8,7 @@ import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSecti
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
 const IGPlusPage = () => {
-  const PRODUCT_KEY = "IGPLUS";
+  const PRODUCT_KEY:string = "IGPLUS";
 
   return (
     <div className="schema-purple">

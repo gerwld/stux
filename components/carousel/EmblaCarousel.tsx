@@ -11,14 +11,14 @@ import {
 import "./embla.css"
 
 type PropType = {
-  slides: number[]
+  slides: string[]
   options?: EmblaOptionsType
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: true, delay: 5500, stopOnMouseEnter: true })
+    Autoplay({ playOnInit: true, delay: 3500, stopOnMouseEnter: false })
   ])
 
   const {
@@ -37,10 +37,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">
-                <span>{index + 1}</span>
+          {slides.map((slide) => (
+            <div className="embla__slide" key={slide}>
+              <div className="embla__slide__image">
+                <img src={slide}/>
               </div>
             </div>
           ))}
