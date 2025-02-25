@@ -1,4 +1,3 @@
-"use client";
 import { ColorSchemeType } from "../schemas/schemas";
 
 export interface Product {
@@ -9,17 +8,39 @@ export interface Product {
   alias: string;
   version?: string;
   colorScheme?: ColorSchemeType;
-  details: ProductDetails
+  details: ProductDetails,
+  productType: ProductType
 }
 
-export type ProductDetails = {
-  id?: string,
+
+export type ProductType = "EXTENSION" | "APPLICATION" | "GITHUB";
+
+type Browsers = "FIREFOX" | "CHROME" | "EDGE";
+
+export type ProductLinks = {
   FIREFOX?: string,
   CHROME?: string,
   EDGE?: string,
   GITHUB?: string,
+  APPSTORE?: string,
+  PLAYMARKET?:string
+}
+
+export type ProductBrowserLinks = Pick<ProductLinks, Browsers>;
+
+
+export type ProductDetails = {
+  id?: string,
+  links: ProductLinks,
+  testimonial?: Testimonial,
   slides_count?: number,
-  available_slides_locales?: string[]
+  available_slides_locales?: string[],
+}
+
+export type Testimonial = {
+  users: number;
+  reviews: number;
+  rating: number;
 }
 
 export const products: Product[] = [
@@ -31,10 +52,18 @@ export const products: Product[] = [
     version: "3.0.1 Stable",
     desc: "Disable Instagram Reels, hide Stories, recommendations  comments, trends, and other unnecessary elements, allowing you to focus on...",
     colorScheme: "PURPLE",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "firefox-link",
-      CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-      EDGE: "edge-link",
+      links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
+      testimonial: {
+        users: 10000,
+        reviews: 680,
+        rating: 4.9
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -45,10 +74,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/memento.svg",
     title: "Memento.",
     desc: "Customizable start page extension for browsers. Features include uploading custom backgrounds, drag-and-drop toolbar widgets.",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -59,10 +91,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/ch.svg",
     title: "ChessHelper",
     desc: "Chess.com extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -75,10 +110,13 @@ export const products: Product[] = [
     version: "2.6.1 Stable",
     desc: 'Hide Spotify "Now Playing" View, bring back classic heart button, disable albums, change themes, fonts, disable videos to reduce bandwidth usage... ',
     colorScheme: "MAIN",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -89,10 +127,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/dh.svg",
     title: "DoHabit",
     desc: "Open-source habits tracker for both iOS and Android. Designed to help users stay consistent and improve their daily routine. It makes tracki...",
+    productType: "APPLICATION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -103,10 +144,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/lc.svg",
     title: "LichessHelper",
     desc: "Lichess.org extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -117,10 +161,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/ec.svg",
     title: "EasyCalc",
     desc: "A simple calculator extension for performing basic arithmetic calculations. EasyCalc's sleek and efficient design not only looks great but also maximiz...",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },
@@ -131,10 +178,13 @@ export const products: Product[] = [
     logoSrc: "/images/logos/gw.svg",
     title: "GwardaApp",
     desc: "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN. Access valuable insights into produ...",
+    productType: "EXTENSION",
     details: {
-      FIREFOX: "",
-      CHROME: "",
-      EDGE: "",
+     links: {
+        FIREFOX: "firefox-link",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "edge-link",
+      },
       slides_count: 4,
       available_slides_locales: ["en"]
     },

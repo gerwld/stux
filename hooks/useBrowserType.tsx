@@ -7,6 +7,7 @@ export type BrowserType =
   | "OPERA"
   | "CHROME"
   | "FIREFOX"
+  | "GITHUB"
   | "SAFARI";
 
 const getBrowserType = (): BrowserType => {

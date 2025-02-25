@@ -6,7 +6,7 @@ import { Product } from "@/app/products/preloaded";
 
 
 
-const ProductBlock: FC<Omit<Product, "details">> = ({ logoSrc, title, desc, alias }) => {
+const ProductBlock: FC<Omit<Product, "details" | "productType">> = ({ logoSrc, title, desc, alias }) => {
   
   return (
     <article className={style.block}>

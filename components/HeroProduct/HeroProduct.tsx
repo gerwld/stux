@@ -21,6 +21,17 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
   const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/en/${i}.png`);
   console.log(SLIDES);
+
+  
+const formatter = new Intl.NumberFormat('fr-FR');
+const formattedTestimonial = ITEM?.details?.testimonial
+  ? {
+      users: formatter.format(ITEM.details.testimonial.users),
+      reviews: formatter.format(ITEM.details.testimonial.reviews),
+      rating: ITEM.details.testimonial.rating.toFixed(1), // rating should have one decimal place
+    }
+  : null;
+
   
 
   return (
@@ -39,7 +50,7 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
           </div>
           <p className={style.desc}>{ITEM?.desc}</p>
           <div className={style.btn_sect}>
-            <DButton links={ITEM!.details}/>
+            <DButton links={ITEM!.details.links} productType={ITEM!.productType}/>
           </div>
         </div>
         
@@ -48,18 +59,19 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
         </div>
 
       </div>
-      <HeroTestimonial users="10 000" reviews="680" rating="4.9"/>
+      {formattedTestimonial ? 
+        <HeroTestimonial 
+        users={formattedTestimonial.users} 
+        reviews={formattedTestimonial.reviews} 
+        rating={formattedTestimonial.rating} 
+        /> : ""}
     </header>
   );
 };
 
-interface Testimonial {
-  users: string;
-  reviews: string;
-  rating: string;
-}
 
-const HeroTestimonial:FC<Testimonial> = ({users, reviews, rating}) => {
+// string as it was formatted
+const HeroTestimonial:FC<{users: string, reviews: string, rating: string}> = ({users, reviews, rating}) => {
   return (
     <div className={style.testimonial}>
 
