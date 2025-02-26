@@ -42,7 +42,7 @@
     pointer-events: none;
     user-select: none;
     background-color: #6B88C1;
-    background: linear-gradient(90deg, #756BC1, #5C52A7);
+    background: var(--gradient-pp, linear-gradient(90deg, #756bc1, #5c52a7));
     border-radius: 50%;
     overflow: hidden;
 }

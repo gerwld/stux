@@ -1,8 +1,8 @@
 :root {
   --background: #1A1C2D;
-  --text-color-main: #ffffff;
+  --text-color-main: #FFFFFF;
   --text-color-sec: #A4A8C9;
-  --active-text-color: #6d8fff;
+  --active-text-color: #6D8FFF;
 
   --mv-header: 60px;
   --content-gap: 10px;
@@ -13,8 +13,9 @@
   --header-background: rgba(255, 255, 255, 0.030);
   --header-border-color: rgba(255, 255, 255, 0.072);
 
-  --button-background-main: #3f5780;
-  --active-color-main: #b9d1ff;
+  --button-background-main: #3F5780;
+  --active-color-main: #B9D1FF;
+  --gradient-pp: linear-gradient(90deg, #6B89C1, #3C4DA4);
 }
 
 html,
@@ -130,6 +131,8 @@ html .lang_set_wrapper {
   background: var(--background);
   background: rgba(27, 30, 47, 0.4);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
   color: #fff;
   font-size: 1em;
   font-weight: inherit;

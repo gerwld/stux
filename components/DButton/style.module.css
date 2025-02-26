@@ -113,10 +113,12 @@
     transition: 0.1s ease;
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
-    background-color: #191e2631;
+    background-color: rgba(10, 17, 28, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
     /* on hidden state */
     opacity: 0;
@@ -133,8 +135,134 @@
 }
 
 .modal_block {
-    width: 500px;
+    width: 600px;
     max-width: 100%;
-    min-height: 300px;
-    background-color: #fff;
+    height: fit-content;
+    margin-top: 15vh;
+    padding: 1.5rem;
+    background-color: #2F354F;
+    background-color: #2a2e41;
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.modal_title {
+    font-size: 1.8rem;
+    margin:  0.5rem 0 1.5rem;
+    text-align: center;
+}
+
+.modal_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    background-color: #404867;
+    padding: 0 1.2rem;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.modal_item__selected:hover,
+.modal_item__selected {
+    background-color: #4e577b;
+}
+
+
+.modal_item .checkbox {
+    color: #2f354f;
+}
+
+.modal_item__selected .checkbox {
+    color: #8aabff;
+}
+
+.modal_item_content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    font-size: 1.74rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    opacity: 0.7;
+}
+
+.modal_item_title,
+.modal_item_platform {
+    font-size: 0.94rem;
+    font-weight: 600;
+    margin-left: 0.4em;
+    user-select: none;
+    pointer-events: none;
+}
+
+.modal_item_platform {
+    color: #9AA6D9;
+}
+
+.modal_item_logo {
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+    margin-right: 0.25rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+.modal_item_logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.modal_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.modal_buttons button {
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding: 0.8em 1.8em;
+    border-radius: 30px;
+    background-color: #383b54;
+    margin-bottom: 0.1em;
+    margin-left: 0.6rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal_buttons button span {
+    user-select: none;
+}
+
+.modal_buttons button:hover {
+    opacity: 0.8;
+}
+
+button.modal_btn_download {
+    background-color: #3e425f;
+}
+
+.modal_buttons button img {
+    height: 1.2em;
+    margin-right: 0.5em;
+    user-select: none;
 }

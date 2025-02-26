@@ -32,6 +32,7 @@
    
     background-color: var(--header-background, rgba(40, 47, 72, 0.3));
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     
 /* active state
     background-color: #282f48d9;

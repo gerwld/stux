@@ -8,6 +8,7 @@
     --header-border-color: rgba(255, 255, 255, 0.072);
     --button-background-main: #484089;
     --active-color-main: #beb9ff;
+    --gradient-pp: linear-gradient(90deg, #756bc1, #5c52a7);
 }
 .schema-purple .embla {
     --detail-medium-contrast: #41366d;

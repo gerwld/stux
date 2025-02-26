@@ -46,7 +46,7 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
             <span>{isE ? "Microsoft Edge" : toTitleCase(browser)}</span>
           </div>
         </Link>
-        <SelectBrowserModal blockScroll={true} />
+        <SelectBrowserModal blockScroll={true} links={links} />
       </div>
     );
   }
