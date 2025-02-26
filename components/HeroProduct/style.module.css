@@ -76,7 +76,7 @@
     margin-top: 2rem;
 }
 
-.testimonial {
+.stats {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +86,7 @@
     padding-top: 4rem;
 }
 
-.testimonial_item {
+.stats_item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +95,7 @@
     padding: 0 min(3vw, 20px);
 }
 
-.testimonial_item svg {
+.stats_item svg {
     height: 1em;
     margin-right: 0.2em;
 }

@@ -11,7 +11,7 @@ const MainPage = () => {
     <Hero/>
     <main>
     <JourneySection/>
-    <TestimonialSection/>
+    <TestimonialSection productAlias='IGPLUS'/>
     <CTASection/>
     </main>
     <Footer/>

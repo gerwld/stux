@@ -14,8 +14,8 @@ const IGPlusPage = () => {
     <div className="schema-purple">
       <HeroProduct productAlias={PRODUCT_KEY}/>
       <main>
-        <FeaturesSection/>
-        <TestimonialSection/>
+        <FeaturesSection productAlias={PRODUCT_KEY}/>
+        <TestimonialSection productAlias={PRODUCT_KEY}/>
         <MoreSection excludeAlias={PRODUCT_KEY}/>
         <CTASection/>
       </main>

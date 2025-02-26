@@ -9,7 +9,7 @@ export interface Product {
   version?: string;
   colorScheme?: ColorSchemeType;
   details: ProductDetails,
-  productType: ProductType
+  productType: ProductType,
 }
 
 
@@ -32,16 +32,32 @@ export type ProductBrowserLinks = Pick<ProductLinks, Browsers>;
 export type ProductDetails = {
   id?: string,
   links: ProductLinks,
-  testimonial?: Testimonial,
+  stats?: Stats,
+  preview_features?: PrevFeature[],
+  preview_reviews?: PrevReview[],
   slides_count?: number,
   available_slides_locales?: string[],
 }
 
-export type Testimonial = {
+export type Stats = {
   users: number;
   reviews: number;
   rating: number;
 }
+
+export type PrevFeature = {
+  iconUrl: string,
+  title: string,
+  description: string
+}
+
+export type PrevReview = {
+  avatarUrl: string,
+  author: string,
+  description: string
+}
+
+
 
 export const products: Product[] = [
   {
@@ -59,12 +75,28 @@ export const products: Product[] = [
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
         EDGE: "edge-link",
       },
-      testimonial: {
+      stats: {
         users: 10000,
         reviews: 680,
         rating: 4.9
       },
-      slides_count: 4,
+      preview_features: [
+        { title: 'Hide <br>Explore Page', iconUrl: '/images/features/look.png', description: 'Turn off the Explore page to focus only on the content that matters to you.'},
+        { title: 'Hide <br>Recommendations', iconUrl: '/images/features/point.png',  description: 'See only content from accounts you follow - no more unwanted suggestions'},
+        { title: 'Personalize <br>Fonts', iconUrl: '/images/features/fonts.png', description: 'Choose from various fonts like Montserrat, Poppins, and more to suit your style.'},
+        { title: 'Customize <br>Notifications', iconUrl: '/images/features/list.png', description: 'Grayscale or disable the new message counter to reduce distractions.'},
+        { title: 'Disable <br>Reels & Videos', iconUrl: '/images/features/camera.png', description: 'Disable Reels and video content for a cleaner, distraction-free experience.'},
+        { title: 'Hide Like <br>& Follower Counts', iconUrl: '/images/features/heart.png', description: 'Make Instagram a more mindful space by hiding likes and follower numbers.'},
+      ],
+      preview_reviews: [
+           { author: 'ZachHere', avatarUrl: '/images/pfp/1.jpg', description:'Very good extension. I like the ability to grayscale. One feature that would make this extension better would be the ability to disable suggested posts from the main page. They are very bothering for me'},
+           { author: 'Barbora Viski', avatarUrl: '/images/pfp/2.jpg', description:'Hate falling into the shortform content trap.<br> Love the apps that allow me to forget it exists.'},
+           { author: 'Cristiano Nunes', avatarUrl: '/images/pfp/3.jpg', description:'This extension is incredibly useful! It has significantly improved my productivity by removing unnecessary distractions, helping focus on what truly matters.'},
+           { author: 'Akram Mohamed', avatarUrl: '/images/pfp/4.jpg', description:'Very good extension. The best and most affective one! Love all the features! Would request a similar for youtube as well'},
+           { author: 'Martin Hublar', avatarUrl: '/images/pfp/5.jpg', description:'It really is an time saver, it is especially good for those people who drift off to reels section from message section unconsciously.'},
+           { author: 'Cailan Wiat', avatarUrl: '/images/pfp/6.jpg', description:"This extension was a perfect investment for me, i have instagram for its intended inspiration purpose and that's it i never spend more than 30 mins a week on the app and i don't have to battle the need to be on it anymore its incredible."},
+      ],
+      slides_count: 7,
       available_slides_locales: ["en"]
     },
   },
