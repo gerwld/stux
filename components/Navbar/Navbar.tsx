@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ProductLinksExtras } from "@/app/products/preloaded";
+import clsx from "clsx";
 
 type Link = {
   href: string,
@@ -12,6 +13,7 @@ type Link = {
 }
 
 const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
+  const [mobileMenu, isMobileMenu] = useState<boolean>(false);
   const m = menuLinks;
   const route = usePathname();
 
@@ -21,6 +23,10 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
     {href: (m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSc8jGjwaVURaYxI0XPIEa9yW21H0CjeHfe19fcxMRBCkFsoPQ/viewform?usp=header"), title: 'Request Feature', n18: 'header_home'}, 
     {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'header_home'},
   ])
+
+  const toggleMenu = () => {
+    isMobileMenu(!mobileMenu);
+  }
   return (
     <>
     <div className={style.gap_fix}/>
@@ -28,7 +34,7 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
     <div className={style.header}>
       <div className={`content_wrapper ${style.header_content}`}>
 
-      <nav className={style.nav}>
+      <nav className={clsx(style.nav, mobileMenu && style.mobile_nav_open)} area-visible={mobileMenu}>
         {links.map(link => 
           <Link 
           target={link.href.indexOf("http") !== -1 ? "_blank" : "_self"}
@@ -37,6 +43,7 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
           className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}
           >{link.title}</Link>)}
       </nav>
+
       <div className="lang_select">
       <div className="lang_set_wrapper">
         <select
@@ -64,6 +71,17 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
       </div>
       </div>
 
+      <button className={style.mobile_menu__btn} onClick={toggleMenu} title="Menu Button">
+      {mobileMenu 
+          ? <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.84615 19L23 1M1 1L23 19" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>          
+          : <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1H27M1 10H27M1 19H27" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>          
+          }
+      </button>
+         
       </div>
     </div>
     </>

@@ -1,8 +1,9 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import style from './style.module.css';
 import withClickOutside, { WithClickOutsideProps } from '@/hocs/withClickOutside';
 import { ProductBrowserLinks, ProductLinks } from '@/app/products/preloaded';
 import clsx from 'clsx';
+import { BrowserType, useBrowserType } from '@/hooks/useBrowserType';
 
 type SelectBrowserModalProps = {
     blockScroll: boolean,
@@ -71,7 +72,18 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
   // Chrome is always available, so MS Edge key is not as important there
   const FILTERED_PROVIDERS = ALL_PROVIDERS.filter(p => AVAILABLE_PLATFORMS.indexOf(p.store) !== -1);
 
+  const browser: BrowserType = useBrowserType();  
+
+  // default option
   const [selected, setSelected] = useState<Provider>(FILTERED_PROVIDERS[0])
+  // change once, if value != seleted
+  useEffect(() => {
+    const currentOption = FILTERED_PROVIDERS.find(p => p.store == browser);
+    if(currentOption && selected.id !== currentOption.id) {
+      setSelected(currentOption);
+    }
+  }, [browser])
+
 
   const handleInstallClick = () => {
     const currentLink = links[selected.store as keyof typeof links];
@@ -92,31 +104,34 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
           </button>
       }
 
-      <div className={`${style.modal} ${isShow ? style.modal_visible : ""}`} aria-hidden={!isShow}>
-        <div ref={refElement} className={style.modal_block}>
-          <h3 className={style.modal_title}>Choose your platform</h3>
-          <div className={style.modal_content}>
-            {FILTERED_PROVIDERS.map(provider => <SelectProviderRadioItem 
-              selected={selected}
-              setSelected={setSelected}
-              id={provider.id}
-              key={provider.id}
-              title={provider.title}  
-              store={provider.store}  
-              icon={provider.icon}  
-              uniqueSubtitle={provider.uniqueSubtitle}  
-            />)}
-            
-              <div className={style.modal_buttons}>
-                <button onClick={toggleShow}><span>Close</span></button>
-                <button onClick={handleInstallClick} className={style.modal_btn_download}>
-                  <img src="/icons/download.svg" alt="ic" />
-                  <span>Install</span>
-                </button>
+    {isShow 
+    ?  <div className={`${style.modal} ${isShow ? style.modal_visible : ""}`} aria-hidden={!isShow}>
+            <div ref={refElement} className={style.modal_block}>
+              <h3 className={style.modal_title}>Choose your platform</h3>
+              <div className={style.modal_content}>
+                {FILTERED_PROVIDERS.map(provider => <SelectProviderRadioItem 
+                  selected={selected}
+                  setSelected={setSelected}
+                  id={provider.id}
+                  key={provider.id}
+                  title={provider.title}  
+                  store={provider.store}  
+                  icon={provider.icon}  
+                  uniqueSubtitle={provider.uniqueSubtitle}  
+                />)}
+                
+                  <div className={style.modal_buttons}>
+                    <button onClick={toggleShow}><span>Close</span></button>
+                    <button onClick={handleInstallClick} className={style.modal_btn_download}>
+                      <img src="/icons/download.svg" alt="ic" />
+                      <span>Install</span>
+                    </button>
+                  </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
+      : ""}
+
     </div>
   );
 };

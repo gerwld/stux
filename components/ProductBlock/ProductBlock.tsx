@@ -3,14 +3,13 @@ import React, { FC } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { Product } from "@/app/products/preloaded";
-import DButton from "../DButton/DButton";
 import SelectBrowserModal from "../DButton/SelectBrowserModal";
 import { redirect } from "next/navigation";
 
 
 
 const ProductBlock: FC<Product> = (props) => {
-  const { logoSrc, title, desc, alias, productType, details } = props;
+  const { logoSrc, title, desc, alias, details } = props;
   
   const truncateDescription = (str:string) => (str.length > 129 ? str.slice(0, 129) + "..." : str);
   return (

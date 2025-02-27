@@ -99,3 +99,31 @@
     height: 1em;
     margin-right: 0.2em;
 }
+
+/* ~~~~~~ TABLET & MOBILE VIEWPORTS ~~~~~ */
+
+@media only screen and (max-width: 1170px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .desc {
+        font-size: 1.08rem;
+    }
+}
+
+
+@media only screen and (max-width: 955px) {
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .desc {
+        font-size: 1.04rem;
+    }
+
+    .title_logo {
+        width: 60px;
+        height: 60px;
+    }
+}

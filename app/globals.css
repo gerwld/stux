@@ -5,7 +5,7 @@
   --active-text-color: #6D8FFF;
 
   --mv-header: 60px;
-  --content-gap: 10px;
+  --content-gap: 25px;
 
   --dash-background: #3C4A6A;
   --dash-text-color: #BBD6FF;
@@ -148,4 +148,19 @@ html .lang_set_wrapper {
 
 .rel {
   position: relative;
+}
+
+
+/* ~~~~~~ TABLET & MOBILE VIEWPORTS ~~~~~ */
+
+@media only screen and (max-width: 740px) {
+  :root {
+    --mv-header: 55px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  :root {
+    --content-gap: 10px;
+  }
 }
