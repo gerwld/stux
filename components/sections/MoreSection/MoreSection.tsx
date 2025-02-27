@@ -2,12 +2,17 @@
 import React, { useEffect, useState } from "react";
 import SectionHeader from "@/components/sections/SectionHeader/SectionHeader";
 import style from "./style.module.css";
-import ProductBlock from "@/components/items/ProductBlock/ProductBlock";
+import ProductBlock from "@/components/ProductBlock/ProductBlock";
 import { Product, products } from "@/app/products/preloaded";
 import Link from "next/link";
 
-const getRandomItems = (array: Product[], count: number, excludeAlias: string) => {
-  const filteredArray = array.filter(item => item.alias?.toLowerCase() !== excludeAlias.toLowerCase());
+const getRandomItems = (
+  array: Product[], 
+  count: number, 
+  excludeAlias: Product["alias"], 
+  excludeType: Product["productType"]
+) => {
+  const filteredArray = array.filter(item => item.alias !== excludeAlias && item.productType !== excludeType);
   const shuffled = [...filteredArray].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 };
@@ -17,7 +22,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
   const [data, setData] = useState<Product[]>([]);
 
   useEffect(() => {    
-    setData(getRandomItems(products, 3, excludeAlias)); // 3 random products in "Other Extensions" section
+    setData(getRandomItems(products, 3, excludeAlias, "APPLICATION")); // 3 random products in "Other Extensions" section
   }, [excludeAlias]);
   
   return (
@@ -37,6 +42,8 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
               desc={p.desc}
               title={p.title}
               alias={p.alias}
+              details={p.details}
+              productType={p.productType}
             />
           ))}
       </div>

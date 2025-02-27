@@ -6,7 +6,8 @@ import clsx from 'clsx';
 
 type SelectBrowserModalProps = {
     blockScroll: boolean,
-    links: ProductBrowserLinks | ProductLinks
+    links: ProductBrowserLinks | ProductLinks,
+    isEmbeded?: boolean
 }
 
 type Provider = {
@@ -22,7 +23,8 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
     toggleShow,
     isShow,
     refElement,
-    links
+    links,
+    isEmbeded
   }) => {
     
   const AVAILABLE_PLATFORMS = Object.keys(links);
@@ -80,9 +82,15 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
     
   return (
     <div className={style.content}>
-      <button onClick={toggleShow} className={style.wrongbrowser_btn}>
-        Not your browser?
-      </button>
+      {isEmbeded 
+      ?   <button onClick={toggleShow} className={style.install_btn}>
+            <img src="/icons/download.svg" alt="ic" />
+            <span>Install</span>
+          </button>
+      :   <button onClick={toggleShow} className={style.wrongbrowser_btn}>
+            Not your browser?
+          </button>
+      }
 
       <div className={`${style.modal} ${isShow ? style.modal_visible : ""}`} aria-hidden={!isShow}>
         <div ref={refElement} className={style.modal_block}>

@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/components/Footer/Footer";
-import ProductBlock from "@/components/items/ProductBlock/ProductBlock";
+import ProductBlock from "@/components/ProductBlock/ProductBlock";
 import Navbar from "@/components/Navbar/Navbar";
 import PageTitle from "@/components/PageTitle";
 import React from "react";
@@ -20,18 +20,19 @@ const ProductsPage = () => {
         <section className={style.content}>
           {products.map((p) => (
             <ProductBlock
-              key={p.id}
               id={p.id}
-              alias={p.alias}
+              key={p.logoSrc}
               logoSrc={`/images/logos/${p.alias}.svg`}
               desc={p.desc}
               title={p.title}
+              alias={p.alias}
+              details={p.details}
+              productType={p.productType}
             />
           ))}
-          {/* <ProductBlock/> */}
         </section>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 };

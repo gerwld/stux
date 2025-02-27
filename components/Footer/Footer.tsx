@@ -11,7 +11,7 @@ type Link = {
   n18?: string;
 };
 
-const Footer: React.FC<{ productAlias: Product["alias"] }> = ({ productAlias }) => {
+const Footer: React.FC<{ productAlias?: Product["alias"] }> = ({ productAlias }) => {
   const ITEM = products.find(p => p.alias === productAlias);
   const menuLinks = ITEM?.details.linksExtras;
   const m = menuLinks;

@@ -79,7 +79,7 @@ export const products: Product[] = [
     details: {
      links: {
         FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/chesshelper/",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        CHROME: "https://chromewebstore.google.com/detail/kdkckejnngdmlcephpnfaggaeofloode/",
         EDGE: "https://microsoftedge.microsoft.com/addons/detail/piiencmafefnakeddeeecjkehmbgcjdg",
       },
       stats: {
@@ -179,7 +179,7 @@ export const products: Product[] = [
     details: {
      links: {
         FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/spoplus/",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        CHROME: "https://chromewebstore.google.com/detail/ijkboaojikgaanlgigobkmbpnjgjljnc/",
         EDGE: "https://microsoftedge.microsoft.com/addons/detail/lgdkbggfepmoagpcgbiblopcllepifjn",
       },
       linksExtras: {
@@ -240,7 +240,7 @@ export const products: Product[] = [
     details: {
      links: {
         FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/lichesshelper/",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        CHROME: "https://chromewebstore.google.com/detail/jmbbkjpjhchfelfflgainekgdmoddgcg/",
         EDGE: "https://microsoftedge.microsoft.com/addons/detail/njfemkdghgeadflbncpafnbfhgapkkjm",
       },
       preview_features: [
@@ -265,7 +265,7 @@ export const products: Product[] = [
     details: {
      links: {
         FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/easycalc/",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        CHROME: "https://chromewebstore.google.com/detail/aeiedhhkddgngmoekfkmdbmiebkaddfd/",
       },
       preview_features: [
         { title: 'Dark Mode <br>& Light Mode', icon: '🌗', description: 'Switch between dark and light modes for a comfortable and personalized experience.', },
@@ -288,7 +288,7 @@ export const products: Product[] = [
     details: {
      links: {
         FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/gwardaapp/",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        CHROME: "https://chromewebstore.google.com/detail/hfknhnfhdnmioompphjjdpgoolcfobng/",
         EDGE: "https://microsoftedge.microsoft.com/addons/detail/kfklnpbkfiekpeejocmjjajkkapbgegj",
       },
       slides_count: 1,

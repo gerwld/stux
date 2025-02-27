@@ -16,6 +16,7 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
   let CONTENT: JSX.Element = <i />;
   let browser: BrowserType = useBrowserType();
 
+  // ** IF EXTENSION ** //
   if (productType === "EXTENSION") {
     // gets the default option (chrome / any other that exists)
     let link =
@@ -50,8 +51,9 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
       </div>
     );
   }
+  // ** IF APPLICATION ** //
   else if (productType === "APPLICATION") {
-    CONTENT = <span>productType === APPLICATION</span>;
+      CONTENT = <span>productType === APPLICATION</span>;
   }
 
   return CONTENT;

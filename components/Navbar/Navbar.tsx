@@ -11,7 +11,7 @@ type Link = {
   n18?: string
 }
 
-const Header:React.FC<{menuLinks: ProductLinksExtras | undefined}> = ({menuLinks}) => {
+const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
   const m = menuLinks;
   const route = usePathname();
 
@@ -31,6 +31,7 @@ const Header:React.FC<{menuLinks: ProductLinksExtras | undefined}> = ({menuLinks
       <nav className={style.nav}>
         {links.map(link => 
           <Link 
+          target={link.href.indexOf("http") !== -1 ? "_blank" : "_self"}
           key={link.href} 
           href={link.href}
           className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}

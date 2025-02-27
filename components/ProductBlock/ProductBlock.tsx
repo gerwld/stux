@@ -3,10 +3,15 @@ import React, { FC } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { Product } from "@/app/products/preloaded";
+import DButton from "../DButton/DButton";
+import SelectBrowserModal from "../DButton/SelectBrowserModal";
+import { redirect } from "next/navigation";
 
 
 
-const ProductBlock: FC<Omit<Product, "details" | "productType">> = ({ logoSrc, title, desc, alias }) => {
+const ProductBlock: FC<Product> = (props) => {
+  const { logoSrc, title, desc, alias, productType, details } = props;
+  
   const truncateDescription = (str:string) => (str.length > 129 ? str.slice(0, 129) + "..." : str);
   return (
     <article className={style.block}>
@@ -15,13 +20,10 @@ const ProductBlock: FC<Omit<Product, "details" | "productType">> = ({ logoSrc, t
           <img src={logoSrc} alt="Logo" />
         </div>
         {/* TODO: Install link */}
-        <Link href={`/products/${alias?.toLowerCase()}`} className={style.install_btn}>
-          <img src="/icons/download.svg" alt="ic" />
-          <span>Install</span>
-        </Link>
+        <SelectBrowserModal blockScroll={true} links={details.links} isEmbeded={true} />
       </div>
 
-      <h3 className={style.title}>{title}</h3>
+      <h3 onClick={()=> redirect(`/products/${alias?.toLowerCase()}`)} className={style.title}>{title}</h3>
       <p className={style.desc}>
         {truncateDescription(desc)}
       </p>

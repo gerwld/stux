@@ -7,7 +7,7 @@ import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
-const IGPlusPage = () => {
+const ECPage = () => {
   const PRODUCT_KEY:string = "EASYCALC";
 
   return (
@@ -19,9 +19,9 @@ const IGPlusPage = () => {
         <MoreSection excludeAlias={PRODUCT_KEY}/>
         <CTASection/>
       </main>
-      <Footer />
+      <Footer productAlias={PRODUCT_KEY}/>
     </div>
   );
 };
 
-export default IGPlusPage;
+export default ECPage;

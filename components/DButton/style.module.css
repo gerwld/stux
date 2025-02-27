@@ -265,3 +265,28 @@ button.modal_btn_download {
     margin-right: 0.5em;
     user-select: none;
 }
+
+.install_btn * {
+    pointer-events: none;
+    user-select: none;
+}
+
+.install_btn {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.02rem;
+    font-weight: 400;
+    padding: 0.6em 0.8em;
+    border-radius: 30px;
+    color: #fff;
+    background-color: rgba(71, 74, 106, 0.6);
+    margin-bottom: 0.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.install_btn img {
+    height: 1em;
+    margin-right: 0.5rem;
+}

@@ -19,7 +19,7 @@ const ChesshelperPage = () => {
         <MoreSection excludeAlias={PRODUCT_KEY}/>
         <CTASection/>
       </main>
-      <Footer />
+      <Footer productAlias={PRODUCT_KEY}/>
     </div>
   );
 };
