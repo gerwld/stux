@@ -23,7 +23,7 @@ export type ProductLinks = {
   EDGE?: string,
   GITHUB?: string,
   APPSTORE?: string,
-  PLAYMARKET?:string
+  PLAYMARKET?:string,
 }
 
 export type ProductBrowserLinks = Pick<ProductLinks, Browsers>;
@@ -32,6 +32,7 @@ export type ProductBrowserLinks = Pick<ProductLinks, Browsers>;
 export type ProductDetails = {
   id?: string,
   links: ProductLinks,
+  linksExtras?: ProductLinksExtras,
   stats?: Stats,
   preview_features?: PrevFeature[],
   preview_reviews?: PrevReview[],
@@ -57,9 +58,76 @@ export type PrevReview = {
   description: string
 }
 
+export type ProductLinksExtras = {
+  releases?: string;
+  contribute?: string;
+  github?: string;
+  bug_report?: string;
+  feature_request: string;
+};
 
 
 export const products: Product[] = [
+  {
+    id: "815f5b7f-bcd5-43f4-a5c8-6e4e95fb3fc8",
+    alias: "CHESSHELPER",
+    logoSrc: "/images/logos/ch.svg",
+    title: "ChessHelper",
+    desc: "Chess.com extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
+    productType: "EXTENSION",
+    colorScheme: "PURPLE",
+    details: {
+     links: {
+        FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/chesshelper/",
+        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
+        EDGE: "https://microsoftedge.microsoft.com/addons/detail/piiencmafefnakeddeeecjkehmbgcjdg",
+      },
+      stats: {
+        users: 4500,
+        reviews: 350,
+        rating: 4.7
+      },
+      preview_features: [
+        { title: 'Custom <br>Themes & Pieces', icon: '🎨', description: 'Change Chess.com’s look with 6 themes, 39 pieces, and 40 boards.', },
+        { title: 'Fullscreen & <br>Fixed Mode', icon: '📺', description: 'Enjoy fullscreen mode and a fixed board layout. No more jumping in HyperBullet!', },
+        { title: 'Bandwidth <br>Saver', icon: '📉', description: 'Reduce bandwidth usage by disabling the main page stream.', },
+        { title: 'Disable <br>Chat', icon: '💬', description: 'No more trolls! Focus on the game without distractions.', },
+        { title: 'Coordinates <br>on Each Square', icon: '♟️', description: 'Learn chess notation faster with coordinates on every square.', },
+        { title: 'Double Click <br>Resign', icon: '⚡', description: 'Resign quickly with a simple double-click. Less frustration, more control.', },
+      ],      
+      slides_count: 5,
+      available_slides_locales: ["en"]
+    },
+  },
+  {
+    id: "f702edcb-b036-4b2e-ab75-f11e42f1ddab",
+    alias: "MEMENTO",
+    logoSrc: "/images/logos/memento.svg",
+    title: "Memento.",
+    desc: "Customizable start page extension for your browser. Open-source, lightweight, and secure, Memento enhances your browsing experience with intuitive customization and a clean design.",
+    productType: "EXTENSION",
+    details: {
+     links: {
+        FIREFOX: "https://addons.mozilla.org/en-US/firefox/addon/memento-extension/",
+        CHROME: "https://chromewebstore.google.com/detail/feiooleecmhaceomemdjchnkahocjgjg/",
+        EDGE: "https://microsoftedge.microsoft.com/addons/detail/fdegnimhficgecognlajckgemcifnocf",
+      },
+      stats: {
+        users: 220,
+        reviews: 10,
+        rating: 4.9
+      },
+      preview_features: [
+        { title: 'Customizable <br>Backgrounds', icon: '🖼️', description: 'Choose high-quality Unsplash images, upload your own, or keep it minimal with a plain background.' },
+        { title: 'Visual <br>Controls', icon: '🎛️', description: 'Adjust blur, clock size, and brightness settings to match your aesthetic.' },
+        { title: 'Localized <br>Experience', icon: '🌍', description: 'Supports 12 languages and both 12-hour and 24-hour clock formats for a personalized experience.' },
+        { title: 'Secure & <br>Open-Source', icon: '🔒', description: 'Memento is open-source, ensuring transparency and privacy with no data tracking.' },
+        { title: 'Fast & <br>Lightweight', icon: '⚡', description: 'Designed for speed and efficiency, keeping your new tab smooth and distraction-free.' },
+      ],          
+      slides_count: 3,
+      available_slides_locales: ["en"]
+    },
+  },
   {
     id: "0ff399d2-9a1c-46c3-83ba-295989873",
     logoSrc: "/images/logos/igp.svg",
@@ -71,9 +139,8 @@ export const products: Product[] = [
     productType: "EXTENSION",
     details: {
       links: {
-        FIREFOX: "firefox-link",
+        FIREFOX: "https://addons.mozilla.org/en-US/firefox/addon/igplus-extension/",
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
       },
       stats: {
         users: 10000,
@@ -101,61 +168,6 @@ export const products: Product[] = [
     },
   },
   {
-    id: "f702edcb-b036-4b2e-ab75-f11e42f1ddab",
-    alias: "MEMENTO",
-    logoSrc: "/images/logos/memento.svg",
-    title: "Memento.",
-    desc: "Customizable start page extension for your browser. Open-source, lightweight, and secure, Memento enhances your browsing experience with intuitive customization and a clean design.",
-    productType: "EXTENSION",
-    details: {
-     links: {
-        FIREFOX: "firefox-link",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
-      },
-      stats: {
-        users: 220,
-        reviews: 10,
-        rating: 4.9
-      },
-      preview_features: [
-        { title: 'Customizable <br>Backgrounds', icon: '🖼️', description: 'Choose high-quality Unsplash images, upload your own, or keep it minimal with a plain background.' },
-        { title: 'Visual <br>Controls', icon: '🎛️', description: 'Adjust blur, clock size, and brightness settings to match your aesthetic.' },
-        { title: 'Localized <br>Experience', icon: '🌍', description: 'Supports 12 languages and both 12-hour and 24-hour clock formats for a personalized experience.' },
-        { title: 'Secure & <br>Open-Source', icon: '🔒', description: 'Memento is open-source, ensuring transparency and privacy with no data tracking.' },
-        { title: 'Fast & <br>Lightweight', icon: '⚡', description: 'Designed for speed and efficiency, keeping your new tab smooth and distraction-free.' },
-      ],          
-      slides_count: 3,
-      available_slides_locales: ["en"]
-    },
-  },
-  {
-    id: "815f5b7f-bcd5-43f4-a5c8-6e4e95fb3fc8",
-    alias: "CHESSHELPER",
-    logoSrc: "/images/logos/ch.svg",
-    title: "ChessHelper",
-    desc: "Chess.com extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
-    productType: "EXTENSION",
-    colorScheme: "PURPLE",
-    details: {
-     links: {
-        FIREFOX: "firefox-link",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
-      },
-      preview_features: [
-        { title: 'Custom <br>Themes & Pieces', icon: '🎨', description: 'Change Chess.com’s look with 6 themes, 39 pieces, and 40 boards.', },
-        { title: 'Fullscreen & <br>Fixed Mode', icon: '📺', description: 'Enjoy fullscreen mode and a fixed board layout. No more jumping in HyperBullet!', },
-        { title: 'Bandwidth <br>Saver', icon: '📉', description: 'Reduce bandwidth usage by disabling the main page stream.', },
-        { title: 'Disable <br>Chat', icon: '💬', description: 'No more trolls! Focus on the game without distractions.', },
-        { title: 'Coordinates <br>on Each Square', icon: '♟️', description: 'Learn chess notation faster with coordinates on every square.', },
-        { title: 'Double Click <br>Resign', icon: '⚡', description: 'Resign quickly with a simple double-click. Less frustration, more control.', },
-      ],      
-      slides_count: 5,
-      available_slides_locales: ["en"]
-    },
-  },
-  {
     id: "6565a677-5e79-4ed2-9cd4-b8f1b15ed",
     logoSrc: "/images/logos/sp.svg",
     alias: "SPOPLUS",
@@ -166,9 +178,21 @@ export const products: Product[] = [
     productType: "EXTENSION",
     details: {
      links: {
-        FIREFOX: "firefox-link",
+        FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/spoplus/",
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
+        EDGE: "https://microsoftedge.microsoft.com/addons/detail/lgdkbggfepmoagpcgbiblopcllepifjn",
+      },
+      linksExtras: {
+        releases: "https://github.com/gerwld/spoplus-extension/releases",
+        contribute: "https://github.com/gerwld/spoplus-extension/blob/main/CONTRIBUTING.md",
+        github: "https://github.com/gerwld/spoplus-extension/",
+        bug_report: "https://docs.google.com/forms/d/e/1FAIpQLSfNy3McLF_lYFVhtLvw0hA34nI80rZNHNf_sQoV2Uj0OKQpLg/viewform",
+        feature_request: "https://docs.google.com/forms/d/e/1FAIpQLSdnIZY7MKnvMXJqxW3VLmsw_YVxyFqPmrG24x64Lug7B09EVg/viewform",
+      },
+      stats: {
+        users: 11000,
+        reviews: 900,
+        rating: 4.8
       },
       preview_features: [
         { title: 'Bring Back <br>Classic Heart Button', icon: '❤️', description: 'Bring back the old heart button for a nostalgic and familiar experience.' },
@@ -180,10 +204,10 @@ export const products: Product[] = [
     ],
     preview_reviews: [
       { author: 'Xavier Wakefield', avatarUrl: '/images/pfp/12.jpg', description:'This is most definitely one of the best extensions to get for Spotify, one thing I love about this extension the most, is the simple but highly effective change in instead of having the plus sign, you can change it back to the classic heart button. But even without that, the UI options are definitely very useful.'},
-      { author: 'Rubysama Marag', avatarUrl: '/images/pfp/10.jpg', description:'This reduced my RAM usage with Spotify. The interface is looking clean too, great job!'},
-      { author: 'Mykaela Ramnani', avatarUrl: '/images/pfp/9.jpg', description:"I think the extension does what it needs to do. For being the seemingly only customization extension for spotify it works and has a good color selection. Works fine as day and totaly worth to install."},
+      { author: 'Olivia Marag', avatarUrl: '/images/pfp/10.jpg', description:'This reduced my RAM usage with Spotify. The interface is looking clean too, great job!'},
+      { author: 'Adam Ramnani', avatarUrl: '/images/pfp/9.jpg', description:"I think the extension does what it needs to do. For being the seemingly only customization extension for spotify it works and has a good color selection. Works fine as day and totaly worth to install."},
       { author: '무무moomoo', avatarUrl: '/images/pfp/8.jpg', description:"adore this!!! was looking for a way to make spotify have a light mode for FOREVER and it acomplishes that and much more!!! 10/10 i can't wait for more ui features!!"},
-      { author: 'Kshitij Das', avatarUrl: '/images/pfp/11.jpg', description:'Work pretty well. The themes are also soothing to the eyes, specially amoled one. But one suggestion, please add some more font options like Comic Sans, or like fancy ones. Thank you 😁'},
+      { author: 'Christopher Nienow', avatarUrl: '/images/pfp/11.jpg', description:'Work pretty well. The themes are also soothing to the eyes, specially amoled one. But one suggestion, please add some more font options like Comic Sans, or like fancy ones. Thank you 😁'},
       { author: 'Sombra', avatarUrl: '/images/pfp/7.jpg', description:"Awesome!! No problems from it at all :) The themes are super cute and it's compatible with the other extensions I connect to Spotify ^_^ definitely recommend"}
     ],
       slides_count: 5,
@@ -199,9 +223,8 @@ export const products: Product[] = [
     productType: "APPLICATION",
     details: {
      links: {
-        FIREFOX: "firefox-link",
-        CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
+        APPSTORE: "https://github.com/gerwld/doHabit/",
+        PLAYMARKET: "https://github.com/gerwld/doHabit/",
       },
       slides_count: 6,
       available_slides_locales: ["en"]
@@ -216,9 +239,9 @@ export const products: Product[] = [
     productType: "EXTENSION",
     details: {
      links: {
-        FIREFOX: "firefox-link",
+        FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/lichesshelper/",
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
+        EDGE: "https://microsoftedge.microsoft.com/addons/detail/njfemkdghgeadflbncpafnbfhgapkkjm",
       },
       preview_features: [
         { title: 'Custom <br>Themes & Pieces', icon: '🎨', description: 'Change Lichess look with 6 themes, 39 pieces, and 40 boards.', },
@@ -241,9 +264,8 @@ export const products: Product[] = [
     productType: "EXTENSION",
     details: {
      links: {
-        FIREFOX: "firefox-link",
+        FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/easycalc/",
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
       },
       preview_features: [
         { title: 'Dark Mode <br>& Light Mode', icon: '🌗', description: 'Switch between dark and light modes for a comfortable and personalized experience.', },
@@ -265,9 +287,9 @@ export const products: Product[] = [
     productType: "EXTENSION",
     details: {
      links: {
-        FIREFOX: "firefox-link",
+        FIREFOX: "https://addons.mozilla.org/pl/firefox/addon/gwardaapp/",
         CHROME: "https://chromewebstore.google.com/detail/dbbopjndlaginbghfoibbndhlbpdpapd/",
-        EDGE: "edge-link",
+        EDGE: "https://microsoftedge.microsoft.com/addons/detail/kfklnpbkfiekpeejocmjjajkkapbgegj",
       },
       slides_count: 1,
       available_slides_locales: ["en"]

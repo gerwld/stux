@@ -14,7 +14,8 @@ const ProductBlock: FC<Omit<Product, "details" | "productType">> = ({ logoSrc, t
         <div className={style.preview_img}>
           <img src={logoSrc} alt="Logo" />
         </div>
-        <Link href="/" className={style.install_btn}>
+        {/* TODO: Install link */}
+        <Link href={`/products/${alias?.toLowerCase()}`} className={style.install_btn}>
           <img src="/icons/download.svg" alt="ic" />
           <span>Install</span>
         </Link>

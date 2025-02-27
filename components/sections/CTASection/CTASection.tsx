@@ -15,7 +15,7 @@ const CTASection = () => {
       <div className={style.content_block2}>
         <img className={style.preview} src="/images/latest-supporters.png" alt="Preview" />
 
-        <Link className={style.button} href="https://ko-fi.com/patrykjaworski">
+        <Link className={style.button} href="https://www.paypal.com/donate/?hosted_button_id=HWFQXM25U8XWU">
           <img src="/icons/kofi.svg" alt="Ko-fi"/>
           <span>Support on Ko-Fi</span>
         </Link>

@@ -6,16 +6,18 @@ import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 
 import style from "./style.module.css";
 import "@/app/inriasans.css";
-import { Product, products } from "@/app/products/preloaded";
+import { Product, ProductLinksExtras, products } from "@/app/products/preloaded";
 import { EmblaOptionsType } from "embla-carousel";
 
 
 type HeroProductProps = {
-  productAlias: Product["alias"]
+  productAlias: Product["alias"],
+  menuLinks?: ProductLinksExtras
 }
 
 const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   const ITEM = products.find(p => p.alias === productAlias);
+  const menuLinks = ITEM?.details.linksExtras;
   
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
@@ -37,7 +39,7 @@ const formattedTestimonial = ITEM?.details?.stats
   return (
     <header className={style.wrapper}>
       <HeaderGradient keyProp={ITEM!.colorScheme}/>
-      <Navbar />
+      <Navbar menuLinks={menuLinks} />
       <div className={`content_wrapper ${style.content}`}>
         
         <div className={style.content_group1}>

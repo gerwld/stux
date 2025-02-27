@@ -1,46 +1,53 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { Product, products } from "@/app/products/preloaded";
 
 type Link = {
-  href: string,
-  title: string,
-  n18?: string
-}
+  href: string;
+  title: string;
+  n18?: string;
+};
 
-const Footer = () => {
+const Footer: React.FC<{ productAlias: Product["alias"] }> = ({ productAlias }) => {
+  const ITEM = products.find(p => p.alias === productAlias);
+  const menuLinks = ITEM?.details.linksExtras;
+  const m = menuLinks;
   const route = usePathname();
 
-  const [links] = useState<Link[]>([
-    {href: "https://github.com", title: 'Github', n18: 'footer_home'},
-    {href: "/", title: 'Releases', n18: 'footer_home'},
-    {href: "/products", title: 'Contribute', n18: 'footer_home'},
-    {href: "https://google.com", title: 'Bug Report', n18: 'footer_home'},
-  ])
-  return (    
+  const [links] = useState<Link[]>([ // weak typisation to fallback the non-existing links with universal ones
+    { href: (m?.github || "https://github.com/gerwld/"), title: "Github", n18: "footer_home" },
+    { href: (m?.releases || "#"), title: "Releases", n18: "footer_home" },
+    { href: (m?.contribute || "https://github.com/gerwld/spoplus-extension/blob/main/CONTRIBUTING.md"), title: "Contribute", n18: "footer_home" },
+    { href: (m?.bug_report || m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Bug Report", n18: "footer_home" },
+  ]);
+  return (
     <footer className={style.footer}>
       <div className={`content_wrapper ${style.footer_content}`}>
+        <nav className={style.nav}>
+          {links.map((link) => (
+            <Link
+              target="_blank"
+              key={link.href + link.title}
+              href={link.href}
+              className={route == link.href ? style.active : ""}
+            >
+              {link.title}
+            </Link>
+          ))}
+        </nav>
 
-      <nav className={style.nav}>
-        {links.map(link => 
-          <Link 
-          key={link.href} 
-          href={link.href}
-          className={route == link.href ? style.active : ""}
-          >{link.title}</Link>)}
-      </nav>
-
-      <div className={style.credentials}>
-        <span>Made with
-            <img title="Heart Icon" src="/icons/heart.svg" alt=" love "/>
+        <div className={style.credentials}>
+          <span>
+            Made with
+            <img title="Heart Icon" src="/icons/heart.svg" alt=" love " />
             by
-        </span>
-       <Link href="/">Patryk Jaworski</Link>{" "}and{" "}<Link href="/">keyxnode</Link>
-      </div>
-
+          </span>
+          <Link target="_blank" href="http://github.com/gerwld">Patryk Jaworski</Link> and{" "}
+          <a>keyxnode</a>
+        </div>
       </div>
     </footer>
   );

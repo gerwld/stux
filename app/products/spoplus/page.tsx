@@ -7,21 +7,21 @@ import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
-const IGPlusPage = () => {
-  const PRODUCT_KEY:string = "SPOPLUS";
+const SpoPlusPage = () => {
+  const PRODUCT_KEY: string = "SPOPLUS";
 
   return (
     <div>
-      <HeroProduct productAlias={PRODUCT_KEY}/>
+      <HeroProduct productAlias={PRODUCT_KEY} />
       <main>
-        <FeaturesSection productAlias={PRODUCT_KEY}/>
-        <TestimonialSection productAlias={PRODUCT_KEY}/>
-        <MoreSection excludeAlias={PRODUCT_KEY}/>
-        <CTASection/>
+        <FeaturesSection productAlias={PRODUCT_KEY} />
+        <TestimonialSection productAlias={PRODUCT_KEY} />
+        <MoreSection excludeAlias={PRODUCT_KEY} />
+        <CTASection />
       </main>
-      <Footer />
+      <Footer productAlias={PRODUCT_KEY} />
     </div>
   );
 };
 
-export default IGPlusPage;
+export default SpoPlusPage;

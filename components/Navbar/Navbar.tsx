@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import style from "./style.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ProductLinksExtras } from "@/app/products/preloaded";
 
 type Link = {
   href: string,
@@ -10,15 +11,15 @@ type Link = {
   n18?: string
 }
 
-const Header = () => {
+const Header:React.FC<{menuLinks: ProductLinksExtras | undefined}> = ({menuLinks}) => {
+  const m = menuLinks;
   const route = usePathname();
 
   const [links] = useState<Link[]>([
     {href: "/", title: 'Home', n18: 'header_home'},
     {href: "/products", title: 'All Products', n18: 'header_home'},
-    {href: "https://google.com", title: 'Request Feature', n18: 'header_home'},
-    {href: "https://github.com", title: 'Github', n18: 'header_home'},
-    {href: "https://google.com/", title: 'Donate', n18: 'header_home'},
+    {href: (m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSc8jGjwaVURaYxI0XPIEa9yW21H0CjeHfe19fcxMRBCkFsoPQ/viewform?usp=header"), title: 'Request Feature', n18: 'header_home'}, 
+    {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'header_home'},
   ])
   return (
     <>
