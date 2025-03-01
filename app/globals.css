@@ -159,7 +159,13 @@ html .lang_set_wrapper {
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
+  :root {
+    --content-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
   :root {
     --content-gap: 10px;
   }

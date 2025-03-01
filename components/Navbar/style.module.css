@@ -141,6 +141,19 @@
         background-color:  rgba(40, 47, 72, 0.6)!important;
     }
 
+    html :global(.lang_set) {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    
+    html :global(.lang_set_wrapper) {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    :global(.lang_set_wrapper .lang_ic) {
+        background-color: transparent !important;
+        box-shadow: none!important;
+    }
+
     .nav * {
         opacity: 0;
         pointer-events: none;
