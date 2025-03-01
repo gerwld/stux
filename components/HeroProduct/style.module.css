@@ -86,6 +86,14 @@
     padding-top: 4rem;
 }
 
+.stats_mobile {
+    display: none;
+}
+
+.stats_mobile span > span {
+    display: none;
+}
+
 .stats_item {
     display: flex;
     align-items: center;
@@ -125,5 +133,57 @@
     .title_logo {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        padding: 1rem 0;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .content_group1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 0 1rem;
+    }
+
+    .content_group2 {
+        max-width: 90%;
+    }
+
+    :global(.embla) {
+        --slide-height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+    :global(.embla) {
+        --slide-height: 60vw;
+    }
+
+    .stats_mobile {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .stats_desktop {
+        display: none;
+    }
+
+     :global(.embla__buttons) {
+        display: none;
+    }
+
+    :global(.embla__controls) {
+        grid-template-columns: 1fr auto;
     }
 }

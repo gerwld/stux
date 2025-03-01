@@ -15,10 +15,11 @@ type PropType = {
   slides: string[]
   options?: EmblaOptionsType
   isVertical: boolean
+  embededItem?: string | React.ReactNode
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options, isVertical } = props
+  const { slides, options, isVertical, embededItem } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({ playOnInit: true, delay: 3500, stopOnMouseEnter: false })
   ])
@@ -50,7 +51,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
 
       <div className="embla__controls">
-        <div></div>
+        <div>{embededItem ? embededItem : ""}</div>
         <div className="embla__buttons">
           <PrevButton
             onClick={() => onAutoplayButtonClick(onPrevButtonClick)}

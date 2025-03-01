@@ -24,6 +24,17 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
     {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'header_home'},
   ])
 
+  const [scrolled, setScrolled] = useState<boolean>(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleMenu = () => {
     isMobileMenu(!mobileMenu);
   }
@@ -32,9 +43,9 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
     <div className={style.gap_fix}/>
     
     <div className={style.header}>
-      <div className={`content_wrapper ${style.header_content}`}>
+      <div className={clsx("content_wrapper", style.header_content, scrolled && style.header_scrolled)}>
 
-      <nav className={clsx(style.nav, mobileMenu && style.mobile_nav_open)} area-visible={mobileMenu}>
+      <nav className={clsx(style.nav, mobileMenu && style.mobile_nav_open)} area-visible={mobileMenu.toString()}>
         {links.map(link => 
           <Link 
           target={link.href.indexOf("http") !== -1 ? "_blank" : "_self"}
@@ -74,10 +85,10 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
       <button className={style.mobile_menu__btn} onClick={toggleMenu} title="Menu Button">
       {mobileMenu 
           ? <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.84615 19L23 1M1 1L23 19" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.84615 19L23 1M1 1L23 19" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>          
           : <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1H27M1 10H27M1 19H27" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1H27M1 10H27M1 19H27" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>          
           }
       </button>
