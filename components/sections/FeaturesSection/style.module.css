@@ -115,6 +115,10 @@
     .title {
         font-size: 0.9rem;
     }
+
+    .header_gap {
+        padding-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
