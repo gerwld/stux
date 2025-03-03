@@ -38,8 +38,8 @@
     align-items: center;
 
     padding: 0.5rem 1.6rem 0.5rem 0.8rem;
-    background-color: #2A2B3F;
-    border: 1px solid #4A4C66;
+    background-color: var(--item-background, #212335);
+    border: 1px solid #30344a;
     border-radius: 16px;
     transition: opacity 300ms ease;
     animation: fadeIn 1s ease-out forwards;
@@ -289,4 +289,19 @@ button.modal_btn_download {
 .install_btn img {
     height: 1em;
     margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 440px) {
+    .btn_download {
+        padding-left: 1.2rem;
+        padding-right: 1.8rem;
+        border-radius: 18px;
+    }
+    .install_btn img {
+        margin: 0;
+        padding: 0;
+    }
+    .install_btn span {
+        display: none;
+    }
 }

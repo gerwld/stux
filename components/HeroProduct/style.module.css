@@ -190,14 +190,43 @@
     :global(.embla__controls) {
         grid-template-columns: 1fr auto;
     }
+
+    .desc {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 420px) {
+
+    :global(.embla) {
+        margin: auto -5px;
+    }
+
+    .content {
+        padding: 0 0 0.5rem;
+    }
+
+    .btn_sect {
+        margin-top: 1rem;
+    }
+
     .stats_item {
         font-size: 1.1rem;
     }
     .stats_mobile {
         padding-left: 0.2rem;
+    }
+
+    .version { 
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 2.1rem;
+    }
+
+    .desc {
+        font-size: 1.16rem;
     }
 }
 

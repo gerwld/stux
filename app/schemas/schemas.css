@@ -9,6 +9,10 @@
     --button-background-main: #484089;
     --active-color-main: #beb9ff;
     --gradient-pp: linear-gradient(90deg, #756bc1, #5c52a7);
+    --item-background: #212334;
+
+    --testimial-block-bg: #24273c8a;
+    --testimial-block-border: #30334a;
 }
 .schema-purple .embla {
     --detail-medium-contrast: #41366d;

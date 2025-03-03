@@ -201,3 +201,14 @@
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
 }
+
+
+@media only screen and (max-width: 440px) {
+  .embla__slide__image {
+    border-radius: 0.4rem;
+  }
+
+  .embla__play {
+    height: 2.2rem;
+  }
+}

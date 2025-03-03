@@ -90,3 +90,58 @@
     background: linear-gradient(96deg, #43517f, #283258);
     border: 1px solid #42507D;
 }
+
+
+@media only screen and (max-width: 940px) {
+    .btn_1 {
+        height: 42px;
+        line-height: 41px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .content > article:nth-last-child(1) {
+        display: none;
+    }
+    .content > article {
+        flex: 0 0 47%;
+        margin-right: 3%;
+    }
+    .content >article:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .content > article {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+
+    .content > article:nth-child(1){
+        margin-right: 2%!important;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    /* .content,
+    .content > article:nth-last-child(1) {
+        display: block;
+    } */
+
+    .content > article {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+
+    .content > article:nth-child(1),
+    .content > article{
+        flex: 0 0 48%;
+        margin: 0 1% 3%!important;
+        border-radius: 0.5rem;
+    }
+    .content {
+        margin-right: -1%;
+    }
+}
+

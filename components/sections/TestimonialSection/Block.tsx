@@ -11,7 +11,7 @@ const Block: FC<PrevReview> = ({ avatarUrl, description, author }) => {
         <div className={style.icon}>
           <img src={avatarUrl} alt={author} />
         </div>
-        <h3 className={style.author}>{author}</h3>
+        <h3 className={style.author_title}>{author}</h3>
       </div>
       <p className={style.desc}><TextWithFragment text={description}/></p>
     </article>

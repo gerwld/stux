@@ -1,7 +1,7 @@
 .wrapper {
     background-color: #1A1C2D;
     background: linear-gradient(180deg, #40527D, #1A1C2D);
-    background: radial-gradient(ellipse at top center, #40527D 0%, #24283f 50%, #1A1C2D 70%, #1A1C2D 100%);
+    background: radial-gradient(at top, #364568 0%, #1b1f33 50%, #181925 70% 100%);
 }
 
 .wrapper_texture {

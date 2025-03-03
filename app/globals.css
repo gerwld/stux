@@ -1,5 +1,6 @@
 :root {
   --background: #1A1C2D;
+  --background: #181925;
   --text-color-main: #FFFFFF;
   --text-color-sec: #A4A8C9;
   --active-text-color: #6D8FFF;
@@ -9,6 +10,11 @@
 
   --dash-background: #3C4A6A;
   --dash-text-color: #BBD6FF;
+  --item-background: #24293f;
+  --item-background-sec: #24293f;
+
+  --testimial-block-bg: #1f2234;
+  --testimial-block-border: #323550;
 
   --header-background: rgba(255, 255, 255, 0.030);
   --header-border-color: rgba(255, 255, 255, 0.072);
@@ -55,7 +61,7 @@ a {
 /* page title  */
 .page_title {
   font-size: 2.4rem;
-  margin: max(1.5em, 8vh) 0;
+  margin: max(1.5em, 8vh) 0 1em;
   text-align: center;
 }
 
@@ -73,7 +79,7 @@ a {
   position: relative;
 
   max-width: 150px;
-  max-height: 38px;
+  max-height: 40px;
   margin: 0;
 
   border-radius: 20px;
@@ -168,5 +174,11 @@ html .lang_set_wrapper {
 @media only screen and (max-width: 420px) {
   :root {
     --content-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  :root {
+    --content-gap: 8px;
   }
 }

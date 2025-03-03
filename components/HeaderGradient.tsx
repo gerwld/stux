@@ -11,8 +11,10 @@ type Props = {
 };
 
 const colors:GradientObject = {
-  MAIN: "radial-gradient(ellipse at top center, #40527D 0%, #24283f 50%, #1A1C2D 70%, #1A1C2D 100%)",
-  PURPLE: "linear-gradient(to top, transparent -100%, var(--background) 10%, transparent 20%), radial-gradient(at center top, rgb(66, 55, 110) 0%, rgb(45, 38, 72), rgb(29, 31, 50), rgba(25, 27, 44, 0.5))",
+  // MAIN: "radial-gradient(ellipse at top center, #40527D 0%, #24283f 50%, #1A1C2D 70%, #1A1C2D 100%)",
+  MAIN: "radial-gradient(at top, #364568 0%, #1b1f33 50%, #181925 70% 100%)",
+  // PURPLE: "linear-gradient(to top, transparent -100%, var(--background) 10%, transparent 20%), radial-gradient(at center top, rgb(66, 55, 110) 0%, rgb(45, 38, 72), rgb(29, 31, 50), rgba(25, 27, 44, 0.5))",
+  PURPLE: "linear-gradient(to top, transparent -100%, var(--background) 10%, transparent 20%), radial-gradient(at center top, rgb(49, 40, 81) 0%, rgb(36, 30, 59), rgb(23, 25, 41), rgba(20, 22, 36, 0.5))",
 }
 
 const HeaderGradient:FC<Props> = ({keyProp = "MAIN", withTexture}) => {

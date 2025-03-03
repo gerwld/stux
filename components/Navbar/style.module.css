@@ -74,7 +74,7 @@
 @media only screen and (max-width: 740px) {
     :global(.lang_select) {
         right: unset;
-        top: calc(var(--mv-header, 50px) / 2 - 18px);
+        top: calc(var(--mv-header, 50px) / 2 - 19px);
         left: var(--content-gap);
     }
 
@@ -174,3 +174,13 @@
     }
 }
 
+
+
+@media only screen and (max-width: 440px) {
+    .mobile_menu__btn svg {
+        height: 40%;
+    }
+    .gap_fix {
+        padding-top: var(--mv-header, 65px);
+    }
+}

@@ -7,7 +7,7 @@
     display: inline-block;
     padding: 0 1em;
 
-    background-color:  var(--dash-background,#3C4A6A);
+    background-color: var(--dash-background, #3C4A6A);
     color: var(--dash-text-color, #BBD6FF);
 
     font-size: 15px;
@@ -40,27 +40,38 @@
 }
 
 @media only screen and (max-width: 425px) {
+    html .header {
+        padding: 1.8em 0 1em;
+    }
     .title {
-        font-size: 2.1rem;
+        font-size: 1.6rem;
+        margin: 0.4em 0;
     }
 
     .desc {
-        font-size: 1rem;
+        font-size: 1.04rem;
     }
-    .dash{
+
+    .dash {
         font-size: 14px;
-        height: 26px;
-        line-height: 26px;
+        height: 22px;
+        line-height: 22px;
     }
 }
 
 @media only screen and (max-width: 380px) {
-  
     .title {
         font-size: 1.8rem;
     }
 
     .desc {
         font-size: 0.98rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html .header {
+        padding-top: 0.4rem;
+        padding-bottom: 0.8rem;
     }
 }

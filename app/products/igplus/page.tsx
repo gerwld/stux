@@ -17,7 +17,7 @@ const IGPlusPage = () => {
         <FeaturesSection productAlias={PRODUCT_KEY}/>
         <TestimonialSection productAlias={PRODUCT_KEY}/>
         <MoreSection excludeAlias={PRODUCT_KEY}/>
-        <CTASection/>
+        {/* <CTASection/> */}
       </main>
       <Footer productAlias={PRODUCT_KEY}/>
     </div>

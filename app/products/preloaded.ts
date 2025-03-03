@@ -134,7 +134,7 @@ export const products: Product[] = [
     alias: "IGPLUS",
     title: "IGPlus",
     version: "3.0.1 Stable",
-    desc: "Disable Instagram Reels, hide Stories, recommendations  comments, trends, and other unnecessary elements, allowing you to focus on...",
+    desc: "Hide Instagram Reels, recommendations, Stories, comments, trends, and other unnecessary elements, allowing you to focus on...",
     colorScheme: "PURPLE",
     productType: "EXTENSION",
     details: {
