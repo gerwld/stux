@@ -12,6 +12,7 @@
     min-height: var(--mv-header, 65px);
     max-width: fit-content;
     padding: 0 1.2rem;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -40,6 +41,7 @@
     display: inline-block;
     margin-left: 0.3em;
     margin-right: 0.3em;
+    text-wrap: nowrap;
 }
 
 .credentials img {
@@ -56,4 +58,10 @@
     align-items: center;
     justify-content: center;
     opacity: 0.6;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .footer_content {
+        padding-bottom: 50px;
+    }
   }
