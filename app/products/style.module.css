@@ -4,6 +4,7 @@
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 150px;
+    margin-right: -0.1%;
 }
 
 .wrapper_texture {
@@ -24,4 +25,58 @@
     justify-content: center;
     pointer-events: none;
     user-select: none;
+}
+
+@media only screen and (max-width: 1020px) {
+    .content {
+        margin-right: -1.5%;
+    }
+    .content > article {
+        flex: 0 0 30.3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .content {
+        margin-right: -1.5%;
+    }
+    .content > article {
+        flex: 0 0 31.2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .content {
+        margin-right: -0.5%;
+    }
+    .content > article {
+        flex: 0 0 48%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .content {
+        margin-right: -0.5%;
+        padding-bottom: 50px;
+    }
+    .content > article {
+        max-width: 48%;
+        flex: 0 0 48%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+
+    .content > article h3 {
+        max-width: 90%;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

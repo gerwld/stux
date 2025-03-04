@@ -175,6 +175,10 @@ html .lang_set_wrapper {
   :root {
     --content-gap: 10px;
   }
+
+  .page_title {
+    margin: 0.8em 0;
+  }
 }
 
 @media only screen and (max-width: 340px) {
