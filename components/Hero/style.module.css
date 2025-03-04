@@ -9,9 +9,9 @@
     background-position: 0% 0%;
     background-size: 100% 100%;
 
-    min-height: 600px;
+    min-height: 640px;
     height: 100vh;
-    max-height: 60vw;
+    max-height: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,8 @@
 
 .content {
     min-height: 400px;
+    padding-top: calc(var(--mv-header, 60px) + 1px);
+    padding-bottom: calc(var(--mv-header, 60px) - 40px);
 }
 
 .title {
@@ -67,4 +69,88 @@
     background: linear-gradient(45deg, #43517F, #303A5C);
     background: linear-gradient(96deg, #43517f, #283258);
     border: 1px solid #42507D;
+}
+
+.shortcuts_act_image {
+    min-width: 60px;
+    min-height: 60px;
+
+    max-width: 60px;
+    max-height: 60px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.shortcuts_act_image__IGPLUS {
+    max-width: 65px;
+    max-height: 65px;
+    margin-top: -4px;
+}
+
+.shortcuts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0 1rem;
+}
+
+.shortcuts:hover .shortcuts_act {
+    filter: blur(3px);
+}
+
+.shortcuts_act:hover {
+    filter: none!important;
+}
+
+.shortcuts_act {
+    display: block;
+    padding: 5px;
+    transition: 300ms transform;
+    margin-right: 20px;
+    transition: 300ms ease;
+
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.shortcuts_act:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.shortcuts_act:hover {
+    transform: scale(1.04);
+}
+
+.shortcuts_act_image__LICHESSHELPER {
+    min-width: 67px;
+    min-height: 67px;
+    margin-top: -2px;
+}
+
+@media only screen and (max-width: 900px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .desc {
+        font-size: 1.1rem;
+        line-height: 180%;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .title {
+        font-size: 2.2rem;
+    }
+    .desc {
+        font-size: 1.16rem;
+        line-height: 180%;
+    }
+    .shortcuts_act:nth-last-child(1) {
+        margin-right: 0;
+    }
+    .shortcuts_act:nth-child(2) {
+        display: none;
+    }
 }

@@ -1,4 +1,5 @@
 .block {
+    width: 18%;
     flex: 0 0 18%;
     display: flex;
     flex-direction: column;
@@ -27,7 +28,11 @@
 }
 
 .desc {
-color: #75799A;
+    color: #75799A;
+    text-wrap: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .content {
@@ -35,4 +40,36 @@ color: #75799A;
     align-items: center;
     justify-content: center;
     padding-bottom: 2.8rem;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1120px) {
+    .block {
+        width: 22%;
+        flex: 0 0 22%;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .block {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .block {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .block {
+        width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 2rem;
+    }
+    .content {
+        padding-bottom: 1rem;
+    }
 }
