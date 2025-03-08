@@ -5,6 +5,7 @@ import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 import { ProductLinksExtras } from "@/app/[locale]/products/preloaded";
 import clsx from "clsx";
+import { SUPPORTED_LOCALES } from "@/i18n/routing";
 
 type Link = {
   href: string,
@@ -38,6 +39,10 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
   const toggleMenu = () => {
     isMobileMenu(!mobileMenu);
   }
+
+  console.log(route);
+  
+
   return (
     <>
     <div className={style.gap_fix}/>
@@ -51,7 +56,7 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
           target={link.href.indexOf("http") !== -1 ? "_blank" : "_self"}
           key={link.href} 
           href={link.href}
-          // className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}
+          className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" || link.href == "/" && SUPPORTED_LOCALES.indexOf(route.slice(1)) !== -1 ? style.active : ""}
           >{link.title}</Link>)}
       </nav>
 
