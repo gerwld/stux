@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import style from "./style.module.css";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
-import { Product, products } from "@/app/products/preloaded";
+import { Product, products } from "@/app/[locale]/products/preloaded";
 
 type Link = {
   href: string;

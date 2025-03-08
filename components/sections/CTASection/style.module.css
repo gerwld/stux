@@ -218,3 +218,28 @@
         padding-top: 80px;
     }
 }
+
+
+@media only screen and (max-width: 420px) {
+    .preview {
+        width: 290px;
+        height: 180px;
+        object-fit: cover;
+        margin-left: -10px;
+    }
+
+    .title {
+        font-size: 1.62rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .wrapper {
+        background-size: 160vw 280px;
+        padding-top: 50px;
+        margin-top: 10px;
+    }
+
+    .content_block2 {
+        padding-bottom: 3.4rem;
+    }
+}

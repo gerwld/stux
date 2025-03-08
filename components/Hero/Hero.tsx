@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import style from "./style.module.css";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import clsx from "clsx";
 
 

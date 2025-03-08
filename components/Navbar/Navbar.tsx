@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import style from "./style.module.css";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
-import { ProductLinksExtras } from "@/app/products/preloaded";
+import { ProductLinksExtras } from "@/app/[locale]/products/preloaded";
 import clsx from "clsx";
 
 type Link = {
@@ -12,7 +12,7 @@ type Link = {
   n18?: string
 }
 
-const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
+const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
   const [mobileMenu, isMobileMenu] = useState<boolean>(false);
   const m = menuLinks;
   const route = usePathname();
@@ -51,7 +51,7 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
           target={link.href.indexOf("http") !== -1 ? "_blank" : "_self"}
           key={link.href} 
           href={link.href}
-          className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}
+          // className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" ? style.active : ""}
           >{link.title}</Link>)}
       </nav>
 
@@ -99,4 +99,4 @@ const Header:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
   );
 };
 
-export default Header;
+export default Navbar;

@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import SectionHeader from "@/components/sections/SectionHeader/SectionHeader";
 import style from "./style.module.css";
 import ProductBlock from "@/components/ProductBlock/ProductBlock";
-import { Product, products } from "@/app/products/preloaded";
-import Link from "next/link";
+import { Product, products } from "@/app/[locale]/products/preloaded";
+import {Link} from "@/i18n/navigation";
 
 const getRandomItems = (
   array: Product[], 

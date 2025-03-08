@@ -1,4 +1,4 @@
-import { ColorSchemeType } from "../schemas/schemas";
+import { ColorSchemeType } from "../../schemas/schemas";
 
 export interface Product {
   logoSrc: string;

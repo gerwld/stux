@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react'
 import style from './style.module.css';
 import withClickOutside, { WithClickOutsideProps } from '@/hocs/withClickOutside';
-import { ProductBrowserLinks, ProductLinks } from '@/app/products/preloaded';
+import { ProductBrowserLinks, ProductLinks } from '@/app/[locale]/products/preloaded';
 import clsx from 'clsx';
 import { BrowserType, useBrowserType } from '@/hooks/useBrowserType';
 

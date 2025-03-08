@@ -7,7 +7,6 @@ import TestimonialSection from '@/components/sections/TestimonialSection/Testimo
 import { useTranslations } from 'next-intl'
 import React from 'react'
 
-
 const MainPage = () => {
   const t = useTranslations('HomePage');
   return (

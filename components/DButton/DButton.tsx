@@ -1,7 +1,7 @@
 import React, { FC, JSX } from "react";
 import style from "./style.module.css";
-import Link from "next/link";
-import { ProductBrowserLinks, ProductLinks, ProductType } from "@/app/products/preloaded";
+import {Link} from "@/i18n/navigation";
+import { ProductBrowserLinks, ProductLinks, ProductType } from "@/app/[locale]/products/preloaded";
 import { BrowserType, useBrowserType } from "@/hooks/useBrowserType";
 import toTitleCase from "@/tools/toTitleCase";
 import clsx from "clsx";

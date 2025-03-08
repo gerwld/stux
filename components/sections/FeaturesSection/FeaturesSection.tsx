@@ -3,7 +3,7 @@ import React from "react";
 import SectionHeader from "@/components/sections/SectionHeader/SectionHeader";
 import style from "./style.module.css";
 import Block from "./Block";
-import { Product, products } from "@/app/products/preloaded";
+import { Product, products } from "@/app/[locale]/products/preloaded";
 
 export interface FeaturesBlock {
   iconUrl: string;

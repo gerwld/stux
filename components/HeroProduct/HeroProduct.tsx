@@ -6,7 +6,7 @@ import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 
 import style from "./style.module.css";
 import "@/app/inriasans.css";
-import { Product, ProductLinksExtras, products } from "@/app/products/preloaded";
+import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/preloaded";
 import { EmblaOptionsType } from "embla-carousel";
 import clsx from "clsx";
 
@@ -23,7 +23,6 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
   const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/en/${i}.png`);
-  console.log(SLIDES);
 
   
 const formatter = new Intl.NumberFormat('fr-FR');

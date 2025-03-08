@@ -1,8 +1,8 @@
 "use client"
 import React, { FC } from "react";
 import style from "./style.module.css";
-import Link from "next/link";
-import { Product } from "@/app/products/preloaded";
+import {Link} from "@/i18n/navigation";
+import { Product } from "@/app/[locale]/products/preloaded";
 import SelectBrowserModal from "../DButton/SelectBrowserModal";
 import { redirect } from "next/navigation";
 

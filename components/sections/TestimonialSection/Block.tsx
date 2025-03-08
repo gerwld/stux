@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import style from "./style.module.css";
 import TextWithFragment from "@/components/TextWithFragments";
-import { PrevReview } from "@/app/products/preloaded";
+import { PrevReview } from "@/app/[locale]/products/preloaded";
 
 
 const Block: FC<PrevReview> = ({ avatarUrl, description, author }) => {
