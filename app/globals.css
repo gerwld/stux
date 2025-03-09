@@ -114,14 +114,14 @@ html .lang_set_wrapper {
   background-size: auto 100%;
   
   background-repeat: no-repeat;
-  background-color: var(--background-contrast) !important;
+  background-color: #1a1d2e!important;
   font-size: 0rem !important;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   user-select: none;
   pointer-events: none;
-  background-color: var(--background)!important;
+
   box-shadow: -2px 0 5px 5px var(--background)!important;
   background-position: 0 0!important;
   border-radius: 3px;

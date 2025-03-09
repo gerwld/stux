@@ -1,0 +1,166 @@
+{
+    "global": {
+        "explore_btn": "Explorar todos os produtos",
+        "install_btn": "Instalar",
+        "details_btn": "Detalhes",
+        "close_btn": "Fechar",
+        "ct_reviews": "avaliações",
+        "ct_reviews_full": "mais de 20 avaliações",
+        "ct_users": "usuários",
+        "ct_users_full": "95.000 usuários",
+        "ct_rating": "classificação",
+        "ct_rating_full": "classificação 4,9"
+    },
+    "Navbar": {
+      "home": "Início",
+      "all_products": "Todos os Produtos",
+      "request_feature": "Solicitar Funcionalidade",
+      "support": "Suporte"
+    },
+    "HeroMain": {
+      "title": "Melhore sua experiência<br/>diária com nossos produtos",
+      "subtitle": "De extensões para navegador e ferramentas CLI a bibliotecas e aplicativos móveis,<br/>nossas soluções sempre focam na atenção aos detalhes e experiência do usuário."
+    },
+    "JourneySection": {
+      "header": {
+        "dash": "nossa experiência",
+        "title": "Nossa Jornada de Desenvolvimento",
+        "description": "Melhorando experiências digitais através da inovação centrada no usuário"
+      },
+      "sect_users": "Usuários Ativos",
+      "sect_install": "Instalações Mensais",
+      "sect_reviews": "Avaliações de Usuários",
+      "sect_gitub_issues": "Problemas GitHub Resolvidos"
+    },
+    "TestimonialSection": {
+      "header": {
+        "dash": "depoimentos",
+        "title": "O que nossos usuários estão dizendo",
+        "title_product": "O que os usuários falam sobre",
+        "title_product_full": "O que os usuários falam sobre DoHabit",
+        "description": "Nossos projetos recebem mais de 150 avaliações por mês, com mais de 4.000 avaliações no total",
+        "description_product": "Recebe mais de 50 avaliações por mês, mais de 1.000 avaliações no total"
+      }
+    },
+    "FeaturesSection": {
+      "header": {
+        "title": "Explore suas funcionalidades úteis",
+        "description": "Algumas das principais funcionalidades que podem ser úteis para você",
+        "dash": "funcionalidades"
+      }
+    },
+    "CTASection": {
+      "title_part_1": "Gosta de usar nossos produtos?<br/>Juntos",
+      "title_part_2": "podemos fazer mais",
+      "description": "Como todos os nossos projetos são completamente gratuitos e não coletam nem vendem seus dados, doações voluntárias são nossa única fonte de financiamento. Seu apoio é extremamente importante para nós, pois nos permite continuar desenvolvendo e atualizando nossos projetos.",
+      "button": "Apoie no Ko-Fi"
+    },
+    "MoreSection": {
+      "header": {
+        "title": "Outras extensões",
+        "description": "Maximize sua produtividade e otimize seu uso da web",
+        "dash": "nossos produtos"
+      }
+    },
+    "Footer": {
+      "releases": "Lançamentos",
+      "contribute": "Para Desenvolvedores",
+      "bug_report": "Reportar um Bug"
+    },
+    "ProductsPage": {
+      "title": "Nossos Produtos"
+    },
+    "ProductInstall": {
+      "download_for": "Baixar para",
+      "nt_btn": "Não é seu navegador?",
+      "choose_platform": "Escolha sua plataforma"
+    },
+    "PRODUCTS": {
+      "IGPLUS": {
+       "description": "Oculte Reels do Instagram, recomendações, Stories, comentários, tendências e outros elementos desnecessários, permitindo que você se concentre no que realmente importa. Assuma o controle da sua experiência no Instagram e personalize-a ao seu gosto.",
+        "preview_features": {
+          "0": { "title": "Ocultar <br/>página Explorar", "description": "Oculte a página Explorar para focar apenas no conteúdo que importa para você." },
+          "1": { "title": "Ocultar <br/>recomendações", "description": "Veja apenas conteúdo de contas que você segue - sem mais sugestões indesejadas." },
+          "2": { "title": "Personalizar <br/>fontes", "description": "Escolha entre várias fontes como Montserrat, Poppins e outras para combinar com seu estilo." },
+          "3": { "title": "Personalizar <br/>notificações", "description": "Torne o contador de novas mensagens preto e branco ou desative-o para reduzir distrações." },
+          "4": { "title": "Desativar <br/>Reels e vídeos", "description": "Desligue Reels e conteúdo de vídeo para uma experiência mais limpa e sem distrações." },
+          "5": { "title": "Ocultar <br/>contagem de curtidas e seguidores", "description": "Torne o Instagram um espaço mais consciente ocultando contagens de curtidas e seguidores." }
+        },      
+        "preview_reviews": {
+          "0": {"description":"Extensão muito boa. Adoro a opção de modo preto e branco. Uma funcionalidade que melhoraria esta extensão seria a capacidade de desativar posts recomendados na página inicial. Eles realmente me incomodam"},
+          "1": {"description":"Odeio cair na armadilha de conteúdo de formato curto.<br/> Adoro aplicativos que me fazem esquecer que isso existe."},
+          "2": {"description":"Esta extensão é incrivelmente útil! Melhorou significativamente minha produtividade ao eliminar distrações desnecessárias, ajudando-me a focar no que realmente importa."},
+          "3": {"description":"Extensão muito boa. A melhor e mais eficaz! Adoro todas as funcionalidades! Também gostaria de solicitar algo semelhante para o YouTube"},
+          "4": {"description":"Isso realmente economiza tempo, especialmente bom para aquelas pessoas que inconscientemente vão para a seção Reels a partir da seção de mensagens."},
+          "5": {"description":"Esta extensão tem sido o investimento perfeito para mim, tenho o Instagram para seu propósito original de inspiração, e só isso, nunca passo mais de 30 minutos por semana no aplicativo, e não preciso mais lutar contra a vontade de estar nele, é incrível."}
+        }
+      },
+      "SPOPLUS": {
+        "description": "Oculte o modo 'Reproduzindo agora' do Spotify, traga de volta o botão clássico de coração, desative álbuns, altere temas, fontes, desative vídeos para reduzir o uso de dados...",
+        "preview_features": {
+         "0": { "title": "Trazer de volta <br/>botão de coração clássico", "description": "Retorne ao antigo botão de coração para uma experiência nostálgica e familiar." },
+         "1": { "title": "Modo <br/>de foco", "description": "Ative uma interface mais compacta e visualmente atraente para melhor imersão ao ouvir." },
+         "2": { "title": "Temas e fontes <br/>personalizados", "description": "Escolha entre vários temas e fontes para personalizar sua experiência no Spotify." },
+         "3": { "title": "Estilo de <br/>álbum",  "description": "Transforme capas de álbuns em um design retangular elegante para um visual moderno." },
+         "4": { "title": "Ocultar <br/>\"Reproduzindo agora\"",  "description": "Desative a seção \"Reproduzindo agora\" para simplificar a interface e manter o foco." },
+         "5": { "title": "Bloquear <br/>imagens e vídeos",  "description": "Reduza o uso de dados desativando imagens e vídeos ao transmitir música." }
+        },
+      "preview_reviews": {
+        "0": { "description":"Esta é definitivamente uma das melhores extensões para o Spotify. O que mais gosto nesta extensão é a mudança simples, mas muito eficaz, do sinal de mais para o coração clássico. Mesmo sem isso, as opções de interface do usuário são definitivamente muito úteis."},
+        "1": { "description":"Este plugin reduziu o uso de RAM na página do Spotify, legal. A interface também parece limpa, ótimo trabalho!"},
+        "2": { "description":"Acho que a extensão faz o que deveria fazer. Sendo aparentemente a única extensão para personalizar o Spotify, funciona e tem uma boa seleção de cores. Funciona muito bem e vale absolutamente a pena instalar."},
+        "3": { "description":"simplesmente amo!!! estava procurando uma maneira de deixar o Spotify claro O TEMPO TODO, e este complemento faz isso e muito mais!!! 10/10, mal posso esperar por mais recursos de interface!!"},
+        "4": { "description":"Funciona muito bem. Os temas também são agradáveis aos olhos, especialmente o AMOLED. A única sugestão seria adicionar mais opções de fonte, como Comic Sans, ou algo incomum. Obrigado 😁"},
+        "5": { "description":"Incrível!! Sem problemas ao usar :) Os temas são super fofos e funciona muito bem com outras extensões que conectei ao Spotify ^_^ definitivamente recomendo"}
+      }
+      },
+      "MEMENTO": {
+        "description": "Extensão de página inicial personalizável para seu navegador. De código aberto, leve e seguro, o Memento aprimora sua experiência de navegação com personalização intuitiva e design limpo.",
+        "preview_features": {
+        "0": { "title": "Planos de fundo <br/>personalizáveis",  "description": "Escolha entre imagens de qualidade do Unsplash, carregue as suas próprias ou desative completamente o plano de fundo." },
+        "1": { "title": "Controles <br/>visuais", "description": "Ajuste as configurações de desfoque, tamanho do relógio e brilho para corresponder às suas preferências." },
+        "2": { "title": "Experiência <br/>localizada", "description": "Suporte para 12 idiomas e formato de 12/24 horas para melhor interação, independentemente da geolocalização." },
+        "3": { "title": "Seguro e de <br/>código aberto", "description": "Código aberto para privacidade e transparência de uso." },
+        "4": { "title": "Rápido e <br/>leve",  "description": "Projetado para velocidade e eficiência, tornando o uso diário suave e sem complicações." }
+        }
+      },
+      "GWARDAAPP": {
+        "description": "Obtenha informações sobre produtos da Amazon, encontre os melhores preços, use palavras-chave SEO, encontre os melhores fornecedores com Reverse ASIN. Obtenha insights valiosos sobre o desempenho do produto e análise de concorrência para sua estratégia de e-commerce."
+      },
+      "CHESSHELPER": {
+        "description": "Extensão para Chess.com, permitindo adicionar novos temas, peças, fontes personalizadas e recursos como desativar pop-ups, coordenadas em cada casa e muito mais.",
+        "preview_features": {
+         "0": { "title": "Temas e peças <br/>personalizados", "description": "Mude a aparência do Chess.com com 6 temas, 39 conjuntos de peças e 40 tabuleiros." },
+         "1": { "title": "Modo tela cheia e <br/>fixo",  "description": "Aproveite o modo de tela cheia e layout fixo do tabuleiro. Sem mais saltos no HyperBullet!" },
+         "2": { "title": "Economia <br/>de dados",  "description": "Reduza o uso de dados desativando o stream na página inicial." },
+         "3": { "title": "Desativar <br/>chat",  "description": "Sem mais trolls! Concentre-se no jogo sem distrações." },
+         "4": { "title": "Coordenadas <br/>em cada casa",  "description": "Aprenda notação de xadrez mais rapidamente com coordenadas em cada casa." },
+         "5": { "title": "Duplo clique <br/>para abandonar",  "description": "Abandone rapidamente com um simples clique duplo. Menos frustração, mais controle." }
+        }    
+      },
+      "LICHESSHELPER": {
+        "description": "Extensão para Lichess.org que adiciona novos temas, peças, tabuleiros, fontes e recursos como desativar pop-ups, coordenadas em cada casa...",
+        "preview_features": {
+         "0": { "title": "Temas e peças <br/>personalizados", "description": "Mude a aparência do Lichess com 6 temas, 39 conjuntos de peças e 40 tabuleiros."},
+         "1": { "title": "Modo de layout <br/>moderno",  "description": "Desfrute de uma interface elegante e modernizada para uma experiência Lichess aprimorada." },
+         "2": { "title": "Modo tela cheia e <br/>fixo",  "description": "Aproveite o modo de tela cheia e layout fixo do tabuleiro. Sem mais saltos no HyperBullet!"},
+         "3": { "title": "Desativar <br/>chat",  "description": "Sem mais trolls! Concentre-se no jogo sem distrações."},
+         "4": { "title": "Coordenadas <br/>em cada casa",  "description": "Aprenda notação de xadrez mais rapidamente com coordenadas em cada casa."},
+         "5": { "title": "Evitar movimentos <br/>por rolagem",  "description": "Pare movimentos acidentais causados pela rolagem, perfeito para jogos rápidos." }
+        }
+      },
+      "DOHABIT": {
+        "description": "Rastreador de hábitos de código aberto para iOS e Android. Projetado para ajudar os usuários a manterem consistência e melhorarem suas rotinas diárias. Torna o acompanhamento e o alcance de progresso mais fácil e muito mais envolvente."
+      },
+      "EASYCALC": {
+        "description": "Extensão de calculadora simples para realizar cálculos aritméticos básicos. O design elegante e eficiente do EasyCalc não apenas tem ótima aparência, mas maximiza a usabilidade.",
+        "preview_features": {
+        "0": { "title": "Modo escuro <br/>e modo claro",  "description": "Alterne entre modos escuro e claro para uma experiência confortável e personalizada."},
+        "1": { "title": "Design <br/>elegante",  "description": "Interface limpa e eficiente que maximiza a funcionalidade sem distrações."},
+        "2": { "title": "Armazenamento <br/>persistente de valores", "description": "Seus valores são salvos até serem limpos, facilitando a referência a cálculos anteriores."},
+        "3": { "title": "Abordagem <br/>prioritária de privacidade", "description": "O EasyCalc não coleta dados pessoais, garantindo sua segurança e tranquilidade."},
+        "4": { "title": "Código aberto <br/>e gratuito", "description": "Totalmente de código aberto no GitHub, permitindo que você inspecione, modifique e contribua."}
+        }
+      }    
+    }
+  }

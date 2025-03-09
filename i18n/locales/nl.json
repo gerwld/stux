@@ -1,0 +1,166 @@
+{
+    "global": {
+        "explore_btn": "Alle producten verkennen",
+        "install_btn": "Installeren",
+        "details_btn": "Details",
+        "close_btn": "Sluiten",
+        "ct_reviews": "beoordelingen",
+        "ct_reviews_full": "20+ beoordelingen",
+        "ct_users": "gebruikers",
+        "ct_users_full": "95.000 gebruikers",
+        "ct_rating": "waardering",
+        "ct_rating_full": "4,9 waardering"
+    },
+    "Navbar": {
+      "home": "Startpagina",
+      "all_products": "Alle Producten",
+      "request_feature": "Functie Aanvragen",
+      "support": "Ondersteuning"
+    },
+    "HeroMain": {
+      "title": "Verbeter je dagelijkse<br/>ervaring met onze producten",
+      "subtitle": "Van browserextensies en CLI-tools tot bibliotheken en mobiele apps,<br/>onze oplossingen zijn altijd gericht op aandacht voor detail en gebruikerservaring."
+    },
+    "JourneySection": {
+      "header": {
+        "dash": "onze ervaring",
+        "title": "Onze Ontwikkelingsreis",
+        "description": "Digitale ervaringen verbeteren door gebruikersgerichte innovatie"
+      },
+      "sect_users": "Actieve Gebruikers",
+      "sect_install": "Maandelijkse Installaties",
+      "sect_reviews": "Gebruikersbeoordelingen",
+      "sect_gitub_issues": "Opgeloste GitHub Problemen"
+    },
+    "TestimonialSection": {
+      "header": {
+        "dash": "getuigenissen",
+        "title": "Wat onze gebruikers zeggen",
+        "title_product": "Wat gebruikers zeggen over",
+        "title_product_full": "Wat gebruikers zeggen over DoHabit",
+        "description": "Onze projecten ontvangen meer dan 150 beoordelingen per maand, met in totaal meer dan 4.000 beoordelingen",
+        "description_product": "Ontvangt meer dan 50 beoordelingen per maand, in totaal meer dan 1.000 beoordelingen"
+      }
+    },
+    "FeaturesSection": {
+      "header": {
+        "title": "Ontdek de nuttige functies",
+        "description": "Enkele belangrijke functies die voor jou handig kunnen zijn",
+        "dash": "functies"
+      }
+    },
+    "CTASection": {
+      "title_part_1": "Vind je onze producten fijn?<br/>Samen",
+      "title_part_2": "kunnen we meer bereiken",
+      "description": "Aangezien al onze projecten volledig gratis zijn en we je gegevens niet verzamelen of verkopen, zijn vrijwillige donaties onze enige bron van financiering. Jouw steun is enorm belangrijk voor ons, omdat het ons in staat stelt om onze projecten te blijven ontwikkelen en updaten.",
+      "button": "Steun ons op Ko-Fi"
+    },
+    "MoreSection": {
+      "header": {
+        "title": "Andere extensies",
+        "description": "Maximaliseer je productiviteit en optimaliseer je webgebruik",
+        "dash": "onze producten"
+      }
+    },
+    "Footer": {
+      "releases": "Releases",
+      "contribute": "Voor Ontwikkelaars",
+      "bug_report": "Bug Melden"
+    },
+    "ProductsPage": {
+      "title": "Onze Producten"
+    },
+    "ProductInstall": {
+      "download_for": "Downloaden voor",
+      "nt_btn": "Niet jouw browser?",
+      "choose_platform": "Kies je platform"
+    },
+    "PRODUCTS": {
+      "IGPLUS": {
+       "description": "Verberg Instagram Reels, aanbevelingen, Verhalen, reacties, trends en andere onnodige elementen, zodat je je kunt concentreren op wat er echt toe doet. Neem de controle over je Instagram-ervaring en pas deze aan naar je wensen.",
+        "preview_features": {
+          "0": { "title": "Verberg <br/>Verkennen-pagina", "description": "Verberg de Verkennen-pagina om je alleen te richten op inhoud die voor jou belangrijk is." },
+          "1": { "title": "Verberg <br/>aanbevelingen", "description": "Zie alleen inhoud van accounts die je volgt - geen ongewenste suggesties meer." },
+          "2": { "title": "Personaliseer <br/>lettertypen", "description": "Kies uit verschillende lettertypen zoals Montserrat, Poppins en andere om bij je stijl te passen." },
+          "3": { "title": "Pas <br/>meldingen aan", "description": "Maak de nieuwe berichtenteller zwart-wit of schakel deze uit om afleiding te verminderen." },
+          "4": { "title": "Schakel <br/>Reels en video's uit", "description": "Zet Reels en video-inhoud uit voor een schonere, afleidingsvrije ervaring." },
+          "5": { "title": "Verberg <br/>likes en volgersteller", "description": "Maak Instagram een meer bewuste ruimte door likes en volgersaantallen te verbergen." }
+        },      
+        "preview_reviews": {
+          "0": {"description":"Zeer goede extensie. Ik hou van de zwart-wit modus optie. Een functie die deze extensie zou verbeteren is de mogelijkheid om aanbevolen berichten op de startpagina uit te schakelen. Ze storen me echt"},
+          "1": {"description":"Ik haat het om in de kortevormcontent-val te lopen.<br/> Ik hou van apps die me laten vergeten dat het bestaat."},
+          "2": {"description":"Deze extensie is ongelooflijk nuttig! Het heeft mijn productiviteit aanzienlijk verbeterd door onnodige afleidingen te elimineren, waardoor ik me kan concentreren op wat echt belangrijk is."},
+          "3": {"description":"Zeer goede extensie. De beste en meest effectieve! Hou van alle functies! Zou ook graag iets soortgelijks voor YouTube willen aanvragen"},
+          "4": {"description":"Dit bespaart echt tijd, vooral goed voor die mensen die onbewust naar de Reels-sectie gaan vanuit de berichten-sectie."},
+          "5": {"description":"Deze extensie is de perfecte investering voor mij geweest, ik heb Instagram voor het beoogde doel van inspiratie, en dat is het, ik breng nooit meer dan 30 minuten per week in de app door, en ik hoef niet meer tegen de drang te vechten om erop te zijn, het is ongelooflijk."}
+        }
+      },
+      "SPOPLUS": {
+        "description": "Verberg Spotify's 'Huidige weergave', breng de klassieke hartknop terug, schakel albums uit, verander thema's, lettertypen, schakel video's uit om datagebruik te verminderen...",
+        "preview_features": {
+         "0": { "title": "Breng de <br/>klassieke hartknop terug", "description": "Keer terug naar de oude hartknop voor een nostalgische en vertrouwde ervaring." },
+         "1": { "title": "Focus <br/>modus", "description": "Schakel een compactere en visueel aantrekkelijkere interface in voor een betere luisterervaring." },
+         "2": { "title": "Aangepaste <br/>thema's en lettertypen", "description": "Kies uit verschillende thema's en lettertypen om je Spotify-ervaring te personaliseren." },
+         "3": { "title": "Album <br/>styling",  "description": "Transformeer albumhoezen naar een elegant rechthoekig ontwerp voor een moderne look." },
+         "4": { "title": "Verberg <br/>\"Huidige weergave\"",  "description": "Schakel de \"Huidige weergave\" sectie uit om de interface te vereenvoudigen en gefocust te blijven." },
+         "5": { "title": "Blokkeer <br/>afbeeldingen en video's",  "description": "Verminder datagebruik door afbeeldingen en video's uit te schakelen tijdens het streamen van muziek." }
+        },
+      "preview_reviews": {
+        "0": { "description":"Dit is zeker een van de beste extensies voor Spotify. Wat ik het meest waardeer aan deze extensie is de eenvoudige maar zeer effectieve verandering van de plus naar het klassieke hartje. Maar zelfs zonder dat zijn de gebruikersinterface-opties zeker erg nuttig."},
+        "1": { "description":"Deze plugin verminderde RAM-gebruik op de Spotify-pagina, cool. De interface ziet er ook schoon uit, goed werk!"},
+        "2": { "description":"Ik denk dat de extensie doet wat het moet doen. Als schijnbaar de enige extensie voor het aanpassen van Spotify, werkt het en heeft het een goede kleurenselectie. Werkt geweldig en absoluut de moeite waard om te installeren."},
+        "3": { "description":"ik vind het geweldig!!! was op zoek naar een manier om Spotify ALTIJD licht te maken, en deze add-on doet dat en nog veel meer!!! 10/10, ik kan niet wachten op meer UI-functies!!"},
+        "4": { "description":"Werkt behoorlijk goed. De thema's zijn ook zacht voor de ogen, vooral AMOLED. De enige suggestie zou zijn om meer lettertype-opties toe te voegen, zoals Comic Sans, of iets ongewoons. Bedankt 😁"},
+        "5": { "description":"Geweldig!! Geen problemen bij gebruik :) Thema's zijn super schattig, en werkt geweldig met andere extensies die ik aan Spotify heb gekoppeld ^_^ zeker een aanrader"}
+      }
+      },
+      "MEMENTO": {
+        "description": "Aanpasbare startpagina-extensie voor je browser. Open source, lichtgewicht en veilig, Memento verbetert je browse-ervaring met intuïtieve aanpassing en een schoon ontwerp.",
+        "preview_features": {
+        "0": { "title": "Aanpasbare <br/>achtergronden",  "description": "Kies uit kwaliteit Unsplash-afbeeldingen, upload je eigen, of schakel de achtergrond helemaal uit." },
+        "1": { "title": "Visuele <br/>bedieningselementen", "description": "Pas vervaging, klokgrootte en helderheid aan om aan je voorkeuren te voldoen." },
+        "2": { "title": "Gelokaliseerde <br/>ervaring", "description": "Ondersteuning voor 12 talen en 12/24-uurs formaat voor betere interactie ongeacht je locatie." },
+        "3": { "title": "Veilig en <br/>open source", "description": "Open source voor privacy en transparantie van gebruik." },
+        "4": { "title": "Snel en <br/>lichtgewicht",  "description": "Ontworpen voor snelheid en efficiëntie, wat dagelijks gebruik soepel en naadloos maakt." }
+        }
+      },
+      "GWARDAAPP": {
+        "description": "Krijg informatie over Amazon-producten, vind de beste prijzen, gebruik SEO-zoekwoorden, vind de beste leveranciers met Reverse ASIN. Krijg waardevolle inzichten in productprestaties, concurrentieanalyse voor je e-commerce strategie."
+      },
+      "CHESSHELPER": {
+        "description": "Extensie voor Chess.com, waarmee je nieuwe thema's, stukken, aangepaste lettertypen en functies zoals het uitschakelen van pop-ups, coördinaten op elk veld en nog veel meer kunt toevoegen.",
+        "preview_features": {
+         "0": { "title": "Aangepaste <br/>thema's en stukken", "description": "Verander het uiterlijk van Chess.com met 6 thema's, 39 stukkensets en 40 borden." },
+         "1": { "title": "Volledig scherm en <br/>vaste modus",  "description": "Geniet van volledig scherm en vaste bordlay-out. Geen sprongen meer in HyperBullet!" },
+         "2": { "title": "Data <br/>besparing",  "description": "Verminder datagebruik door de stream op de startpagina uit te schakelen." },
+         "3": { "title": "Chat <br/>uitschakelen",  "description": "Geen trollen meer! Focus op het spel zonder afleidingen." },
+         "4": { "title": "Coördinaten <br/>op elk veld",  "description": "Leer schaaknotatie sneller met coördinaten op elk veld." },
+         "5": { "title": "Dubbelklik <br/>om op te geven",  "description": "Geef snel op met een eenvoudige dubbelklik. Minder frustratie, meer controle." }
+        }    
+      },
+      "LICHESSHELPER": {
+        "description": "Extensie voor Lichess.org die nieuwe thema's, stukken, borden, lettertypen en functies toevoegt zoals het uitschakelen van pop-ups, coördinaten op elk veld...",
+        "preview_features": {
+         "0": { "title": "Aangepaste <br/>thema's en stukken", "description": "Verander het uiterlijk van Lichess met 6 thema's, 39 stukkensets en 40 borden."},
+         "1": { "title": "Moderne <br/>lay-out modus",  "description": "Geniet van een elegante, gemoderniseerde interface voor een verbeterde Lichess-ervaring." },
+         "2": { "title": "Volledig scherm en <br/>vaste modus",  "description": "Geniet van volledig scherm en vaste bordlay-out. Geen sprongen meer in HyperBullet!"},
+         "3": { "title": "Chat <br/>uitschakelen",  "description": "Geen trollen meer! Focus op het spel zonder afleidingen."},
+         "4": { "title": "Coördinaten <br/>op elk veld",  "description": "Leer schaaknotatie sneller met coördinaten op elk veld."},
+         "5": { "title": "Voorkom <br/>verschuiving door scrollen",  "description": "Stop onbedoelde zetten veroorzaakt door scrollen, perfect voor snelle spellen." }
+        }
+      },
+      "DOHABIT": {
+        "description": "Open-source gewoonte-tracker voor iOS en Android. Ontworpen om gebruikers te helpen consistent te blijven en hun dagelijkse routines te verbeteren. Het maakt het bijhouden en behalen van voortgang gemakkelijker en veel boeiender."
+      },
+      "EASYCALC": {
+        "description": "Eenvoudige rekenmachine-extensie voor het uitvoeren van basale rekenkundige berekeningen. EasyCalc's elegante en efficiënte ontwerp ziet er niet alleen geweldig uit, maar maximaliseert ook de bruikbaarheid.",
+        "preview_features": {
+        "0": { "title": "Donkere modus <br/>en lichte modus",  "description": "Schakel tussen donkere en lichte modi voor een comfortabele en gepersonaliseerde ervaring."},
+        "1": { "title": "Elegant <br/>ontwerp",  "description": "Schone en efficiënte interface die functionaliteit maximaliseert zonder afleidingen."},
+        "2": { "title": "Permanente <br/>waardenopslag", "description": "Je waarden worden bewaard tot ze gewist worden, waardoor het gemakkelijker is om eerdere berekeningen te raadplegen."},
+        "3": { "title": "Privacy-eerst <br/>benadering", "description": "EasyCalc verzamelt geen persoonlijke gegevens, wat je veiligheid en gemoedsrust garandeert."},
+        "4": { "title": "Open source <br/>en gratis", "description": "Volledig open source op GitHub, waardoor je kunt inspecteren, wijzigen en bijdragen."}
+        }
+      }    
+    }
+  }

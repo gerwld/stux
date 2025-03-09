@@ -35,7 +35,7 @@ const formattedTestimonial = ITEM?.details?.stats
   ? {
       users: formatter.format(ITEM.details.stats.users),
       reviews: formatter.format(ITEM.details.stats.reviews),
-      rating: ITEM.details.stats.rating.toFixed(1), // rating should have one decimal place
+      rating: ITEM.details.stats.rating.toFixed(2), // rating should have 2 decimal place
     }
   : null;
 

@@ -145,7 +145,7 @@ export const products: Product[] = [
       stats: {
         users: 10000,
         reviews: 680,
-        rating: 4.9
+        rating: 4.86
       },
       preview_features: [
         { title: 'Hide <br>Explore Page', icon: '🔍', description: 'Turn off the Explore page to focus only on the content that matters to you.' },
@@ -190,9 +190,9 @@ export const products: Product[] = [
         feature_request: "https://docs.google.com/forms/d/e/1FAIpQLSdnIZY7MKnvMXJqxW3VLmsw_YVxyFqPmrG24x64Lug7B09EVg/viewform",
       },
       stats: {
-        users: 11000,
+        users: 14000,
         reviews: 900,
-        rating: 4.8
+        rating: 4.78
       },
       preview_features: [
         { title: 'Bring Back <br>Classic Heart Button', icon: '❤️', description: 'Bring back the old heart button for a nostalgic and familiar experience.' },

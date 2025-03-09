@@ -1,0 +1,166 @@
+{
+    "global": {
+        "explore_btn": "Utforska alla produkter",
+        "install_btn": "Installera",
+        "details_btn": "Detaljer",
+        "close_btn": "Stäng",
+        "ct_reviews": "recensioner",
+        "ct_reviews_full": "20+ recensioner",
+        "ct_users": "användare",
+        "ct_users_full": "95 000 användare",
+        "ct_rating": "betyg",
+        "ct_rating_full": "4,9 i betyg"
+    },
+    "Navbar": {
+      "home": "Hem",
+      "all_products": "Alla produkter",
+      "request_feature": "Föreslå funktion",
+      "support": "Support"
+    },
+    "HeroMain": {
+      "title": "Förbättra din vardagliga<br/>upplevelse med våra produkter",
+      "subtitle": "Från webbläsartillägg och CLI-verktyg till bibliotek och mobilappar,<br/>våra lösningar fokuserar alltid på noggrannhet i detaljer och användarupplevelse."
+    },
+    "JourneySection": {
+      "header": {
+        "dash": "vår erfarenhet",
+        "title": "Vår utvecklingsresa",
+        "description": "Förbättrar digitala upplevelser genom användarcentrerad innovation"
+      },
+      "sect_users": "Aktiva användare",
+      "sect_install": "Månatliga installationer",
+      "sect_reviews": "Användarrecensioner",
+      "sect_gitub_issues": "Lösta GitHub-ärenden"
+    },
+    "TestimonialSection": {
+      "header": {
+        "dash": "omdömen",
+        "title": "Vad våra användare säger",
+        "title_product": "Vad användare säger om",
+        "title_product_full": "Vad användare säger om DoHabit",
+        "description": "Våra projekt får mer än 150 recensioner varje månad, med över 4 000 recensioner totalt",
+        "description_product": "Får mer än 50 recensioner varje månad, över 1 000 recensioner totalt"
+      }
+    },
+    "FeaturesSection": {
+      "header": {
+        "title": "Utforska dess användbara funktioner",
+        "description": "Några av de viktigaste funktionerna som kan vara till hjälp för dig",
+        "dash": "funktioner"
+      }
+    },
+    "CTASection": {
+      "title_part_1": "Gillar du att använda våra produkter?<br/>Tillsammans",
+      "title_part_2": "kan vi göra mer",
+      "description": "Eftersom alla våra projekt är helt gratis och inte samlar in eller säljer dina data, är frivilliga donationer vår enda finansieringskälla. Ditt stöd är extremt viktigt för oss, då det gör det möjligt för oss att fortsätta utveckla och uppdatera våra projekt.",
+      "button": "Stöd oss på Ko-Fi"
+    },
+    "MoreSection": {
+      "header": {
+        "title": "Andra tillägg",
+        "description": "Maximera din produktivitet och optimera din webbanvändning",
+        "dash": "våra produkter"
+      }
+    },
+    "Footer": {
+      "releases": "Releaser",
+      "contribute": "För utvecklare",
+      "bug_report": "Rapportera en bugg"
+    },
+    "ProductsPage": {
+      "title": "Våra produkter"
+    },
+    "ProductInstall": {
+      "download_for": "Ladda ner för",
+      "nt_btn": "Inte din webbläsare?",
+      "choose_platform": "Välj din plattform"
+    },
+    "PRODUCTS": {
+      "IGPLUS": {
+       "description": "Dölj Instagram Reels, rekommendationer, Stories, kommentarer, trender och andra onödiga element, så att du kan fokusera på det som verkligen betyder något. Ta kontroll över din Instagram-upplevelse och anpassa den efter dina önskemål.",
+        "preview_features": {
+          "0": { "title": "Dölj <br/>Utforska-sidan", "description": "Dölj Utforska-sidan för att fokusera endast på innehåll som är viktigt för dig." },
+          "1": { "title": "Dölj <br/>rekommendationer", "description": "Se endast innehåll från konton du följer - inga fler oönskade förslag." },
+          "2": { "title": "Anpassa <br/>typsnitt", "description": "Välj bland olika typsnitt som Montserrat, Poppins och andra för att matcha din stil." },
+          "3": { "title": "Anpassa <br/>aviseringar", "description": "Gör räknaren för nya meddelanden svartvit eller inaktivera den för att minska distraktioner." },
+          "4": { "title": "Inaktivera <br/>Reels och videor", "description": "Stäng av Reels och videoinnehåll för en renare, distriktionsfri upplevelse." },
+          "5": { "title": "Dölj <br/>antalet gilla-markeringar och följare", "description": "Gör Instagram till en mer medveten plats genom att dölja antal gilla-markeringar och följare." }
+        },      
+        "preview_reviews": {
+          "0": {"description":"Mycket bra tillägg. Jag älskar alternativet för svartvitt läge. En funktion som skulle förbättra detta tillägg skulle vara möjligheten att inaktivera rekommenderade inlägg på startsidan. De stör mig verkligen"},
+          "1": {"description":"Jag hatar att fastna i fällan med kortformat-innehåll.<br/> Jag älskar appar som låter mig glömma att det existerar."},
+          "2": {"description":"Detta tillägg är otroligt användbart! Det har avsevärt förbättrat min produktivitet genom att eliminera onödiga distraktioner, vilket hjälper mig att fokusera på det som verkligen är viktigt."},
+          "3": {"description":"Mycket bra tillägg. Det bästa och mest effektiva! Älskar alla funktioner! Skulle också vilja be om något liknande för YouTube"},
+          "4": {"description":"Detta sparar verkligen tid, särskilt bra för de personer som omedvetet går till Reels-sektionen från meddelandesektionen."},
+          "5": {"description":"Detta tillägg har varit den perfekta investeringen för mig. Jag har Instagram för dess avsedda syfte, inspiration, och det är allt. Jag spenderar aldrig mer än 30 minuter i veckan i appen, och jag behöver inte längre kämpa mot lusten att vara där, det är otroligt."}
+        }
+      },
+      "SPOPLUS": {
+        "description": "Dölj Spotifys 'Nu spelas'-läge, återställ den klassiska hjärtknappen, inaktivera album, ändra teman, typsnitt, inaktivera videor för att minska dataanvändning...",
+        "preview_features": {
+         "0": { "title": "Återställ <br/>klassiska hjärtknappen", "description": "Återgå till den gamla hjärtknappen för en nostalgisk och välbekant upplevelse." },
+         "1": { "title": "Fokus- <br/>läge", "description": "Aktivera ett mer kompakt och visuellt tilltalande gränssnitt för bättre lyssningsupplevelse." },
+         "2": { "title": "Anpassade <br/>teman och typsnitt", "description": "Välj bland olika teman och typsnitt för att personifiera din Spotify-upplevelse." },
+         "3": { "title": "Album- <br/>styling",  "description": "Förvandla albumomslag till en elegant rektangulär design för ett modernare utseende." },
+         "4": { "title": "Dölj <br/>\"Nu spelas\"",  "description": "Inaktivera \"Nu spelas\"-sektionen för att förenkla gränssnittet och hålla fokus." },
+         "5": { "title": "Blockera <br/>bilder och videor",  "description": "Minska dataanvändningen genom att inaktivera bilder och videor när du streamar musik." }
+        },
+      "preview_reviews": {
+        "0": { "description":"Detta är definitivt ett av de bästa tilläggen för Spotify. Det jag gillar mest med detta tillägg är den enkla men mycket effektiva ändringen från plus till det klassiska hjärtat. Men även utan det är användargränssnittsalternativen definitivt mycket användbara."},
+        "1": { "description":"Detta plugin minskade RAM-användningen på Spotify-sidan, coolt. Gränssnittet ser också rent ut, bra jobbat!"},
+        "2": { "description":"Jag tycker att tillägget gör det som det ska göra. Som det enda tillägget för anpassning av Spotify fungerar det och har ett bra färgurval. Fungerar utmärkt och är absolut värt att installera."},
+        "3": { "description":"Älskar det verkligen!!! Letade efter ett sätt att göra Spotify ljust HELA TIDEN, och detta tillägg gör det och så mycket mer!!! 10/10, jag kan knappt vänta på fler UI-funktioner!!"},
+        "4": { "description":"Fungerar riktigt bra. Temana är också skonsamma för ögonen, särskilt AMOLED. Det enda förslaget skulle vara att lägga till fler typsnittsalternativ, som Comic Sans, eller något ovanligt. Tack 😁"},
+        "5": { "description":"Fantastiskt!! Inga problem vid användning :) Temana är supergulliga och fungerar bra med andra tillägg jag har kopplat till Spotify ^_^ rekommenderar definitivt"}
+      }
+      },
+      "MEMENTO": {
+        "description": "Anpassningsbar startsidestillägg för din webbläsare. Memento är open source, lättviktigt och säkert och förbättrar din surfupplevelse med intuitiv anpassning och ren design.",
+        "preview_features": {
+        "0": { "title": "Anpassningsbara <br/>bakgrunder",  "description": "Välj bland kvalitetsbilder från Unsplash, ladda upp dina egna, eller inaktivera bakgrunden helt." },
+        "1": { "title": "Visuella <br/>kontroller", "description": "Justera oskärpa, klockstorleken och ljusstyrka efter dina preferenser." },
+        "2": { "title": "Lokaliserad <br/>upplevelse", "description": "Stöd för 12 språk och 12/24-timmarsformat för bättre interaktion oavsett geografisk plats." },
+        "3": { "title": "Säker och <br/>open source", "description": "Open source för integritet och transparens vid användning." },
+        "4": { "title": "Snabbt och <br/>lättviktigt",  "description": "Designat för snabbhet och effektivitet, vilket gör vardaglig användning smidig och sömlös." }
+        }
+      },
+      "GWARDAAPP": {
+        "description": "Få information om Amazon-produkter, hitta de bästa priserna, använd SEO-nyckelord, hitta de bästa leverantörerna med Reverse ASIN. Få värdefulla insikter om produktprestanda och konkurrensanalys för din e-handelsstrategi."
+      },
+      "CHESSHELPER": {
+        "description": "Tillägg för Chess.com som låter dig lägga till nya teman, pjäser, anpassade typsnitt och funktioner som att inaktivera popup-fönster, koordinater på varje ruta och mycket mer.",
+        "preview_features": {
+         "0": { "title": "Anpassade <br/>teman och pjäser", "description": "Ändra utseendet på Chess.com med 6 teman, 39 pjässet och 40 bräden." },
+         "1": { "title": "Helskärms- och <br/>fixerat läge",  "description": "Njut av helskärmsläge och fixerad brädlayout. Inga mer hopp i HyperBullet!" },
+         "2": { "title": "Data- <br/>besparing",  "description": "Minska dataanvändningen genom att inaktivera strömmen på startsidan." },
+         "3": { "title": "Inaktivera <br/>chatten",  "description": "Inga fler troll! Fokusera på spelet utan distraktioner." },
+         "4": { "title": "Koordinater <br/>på varje ruta",  "description": "Lär dig schacknotation snabbare med koordinater på varje ruta." },
+         "5": { "title": "Dubbelklicka <br/>för att ge upp",  "description": "Ge snabbt upp med en enkel dubbelklickning. Mindre frustration, mer kontroll." }
+        }    
+      },
+      "LICHESSHELPER": {
+        "description": "Tillägg för Lichess.org som lägger till nya teman, pjäser, bräden, typsnitt och funktioner som att inaktivera popup-fönster, koordinater på varje ruta...",
+        "preview_features": {
+         "0": { "title": "Anpassade <br/>teman och pjäser", "description": "Ändra utseendet på Lichess med 6 teman, 39 pjässet och 40 bräden."},
+         "1": { "title": "Modernt <br/>layoutläge",  "description": "Njut av ett elegant, moderniserat gränssnitt för en förbättrad Lichess-upplevelse." },
+         "2": { "title": "Helskärms- och <br/>fixerat läge",  "description": "Njut av helskärmsläge och fixerad brädlayout. Inga mer hopp i HyperBullet!"},
+         "3": { "title": "Inaktivera <br/>chatten",  "description": "Inga fler troll! Fokusera på spelet utan distraktioner."},
+         "4": { "title": "Koordinater <br/>på varje ruta",  "description": "Lär dig schacknotation snabbare med koordinater på varje ruta."},
+         "5": { "title": "Förhindra <br/>scrollningsdrag",  "description": "Stoppa oavsiktliga drag orsakade av scrollning, perfekt för snabba spel." }
+        }
+      },
+      "DOHABIT": {
+        "description": "Vaneföljare med öppen källkod för iOS och Android. Designad för att hjälpa användare att hålla sig konsekventa och förbättra sina dagliga rutiner. Den gör det enklare och mer engagerande att följa och uppnå framsteg."
+      },
+      "EASYCALC": {
+        "description": "Enkelt räknartillägg för att utföra grundläggande aritmetiska beräkningar. EasyCalcs eleganta och effektiva design ser inte bara bra ut utan maximerar också användbarheten.",
+        "preview_features": {
+        "0": { "title": "Mörkt läge <br/>och ljust läge",  "description": "Växla mellan mörkt och ljust läge för en bekväm och personlig upplevelse."},
+        "1": { "title": "Elegant <br/>design",  "description": "Rent och effektivt gränssnitt som maximerar funktionalitet utan distraktioner."},
+        "2": { "title": "Bestående <br/>värdelagring", "description": "Dina värden sparas tills de rensas, vilket gör det enklare att referera till tidigare beräkningar."},
+        "3": { "title": "Integritetsfokuserad <br/>approach", "description": "EasyCalc samlar inte in personliga data, vilket säkerställer din säkerhet och sinnesro."},
+        "4": { "title": "Open source <br/>och gratis", "description": "Helt öppen källkod på GitHub, vilket låter dig inspektera, modifiera och bidra."}
+        }
+      }    
+    }
+  }

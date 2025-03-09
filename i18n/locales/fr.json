@@ -1,0 +1,166 @@
+{
+    "global": {
+        "explore_btn": "Explorer tous les produits",
+        "install_btn": "Installer",
+        "details_btn": "Détails",
+        "close_btn": "Fermer",
+        "ct_reviews": "avis",
+        "ct_reviews_full": "plus de 20 avis",
+        "ct_users": "utilisateurs",
+        "ct_users_full": "95 000 utilisateurs",
+        "ct_rating": "note",
+        "ct_rating_full": "note de 4,9"
+    },
+    "Navbar": {
+      "home": "Accueil",
+      "all_products": "Tous les produits",
+      "request_feature": "Suggérer une fonctionnalité",
+      "support": "Support"
+    },
+    "HeroMain": {
+      "title": "Améliorez votre expérience<br/>quotidienne avec nos produits",
+      "subtitle": "Des extensions de navigateur aux outils en ligne de commande, en passant par les bibliothèques <br/>et applications mobiles, nos solutions mettent toujours l'accent sur l'attention aux détails et l'expérience utilisateur."
+    },
+    "JourneySection": {
+      "header": {
+        "dash": "notre expérience",
+        "title": "Notre parcours de développement",
+        "description": "Améliorer les expériences numériques grâce à l'innovation centrée sur l'utilisateur"
+      },
+      "sect_users": "Utilisateurs actifs",
+      "sect_install": "Installations mensuelles",
+      "sect_reviews": "Avis utilisateurs",
+      "sect_gitub_issues": "Problèmes GitHub résolus"
+    },
+    "TestimonialSection": {
+      "header": {
+        "dash": "témoignages",
+        "title": "Ce que disent nos utilisateurs",
+        "title_product": "Ce que les utilisateurs disent de",
+        "title_product_full": "Ce que les utilisateurs disent de DoHabit",
+        "description": "Nos projets reçoivent plus de 150 avis chaque mois, avec plus de 4 000 avis au total",
+        "description_product": "Reçoit plus de 50 avis chaque mois, plus de 1 000 avis au total"
+      }
+    },
+    "FeaturesSection": {
+      "header": {
+        "title": "Découvrez ses fonctionnalités utiles",
+        "description": "Quelques fonctionnalités clés qui pourraient vous être utiles",
+        "dash": "fonctionnalités"
+      }
+    },
+    "CTASection": {
+      "title_part_1": "Vous appréciez nos produits ?<br/>Ensemble",
+      "title_part_2": "nous pouvons faire plus",
+      "description": "Comme tous nos projets sont entièrement gratuits et ne collectent ni ne vendent vos données, les dons volontaires sont notre unique source de financement. Votre soutien est extrêmement important pour nous, car il nous permet de continuer à développer et à mettre à jour nos projets.",
+      "button": "Nous soutenir sur Ko-Fi"
+    },
+    "MoreSection": {
+      "header": {
+        "title": "Autres extensions",
+        "description": "Maximisez votre productivité et optimisez votre utilisation du web",
+        "dash": "nos produits"
+      }
+    },
+    "Footer": {
+      "releases": "Versions",
+      "contribute": "Pour les développeurs",
+      "bug_report": "Signaler un bug"
+    },
+    "ProductsPage": {
+      "title": "Nos produits"
+    },
+    "ProductInstall": {
+      "download_for": "Télécharger pour",
+      "nt_btn": "Pas votre navigateur ?",
+      "choose_platform": "Choisissez votre plateforme"
+    },
+    "PRODUCTS": {
+      "IGPLUS": {
+       "description": "Masquez les Reels Instagram, les recommandations, les Stories, les commentaires, les tendances et autres éléments superflus, vous permettant de vous concentrer sur ce qui compte vraiment. Prenez le contrôle de votre expérience Instagram et personnalisez-la selon vos préférences.",
+        "preview_features": {
+          "0": { "title": "Masquer <br/>la page Explorer", "description": "Masquez la page Explorer pour vous concentrer uniquement sur le contenu qui vous intéresse." },
+          "1": { "title": "Masquer <br/>les recommandations", "description": "Ne voyez que le contenu des comptes que vous suivez - plus de suggestions indésirables." },
+          "2": { "title": "Personnaliser <br/>les polices", "description": "Choisissez parmi diverses polices comme Montserrat, Poppins et d'autres pour correspondre à votre style." },
+          "3": { "title": "Personnaliser <br/>les notifications", "description": "Rendez le compteur de nouveaux messages en noir et blanc ou désactivez-le pour réduire les distractions." },
+          "4": { "title": "Désactiver <br/>les Reels et vidéos", "description": "Désactivez les Reels et les contenus vidéo pour une expérience plus épurée et sans distraction." },
+          "5": { "title": "Masquer <br/>le nombre de likes et d'abonnés", "description": "Faites d'Instagram un espace plus conscient en masquant le nombre de likes et d'abonnés." }
+        },      
+        "preview_reviews": {
+          "0": {"description":"Très bonne extension. J'adore l'option mode noir et blanc. Une fonctionnalité qui améliorerait cette extension serait la possibilité de désactiver les publications recommandées sur la page d'accueil. Elles me dérangent vraiment"},
+          "1": {"description":"Je déteste tomber dans le piège des contenus courts.<br/> J'adore les applications qui me permettent d'oublier que ça existe."},
+          "2": {"description":"Cette extension est incroyablement utile ! Elle a considérablement amélioré ma productivité en éliminant les distractions inutiles, m'aidant à me concentrer sur ce qui compte vraiment."},
+          "3": {"description":"Très bonne extension. La meilleure et la plus efficace ! J'adore toutes les fonctionnalités ! J'aimerais aussi demander quelque chose de similaire pour YouTube"},
+          "4": {"description":"Cela fait vraiment gagner du temps, particulièrement utile pour les personnes qui vont inconsciemment à la section Reels depuis la section messages."},
+          "5": {"description":"Cette extension a été l'investissement parfait pour moi, j'utilise Instagram pour son objectif initial d'inspiration, et c'est tout, je ne passe jamais plus de 30 minutes par semaine sur l'application, et je n'ai plus besoin de combattre l'envie d'y être, c'est incroyable."}
+        }
+      },
+      "SPOPLUS": {
+        "description": "Masquez le mode 'Lecture en cours' de Spotify, ramenez le bouton cœur classique, désactivez les albums, changez les thèmes, les polices, désactivez les vidéos pour réduire l'utilisation des données...",
+        "preview_features": {
+         "0": { "title": "Retrouver <br/>le bouton cœur classique", "description": "Revenir à l'ancien bouton cœur pour une expérience nostalgique et familière." },
+         "1": { "title": "Mode <br/>concentration", "description": "Activez une interface plus compacte et visuellement attrayante pour une meilleure immersion d'écoute." },
+         "2": { "title": "Thèmes et polices <br/>personnalisés", "description": "Choisissez parmi divers thèmes et polices pour personnaliser votre expérience Spotify." },
+         "3": { "title": "Style <br/>d'album",  "description": "Transformez les pochettes d'albums en un design rectangulaire élégant pour un look moderne." },
+         "4": { "title": "Masquer <br/>\"Lecture en cours\"",  "description": "Désactivez la section \"Lecture en cours\" pour simplifier l'interface et rester concentré." },
+         "5": { "title": "Bloquer <br/>les images et vidéos",  "description": "Réduisez l'utilisation des données en désactivant les images et les vidéos lors de l'écoute de musique." }
+        },
+      "preview_reviews": {
+        "0": { "description":"C'est définitivement l'une des meilleures extensions pour Spotify. Ce que j'aime le plus dans cette extension, c'est le changement simple mais très efficace du plus vers le cœur classique. Mais même sans cela, les options d'interface utilisateur sont vraiment très utiles."},
+        "1": { "description":"Ce plugin a réduit l'utilisation de la RAM sur la page Spotify, cool. L'interface a également l'air épurée, excellent travail !"},
+        "2": { "description":"Je pense que l'extension fait ce qu'elle est censée faire. Étant apparemment la seule extension pour personnaliser Spotify, elle fonctionne et propose une bonne sélection de couleurs. Fonctionne parfaitement et vaut absolument l'installation."},
+        "3": { "description":"J'adore !!! Je cherchais un moyen de rendre Spotify clair TOUT LE TEMPS, et cette extension fait ça et bien plus encore !!! 10/10, j'ai hâte de voir plus de fonctionnalités d'interface utilisateur !!"},
+        "4": { "description":"Fonctionne très bien. Les thèmes sont également agréables à regarder, surtout AMOLED. La seule suggestion serait d'ajouter plus d'options de polices, comme Comic Sans, ou quelque chose d'inhabituel. Merci 😁"},
+        "5": { "description":"Incroyable !! Aucun problème lors de l'utilisation :) Les thèmes sont super mignons et fonctionne parfaitement avec d'autres extensions que j'ai connectées à Spotify ^_^ je recommande vivement"}
+      }
+      },
+      "MEMENTO": {
+        "description": "Extension de page de démarrage personnalisable pour votre navigateur. Open source, légère et sécurisée, Memento améliore votre expérience de navigation avec une personnalisation intuitive et un design épuré.",
+        "preview_features": {
+        "0": { "title": "Arrière-plans <br/>personnalisables",  "description": "Choisissez parmi des images Unsplash de qualité, téléchargez les vôtres ou désactivez complètement l'arrière-plan." },
+        "1": { "title": "Contrôles <br/>visuels", "description": "Ajustez les paramètres de flou, de taille d'horloge et de luminosité selon vos préférences." },
+        "2": { "title": "Expérience <br/>localisée", "description": "Prise en charge de 12 langues et du format 12/24 heures pour une meilleure interaction quelle que soit votre localisation." },
+        "3": { "title": "Sécurisée et <br/>open source", "description": "Open source pour la confidentialité et la transparence d'utilisation." },
+        "4": { "title": "Rapide et <br/>légère",  "description": "Conçue pour la vitesse et l'efficacité, rendant l'utilisation quotidienne fluide et sans accroc." }
+        }
+      },
+      "GWARDAAPP": {
+        "description": "Obtenez des informations sur les produits Amazon, trouvez les meilleurs prix, utilisez des mots-clés SEO, trouvez les meilleurs fournisseurs avec Reverse ASIN. Obtenez des insights précieux sur les performances des produits et l'analyse de la concurrence pour votre stratégie e-commerce."
+      },
+      "CHESSHELPER": {
+        "description": "Extension pour Chess.com, vous permettant d'ajouter de nouveaux thèmes, pièces, polices personnalisées et fonctionnalités telles que la désactivation des popups, les coordonnées sur chaque case et bien plus encore.",
+        "preview_features": {
+         "0": { "title": "Thèmes et pièces <br/>personnalisés", "description": "Changez l'apparence de Chess.com avec 6 thèmes, 39 ensembles de pièces et 40 échiquiers." },
+         "1": { "title": "Mode plein écran et <br/>mode fixe",  "description": "Profitez du mode plein écran et d'une disposition fixe de l'échiquier. Plus de sauts en HyperBullet !" },
+         "2": { "title": "Économie <br/>de données",  "description": "Réduisez l'utilisation des données en désactivant le flux sur la page d'accueil." },
+         "3": { "title": "Désactiver <br/>le chat",  "description": "Plus de trolls ! Concentrez-vous sur le jeu sans distractions." },
+         "4": { "title": "Coordonnées <br/>sur chaque case",  "description": "Apprenez la notation des échecs plus rapidement avec des coordonnées sur chaque case." },
+         "5": { "title": "Double-clic <br/>pour abandonner",  "description": "Abandonnez rapidement avec un simple double-clic. Moins de frustration, plus de contrôle." }
+        }    
+      },
+      "LICHESSHELPER": {
+        "description": "Extension pour Lichess.org qui ajoute de nouveaux thèmes, pièces, échiquiers, polices et fonctionnalités telles que la désactivation des popups, les coordonnées sur chaque case...",
+        "preview_features": {
+         "0": { "title": "Thèmes et pièces <br/>personnalisés", "description": "Changez l'apparence de Lichess avec 6 thèmes, 39 ensembles de pièces et 40 échiquiers."},
+         "1": { "title": "Mode <br/>layout moderne",  "description": "Profitez d'une interface élégante et modernisée pour une expérience Lichess améliorée." },
+         "2": { "title": "Mode plein écran et <br/>mode fixe",  "description": "Profitez du mode plein écran et d'une disposition fixe de l'échiquier. Plus de sauts en HyperBullet !"},
+         "3": { "title": "Désactiver <br/>le chat",  "description": "Plus de trolls ! Concentrez-vous sur le jeu sans distractions."},
+         "4": { "title": "Coordonnées <br/>sur chaque case",  "description": "Apprenez la notation des échecs plus rapidement avec des coordonnées sur chaque case."},
+         "5": { "title": "Prévenir le défilement <br/>lors des coups",  "description": "Empêchez les coups accidentels causés par le défilement, parfait pour les parties rapides." }
+        }
+      },
+      "DOHABIT": {
+        "description": "Suivi d'habitudes open-source pour iOS et Android. Conçu pour aider les utilisateurs à rester constants et à améliorer leurs routines quotidiennes. Il rend le suivi et l'atteinte des progrès plus faciles et beaucoup plus engageants."
+      },
+      "EASYCALC": {
+        "description": "Extension de calculatrice simple pour effectuer des calculs arithmétiques de base. Le design élégant et efficace d'EasyCalc non seulement a fière allure mais maximise l'utilisabilité.",
+        "preview_features": {
+        "0": { "title": "Mode sombre <br/>et mode clair",  "description": "Basculez entre les modes sombre et clair pour une expérience confortable et personnalisée."},
+        "1": { "title": "Design <br/>élégant",  "description": "Interface propre et efficace qui maximise la fonctionnalité sans distractions."},
+        "2": { "title": "Stockage <br/>persistant des valeurs", "description": "Vos valeurs sont sauvegardées jusqu'à ce qu'elles soient effacées, facilitant la référence aux calculs précédents."},
+        "3": { "title": "Approche <br/>axée sur la confidentialité", "description": "EasyCalc ne collecte pas de données personnelles, garantissant votre sécurité et votre tranquillité d'esprit."},
+        "4": { "title": "Open source <br/>et gratuit", "description": "Entièrement open source sur GitHub, vous permettant d'inspecter, modifier et contribuer."}
+        }
+      }    
+    }
+  }

@@ -1,0 +1,166 @@
+{
+    "global": {
+        "explore_btn": "探索所有产品",
+        "install_btn": "安装",
+        "details_btn": "详情",
+        "close_btn": "关闭",
+        "ct_reviews": "评论",
+        "ct_reviews_full": "20+条评论",
+        "ct_users": "用户",
+        "ct_users_full": "95,000名用户",
+        "ct_rating": "评分",
+        "ct_rating_full": "4.9分评价"
+    },
+    "Navbar": {
+      "home": "首页",
+      "all_products": "所有产品",
+      "request_feature": "功能请求",
+      "support": "支持"
+    },
+    "HeroMain": {
+      "title": "用我们的产品<br/>提升您的日常体验",
+      "subtitle": "从浏览器扩展和命令行工具到库和移动应用，<br/>我们的解决方案始终专注于细节和用户体验。"
+    },
+    "JourneySection": {
+      "header": {
+        "dash": "我们的经验",
+        "title": "我们的开发历程",
+        "description": "通过以用户为中心的创新改善数字体验"
+      },
+      "sect_users": "活跃用户",
+      "sect_install": "每月安装量",
+      "sect_reviews": "用户评论",
+      "sect_gitub_issues": "已解决的GitHub问题"
+    },
+    "TestimonialSection": {
+      "header": {
+        "dash": "用户评价",
+        "title": "用户们怎么说",
+        "title_product": "用户对此产品的评价",
+        "title_product_full": "用户对DoHabit的评价",
+        "description": "我们的项目每月收到超过150条评论，总计超过4,000条评论",
+        "description_product": "每月收到超过50条评论，总计超过1,000条评论"
+      }
+    },
+    "FeaturesSection": {
+      "header": {
+        "title": "探索其实用功能",
+        "description": "一些可能对您有帮助的关键功能",
+        "dash": "功能"
+      }
+    },
+    "CTASection": {
+      "title_part_1": "喜欢使用我们的产品吗？<br/>一起",
+      "title_part_2": "我们可以做得更多",
+      "description": "由于我们所有的项目都是完全免费的，且不收集或出售您的数据，自愿捐赠是我们唯一的资金来源。您的支持对我们极为重要，它使我们能够继续开发和更新我们的项目。",
+      "button": "在Ko-Fi上支持我们"
+    },
+    "MoreSection": {
+      "header": {
+        "title": "其他扩展",
+        "description": "最大化您的生产力，优化您的网络使用",
+        "dash": "我们的产品"
+      }
+    },
+    "Footer": {
+      "releases": "版本发布",
+      "contribute": "开发者专区",
+      "bug_report": "报告错误"
+    },
+    "ProductsPage": {
+      "title": "我们的产品"
+    },
+    "ProductInstall": {
+      "download_for": "下载适用于",
+      "nt_btn": "不是您的浏览器？",
+      "choose_platform": "选择您的平台"
+    },
+    "PRODUCTS": {
+      "IGPLUS": {
+       "description": "隐藏Instagram的Reels、推荐、Stories、评论、趋势和其他不必要的元素，让您专注于真正重要的内容。掌控您的Instagram体验，根据自己的喜好进行定制。",
+        "preview_features": {
+          "0": { "title": "隐藏<br/>探索页面", "description": "隐藏探索页面，只关注对您重要的内容。" },
+          "1": { "title": "隐藏<br/>推荐内容", "description": "仅查看您关注的账号的内容 - 不再有不需要的建议。" },
+          "2": { "title": "个性化<br/>字体", "description": "从各种字体如Montserrat、Poppins等中选择，匹配您的风格。" },
+          "3": { "title": "自定义<br/>通知", "description": "将新消息计数器更改为黑白色或禁用它以减少干扰。" },
+          "4": { "title": "禁用<br/>Reels和视频", "description": "关闭Reels和视频内容，获得更清爽、无干扰的体验。" },
+          "5": { "title": "隐藏<br/>点赞和关注人数", "description": "通过隐藏点赞和关注人数，使Instagram成为更专注的空间。" }
+        },      
+        "preview_reviews": {
+          "0": {"description":"非常好的扩展。我喜欢黑白模式选项。能改进这个扩展的一个功能是能够在主页上禁用推荐帖子。它们真的很烦人"},
+          "1": {"description":"我讨厌陷入短视频内容的陷阱。<br/>我喜欢能让我忘记它存在的应用。"},
+          "2": {"description":"这个扩展非常有用！它通过消除不必要的干扰显著提高了我的生产力，帮助我专注于真正重要的事情。"},
+          "3": {"description":"非常好的扩展。最好最有效的！喜欢所有功能！也希望能为YouTube请求类似的功能"},
+          "4": {"description":"这真的节省了时间，尤其对那些无意识地从消息部分转到Reels部分的人特别有用。"},
+          "5": {"description":"这个扩展对我来说是完美的投资，我使用Instagram的目的是获取灵感，仅此而已，我每周在应用中花费的时间不超过30分钟，而且我不再需要抵抗使用它的冲动，这太不可思议了。"}
+        }
+      },
+      "SPOPLUS": {
+        "description": "隐藏Spotify的\"正在播放\"模式，恢复经典的心形按钮，禁用专辑，更改主题、字体，禁用视频以减少数据使用量...",
+        "preview_features": {
+         "0": { "title": "恢复<br/>经典心形按钮", "description": "返回旧版心形按钮，体验怀旧和熟悉的感觉。" },
+         "1": { "title": "专注<br/>模式", "description": "启用更紧凑、视觉上更吸引人的界面，提升聆听沉浸感。" },
+         "2": { "title": "自定义<br/>主题和字体", "description": "从各种主题和字体中选择，个性化您的Spotify体验。" },
+         "3": { "title": "专辑<br/>样式",  "description": "将专辑封面转变为优雅的矩形设计，呈现现代感。" },
+         "4": { "title": "隐藏<br/>\"正在播放\"",  "description": "禁用\"正在播放\"部分，简化界面并保持专注。" },
+         "5": { "title": "屏蔽<br/>图片和视频",  "description": "通过在流媒体音乐时禁用图片和视频来减少数据使用量。" }
+        },
+      "preview_reviews": {
+        "0": { "description":"这绝对是Spotify最好的扩展之一。我最喜欢这个扩展的是将加号改为经典心形的简单但非常有效的变化。即使没有这个功能，用户界面选项也非常有用。"},
+        "1": { "description":"这个插件减少了Spotify页面的RAM使用量，很酷。界面看起来也很干净，做得好！"},
+        "2": { "description":"我认为这个扩展完成了它应该做的事情。作为显然唯一一个用于自定义Spotify的扩展，它工作良好并且有很好的颜色选择。运行得很好，绝对值得安装。"},
+        "3": { "description":"简直爱死了！！！一直在寻找让Spotify一直保持亮色的方法，这个插件不仅做到了这一点，还提供了更多功能！！！10分满分，我迫不及待地想要更多UI功能！！"},
+        "4": { "description":"运行得很好。主题也很养眼，尤其是AMOLED。唯一的建议是添加更多字体选项，比如Comic Sans或其他不寻常的字体。谢谢😁"},
+        "5": { "description":"太棒了！！使用时没有任何问题:) 主题超级可爱，与我连接到Spotify的其他扩展配合得很好^_^绝对推荐"}
+      }
+      },
+      "MEMENTO": {
+        "description": "为您的浏览器提供可自定义的起始页扩展。开源、轻量级且安全，Memento通过直观的自定义和简洁的设计增强您的浏览体验。",
+        "preview_features": {
+        "0": { "title": "可自定义<br/>背景",  "description": "从高质量的Unsplash图片中选择，上传您自己的图片，或完全禁用背景。" },
+        "1": { "title": "视觉<br/>控制", "description": "调整模糊度、时钟大小和亮度设置，以符合您的偏好。" },
+        "2": { "title": "本地化<br/>体验", "description": "支持12种语言和12/24小时格式，无论地理位置如何，都能提供更好的交互体验。" },
+        "3": { "title": "安全且<br/>开源", "description": "开源以确保使用的隐私和透明度。" },
+        "4": { "title": "快速且<br/>轻量级",  "description": "专为速度和效率而设计，使日常使用流畅无缝。" }
+        }
+      },
+      "GWARDAAPP": {
+        "description": "获取Amazon产品信息，找到最佳价格，使用SEO关键词，通过反向ASIN找到最佳供应商。为您的电商策略获取有关产品性能、竞争分析的宝贵见解。"
+      },
+      "CHESSHELPER": {
+        "description": "Chess.com的扩展，允许您添加新主题、棋子、自定义字体和功能，如禁用弹窗、在每个方格上显示坐标等等。",
+        "preview_features": {
+         "0": { "title": "自定义<br/>主题和棋子", "description": "通过6种主题、39套棋子和40种棋盘改变Chess.com的外观。" },
+         "1": { "title": "全屏和<br/>固定模式",  "description": "享受全屏模式和固定棋盘布局。在超快棋中不再有跳动！" },
+         "2": { "title": "数据<br/>节省",  "description": "通过禁用首页的流媒体减少数据使用量。" },
+         "3": { "title": "禁用<br/>聊天",  "description": "不再有恶意玩家！专注于游戏，没有干扰。" },
+         "4": { "title": "每个方格上<br/>显示坐标",  "description": "通过在每个方格上显示坐标更快学习国际象棋记号。" },
+         "5": { "title": "双击<br/>认输",  "description": "通过简单的双击快速认输。减少挫折感，更多控制权。" }
+        }    
+      },
+      "LICHESSHELPER": {
+        "description": "Lichess.org的扩展，添加新主题、棋子、棋盘、字体和功能，如禁用弹窗、在每个方格上显示坐标...",
+        "preview_features": {
+         "0": { "title": "自定义<br/>主题和棋子", "description": "通过6种主题、39套棋子和40种棋盘改变Lichess的外观。"},
+         "1": { "title": "现代<br/>布局模式",  "description": "享受优雅、现代化的界面，获得增强的Lichess体验。" },
+         "2": { "title": "全屏和<br/>固定模式",  "description": "享受全屏模式和固定棋盘布局。在超快棋中不再有跳动！"},
+         "3": { "title": "禁用<br/>聊天",  "description": "不再有恶意玩家！专注于游戏，没有干扰。"},
+         "4": { "title": "每个方格上<br/>显示坐标",  "description": "通过在每个方格上显示坐标更快学习国际象棋记号。"},
+         "5": { "title": "防止<br/>滚动移动",  "description": "防止由滚动引起的意外移动，非常适合快速游戏。" }
+        }
+      },
+      "DOHABIT": {
+        "description": "开源的iOS和Android习惯追踪器。旨在帮助用户保持一致性并改善日常习惯。它使追踪和实现进步变得更容易且更有趣。"
+      },
+      "EASYCALC": {
+        "description": "用于执行基本算术计算的简单计算器扩展。EasyCalc优雅高效的设计不仅外观精美，还最大化了可用性。",
+        "preview_features": {
+        "0": { "title": "深色模式<br/>和浅色模式",  "description": "在深色和浅色模式之间切换，获得舒适和个性化的体验。"},
+        "1": { "title": "优雅<br/>设计",  "description": "干净高效的界面，在没有干扰的情况下最大化功能性。"},
+        "2": { "title": "持久<br/>值存储", "description": "您的值会被保存直到清除，使参考过去的计算更容易。"},
+        "3": { "title": "隐私优先<br/>方法", "description": "EasyCalc不收集个人数据，确保您的安全和安心。"},
+        "4": { "title": "开源<br/>且免费", "description": "在GitHub上完全开源，允许您检查、修改和贡献。"}
+        }
+      }    
+    }
+  }
