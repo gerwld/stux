@@ -91,8 +91,8 @@
         "1": {"description":"Nienawidzę wpadać w pułapkę treści krótkoformatowych.<br/> Uwielbiam aplikacje, które pozwalają mi zapomnieć, że istnieją."},
         "2": {"description":"To rozszerzenie jest niesamowicie przydatne! Znacznie poprawiło moją produktywność, eliminując niepotrzebne rozpraszacze, pomagając mi skupić się na tym, co naprawdę ważne."},
         "3": {"description":"Bardzo dobre rozszerzenie. Najlepsze i najbardziej skuteczne! Uwielbiam wszystkie funkcje! Chciałbym również poprosić o coś podobnego dla YouTube"},
-        "4": {"description":"To naprawdę oszczędza czas, szczególnie dobre dla tych osób, które nieświadomie przechodzą z sekcji wiadomości do sekcji Reels."},
-        "5": {"description":"To rozszerzenie było dla mnie idealną inwestycją, mam Instagram w zamierzonym celu inspiracji i to wszystko. Nigdy nie spędzam więcej niż 30 minut tygodniowo w aplikacji i nie muszę już walczyć z chęcią korzystania z niej, to niesamowite."}
+        "4": {"description":"Naprawdę oszczędza czas, szczególnie dobre dla tych osób, które nieświadomie przechodzą z sekcji wiadomości do sekcji Reels."},
+        "5": {"description":"To rozszerzenie było dla mnie idealną inwestycją, mam Instagram w zamierzonym celu inspiracji. Teraz spędzam mniej niż 30 minut tygodniowo w aplikacji i nie muszę już walczyć z chęcią korzystania z niej. Jestem bardzo zadowolony."}
       }
     },
     "SPOPLUS": {
@@ -106,10 +106,10 @@
        "5": { "title": "Blokuj <br/>obrazy i filmy",  "description": "Zmniejsz zużycie danych, wyłączając obrazy i filmy podczas streamowania muzyki." }
       },
     "preview_reviews": {
-      "0": { "description":"To zdecydowanie jedno z najlepszych rozszerzeń dla Spotify. To, co najbardziej lubię w tym rozszerzeniu, to prosta, ale bardzo skuteczna zmiana plusa na klasyczne serce. Ale nawet bez tego, opcje interfejsu użytkownika są zdecydowanie bardzo przydatne."},
+      "0": { "description":"To zdecydowanie jedno z najlepszych rozszerzeń dla Spotify. To, co najbardziej lubię w tym rozszerzeniu, to prosta, ale bardzo skuteczna zmiana plusa na klasyczny przycisk serca. Ale nawet bez tego, opcje UI są zdecydowanie bardzo przydatne."},
       "1": { "description":"Ta wtyczka zmniejszyła zużycie pamięci RAM na stronie Spotify, fajnie. Interfejs również wygląda czysto, świetna robota!"},
       "2": { "description":"Myślę, że rozszerzenie robi to, co powinno. Będąc pozornie jedynym rozszerzeniem do dostosowywania Spotify, działa i ma dobry wybór kolorów. Działa świetnie i absolutnie warto zainstalować."},
-      "3": { "description":"po prostu kocham to!!! szukałem sposobu, aby Spotify było jasne PRZEZ CAŁY CZAS, a to rozszerzenie robi to i wiele więcej!!! 10/10, nie mogę się doczekać kolejnych funkcji UI!!"},
+      "3": { "description":"po prostu kocham to!!! szukałam sposobu, aby Spotify było jasne PRZEZ CAŁY CZAS, a to rozszerzenie robi to i wiele więcej!!! 10/10, nie mogę się doczekać kolejnych funkcji UI!!"},
       "4": { "description":"Działa całkiem dobrze. Motywy są również łagodne dla oczu, zwłaszcza AMOLED. Jedyną sugestią byłoby dodanie większej liczby opcji czcionek, jak Comic Sans lub coś niezwykłego. Dzięki 😁"},
       "5": { "description":"Niesamowite!! Brak problemów podczas korzystania :) Motywy są super urocze i świetnie współpracuje z innymi rozszerzeniami, które podłączyłem do Spotify ^_^ zdecydowanie polecam"}
     }
