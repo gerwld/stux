@@ -1,93 +1,166 @@
 {
   "global": {
-    "explore_btn": "Odkryj Wszystkie Produkty",
+    "explore_btn": "Przeglądaj wszystkie produkty",
     "install_btn": "Zainstaluj",
-    "details_btn": "Zobacz Szczegóły",
-    "close_btn": "Zamknij"
+    "details_btn": "Zobacz szczegóły",
+    "close_btn": "Zamknij",
+    "ct_reviews": "recenzje",
+    "ct_reviews_full": "ponad 20 recenzji",
+    "ct_users": "użytkownicy",
+    "ct_users_full": "95 000 użytkowników",
+    "ct_rating": "ocena",
+    "ct_rating_full": "ocena 4.9"
   },
   "Navbar": {
-    "home": "Strona Główna",
-    "all_products": "Wszystkie Produkty",
-    "request_feature": "Zaproponuj Funkcję",
+    "home": "Strona główna",
+    "all_products": "Wszystkie produkty",
+    "request_feature": "Zaproponuj funkcję",
     "support": "Wsparcie"
   },
   "HeroMain": {
-    "title": "Ulepsz Swoje Codzienne<br/>Doświadczenie Dzięki Naszym Produktom",
-    "subtitle": "Od rozszerzeń przeglądarki i narzędzi CLI po biblioteki i aplikacje mobilne, <br/>nasze rozwiązania zawsze koncentrują się na dbałości o szczegóły i doświadczeniu użytkownika."
+    "title": "Ulepsz swoje codzienne<br/>doświadczenie dzięki naszym produktom",
+    "subtitle": "Od rozszerzeń przeglądarki i narzędzi CLI po biblioteki i aplikacje mobilne, <br/>nasze rozwiązania zawsze skupiają się na dbałości o szczegóły i doświadczeniu użytkownika."
   },
   "JourneySection": {
     "header": {
       "dash": "podróż",
-      "title": "Nasza Droga do Zaangażowania Użytkowników",
-      "description": "Ulepszanie Doświadczeń Cyfrowych Poprzez Innowacje Skoncentrowane na Użytkowniku"
+      "title": "Nasza podróż w zaangażowaniu użytkowników",
+      "description": "Ulepszanie cyfrowych doświadczeń poprzez innowacje zorientowane na użytkownika"
     },
-    "sect_users": "Aktywni tygodniowi użytkownicy",
+    "sect_users": "Aktywni użytkownicy tygodniowo",
     "sect_install": "Miesięczne instalacje",
-    "sect_reviews": "Opinie użytkowników",
-    "sect_gitub_issues": "Rozwiązane problemy na Githubie"
+    "sect_reviews": "Recenzje użytkowników",
+    "sect_gitub_issues": "Rozwiązane problemy na Github"
   },
   "TestimonialSection": {
     "header": {
-      "dash": "opinia",
-      "title": "Co Mówią Nasi Użytkownicy",
+      "dash": "referencje",
+      "title": "Co mówią nasi użytkownicy",
       "title_product": "Co użytkownicy mówią o",
       "title_product_full": "Co użytkownicy mówią o DoHabit",
-      "description": "Nasze projekty otrzymują ponad 150 recenzji miesięcznie, a łącznie mamy ich ponad 4000",
+      "description": "Nasze projekty otrzymują ponad 150 recenzji każdego miesiąca, z ponad 4 000 recenzji łącznie",
       "description_product": "Otrzymujemy ponad 50 recenzji miesięcznie, łącznie ponad 1000 recenzji"
     }
   },
   "FeaturesSection": {
     "header": {
-      "title": "Odkryj Niesamowite Funkcje",
-      "description": "Niektóre kluczowe funkcje, które mogą Ci się przydać",
+      "title": "Odkryj niesamowite funkcje",
+      "description": "Niektóre z kluczowych funkcji, które mogą okazać się przydatne",
       "dash": "funkcje"
     }
   },
   "CTASection": {
-    "title_part_1": "Podoba Ci Się To, Co Robimy?<br/>Razem,",
-    "title_part_2": "Możemy Zrobić Więcej",
-    "description": "Ponieważ wszystkie nasze projekty są całkowicie darmowe i nie zbierają ani nie sprzedają Twoich danych, dobrowolne darowizny są ich jedynym źródłem finansowania. Twoje wsparcie finansowe jest dla nas niezwykle ważne, ponieważ pozwala nam kontynuować rozwój i aktualizację naszych projektów.",
-    "button": "Wspieraj na Ko-Fi"
+    "title_part_1": "Podoba Ci się to, co robimy?<br/>Razem,",
+    "title_part_2": "możemy więcej",
+    "description": "Ponieważ wszystkie nasze projekty są całkowicie darmowe i nie zbierają ani nie sprzedają Twoich danych, dobrowolne darowizny są ich jedynym źródłem finansowania. Twoje wsparcie finansowe jest dla nas niezwykle ważne, ponieważ pozwala nam kontynuować rozwijanie i aktualizowanie naszych projektów.",
+    "button": "Wesprzyj na Ko-Fi"
+  },
+  "MoreSection": {
+    "header": {
+      "title": "Inne rozszerzenia",
+      "description": "Zmaksymalizuj swoją produktywność i usprawnij korzystanie z sieci",
+      "dash": "przeglądaj"
+    }
   },
   "Footer": {
     "releases": "Wydania",
-    "contribute": "Współtwórz",
-    "bug_report": "Zgłoś Błąd"
+    "contribute": "Wnieś wkład",
+    "bug_report": "Zgłoś błąd"
   },
   "ProductsPage": {
-    "title": "Nasze Produkty"
+    "title": "Nasze produkty"
   },
   "ProductInstall": {
     "download_for": "Pobierz dla",
     "nt_btn": "Nie Twoja przeglądarka?",
     "choose_platform": "Wybierz swoją platformę"
   },
-  "MoreSection": {
-    "header": {
-      "title": "Other Extensions blax",
-      "description": "Maximize your productivity and streamline your web usage 1",
-      "dash": "explore 1"
-    }
-  },
   "PRODUCTS": {
     "IGPLUS": {
-      "description": "Ukryj Instagram Reels, rekomendacje, Stories, komentarze, trendy i inne zbędne elementy, pozwalając Ci skupić się na tym, co naprawdę ważne. Przejmij kontrolę nad swoim doświadczeniem na Instagramie i dostosuj go do swoich preferencji.",
+      "description": "Ukryj Instagram Reels, rekomendacje, Relacje, komentarze, trendy i inne niepotrzebne elementy, pozwalając skupić się na tym, co naprawdę ważne. Przejmij kontrolę nad swoim doświadczeniem na Instagramie i dostosuj je do swoich preferencji.",
       "preview_features": {
-        "0": { "title": "Ukryj <br/>Stronę Eksploruj", "description": "Wyłącz stronę Eksploruj, aby skupić się tylko na treściach, które Cię interesują." },
-        "1": { "title": "Ukryj <br/>Rekomendacje", "description": "Zobacz tylko treści z kont, które obserwujesz – koniec z niechcianymi sugestiami." },
-        "2": { "title": "Personalizuj <br/>Czcionki", "description": "Wybierz spośród różnych czcionek, takich jak Montserrat, Poppins i inne, aby dopasować styl do siebie." },
-        "3": { "title": "Dostosuj <br/>Powiadomienia", "description": "Zastosuj skale szarości lub wyłącz licznik nowych wiadomości, aby zmniejszyć rozpraszanie." },
-        "4": { "title": "Wyłącz <br/>Reels i Filmy", "description": "Wyłącz Reels i treści wideo, aby cieszyć się czystszym, wolnym od rozpraszaczy doświadczeniem." },
-        "5": { "title": "Ukryj Licznik <br/>Polubień i Obserwujących", "description": "Spraw, aby Instagram był bardziej świadomą przestrzenią, ukrywając liczbę polubień i obserwujących." }
+        "0": { "title": "Ukryj stronę <br/>Odkrywaj", "description": "Wyłącz stronę Odkrywaj, aby skupić się tylko na treściach, które są dla Ciebie ważne." },
+        "1": { "title": "Ukryj <br/>rekomendacje", "description": "Zobacz tylko treści z kont, które obserwujesz - koniec z niechcianymi sugestiami." },
+        "2": { "title": "Personalizuj <br/>czcionki", "description": "Wybieraj spośród różnych czcionek, takich jak Montserrat, Poppins i inne, aby dopasować do swojego stylu." },
+        "3": { "title": "Dostosuj <br/>powiadomienia", "description": "Zmień na skalę szarości lub wyłącz licznik nowych wiadomości, aby zmniejszyć rozproszenia." },
+        "4": { "title": "Wyłącz <br/>Reels i filmy", "description": "Wyłącz Reels i treści wideo, aby uzyskać czystsze doświadczenie bez rozpraszania uwagi." },
+        "5": { "title": "Ukryj liczniki <br/>polubień i obserwujących", "description": "Uczyń Instagram bardziej świadomą przestrzenią, ukrywając polubienia i liczbę obserwujących." }
       },      
       "preview_reviews": {
-        "0": {"description":"Bardzo dobre rozszerzenie. Podoba mi się możliwość zastosowania skali szarości. Jedna funkcja, która by je ulepszyła, to możliwość wyłączenia sugerowanych postów na głównej stronie. Bardzo mnie irytują."},
-        "1": {"description":"Nienawidzę wpadać w pułapkę krótkich filmików.<br/> Uwielbiam aplikacje, które pozwalają mi o nich zapomnieć."},
-        "2": {"description":"To rozszerzenie jest niesamowicie przydatne! Znacząco poprawiło moją produktywność, eliminując zbędne rozpraszacze i pomagając skupić się na tym, co naprawdę ważne."},
-        "3": {"description":"Bardzo dobre rozszerzenie. Najlepsze i najskuteczniejsze! Uwielbiam wszystkie funkcje! Chciałbym podobne rozszerzenie dla YouTube."},
-        "4": {"description":"To naprawdę oszczędza czas, zwłaszcza dla osób, które nieświadomie przechodzą do sekcji Reels z sekcji wiadomości."},
-        "5": {"description":"To rozszerzenie było dla mnie idealną inwestycją. Mam Instagrama tylko dla inspiracji i niczego więcej. Nie spędzam na nim więcej niż 30 minut tygodniowo i nie muszę już walczyć z pokusą, by na nim siedzieć. To niesamowite."}
+        "0": {"description":"Bardzo dobre rozszerzenie. Lubię możliwość zmiany na skalę szarości. Funkcją, która uczyniłaby to rozszerzenie lepszym, byłaby możliwość wyłączenia sugerowanych postów ze strony głównej. Są one dla mnie bardzo denerwujące"},
+        "1": {"description":"Nienawidzę wpadać w pułapkę treści krótkoformatowych.<br/> Kocham aplikacje, które pozwalają mi zapomnieć, że istnieją."},
+        "2": {"description":"To rozszerzenie jest niesamowicie przydatne! Znacznie poprawiło moją produktywność poprzez usunięcie niepotrzebnych rozpraszaczy, pomagając skupić się na tym, co naprawdę ważne."},
+        "3": {"description":"Bardzo dobre rozszerzenie. Najlepsze i najbardziej skuteczne! Uwielbiam wszystkie funkcje! Prośba o podobne rozszerzenie również dla YouTube"},
+        "4": {"description":"To naprawdę oszczędza czas, szczególnie dobre dla tych osób, które nieświadomie przenoszą się z sekcji wiadomości do sekcji reels."},
+        "5": {"description":"To rozszerzenie było dla mnie idealną inwestycją, mam instagrama dla jego zamierzonego celu inspiracji i to wszystko, nigdy nie spędzam więcej niż 30 minut tygodniowo w aplikacji i nie muszę już walczyć z potrzebą bycia na niej, to niesamowite."}
       }
+    },
+    "SPOPLUS": {
+      "description": "Ukryj widok \"Teraz odtwarzane\" na Spotify, przywróć klasyczny przycisk serca, wyłącz albumy, zmień motywy, czcionki, wyłącz filmy, aby zmniejszyć zużycie przepustowości...",
+      "preview_features": {
+       "0": { "title": "Przywróć klasyczny <br/>przycisk serca", "description": "Przywróć stary przycisk serca dla nostalgicznego i znajomego doświadczenia." },
+       "1": { "title": "Tryb <br/>skupienia", "description": "Włącz kompaktowy i wolny od rozpraszaczy interfejs dla bardziej immersyjnego doświadczenia słuchania." },
+       "2": { "title": "Niestandardowe <br/>motywy i czcionki", "description": "Wybieraj spośród różnych motywów i czcionek, aby spersonalizować swoje doświadczenie ze Spotify." },
+       "3": { "title": "Stylizacja <br/>albumów",  "description": "Przekształć okładki albumów w elegancki prostokątny design dla nowoczesnego wyglądu." },
+       "4": { "title": "Ukryj widok <br/>\"Teraz odtwarzane\"",  "description": "Wyłącz sekcję \"Teraz odtwarzane\", aby uprościć interfejs i pozostać skupionym." },
+       "5": { "title": "Blokuj <br/>obrazy i filmy",  "description": "Zmniejsz zużycie przepustowości, wyłączając obrazy i filmy podczas strumieniowania muzyki." }
+      },
+    "preview_reviews": {
+      "0": { "description":"To z pewnością jedno z najlepszych rozszerzeń dla Spotify, jedną rzeczą, którą najbardziej lubię w tym rozszerzeniu, jest prosta, ale bardzo skuteczna zmiana zamiast znaku plus, możesz zmienić go z powrotem na klasyczny przycisk serca. Ale nawet bez tego, opcje interfejsu są zdecydowanie bardzo przydatne."},
+      "1": { "description":"To zmniejszyło moje zużycie pamięci RAM przy Spotify. Interfejs również wygląda czysto, świetna robota!"},
+      "2": { "description":"Myślę, że rozszerzenie robi to, co powinno. Będąc pozornie jedynym rozszerzeniem do personalizacji Spotify, działa i ma dobry wybór kolorów. Działa dobrze w ciągu dnia i zdecydowanie warto zainstalować."},
+      "3": { "description":"uwielbiam to!!! szukałem sposobu, aby Spotify miało tryb jasny przez WIECZNIE i spełnia to i wiele więcej!!! 10/10 nie mogę się doczekać większej liczby funkcji interfejsu użytkownika!!!"},
+      "4": { "description":"Działa całkiem dobrze. Motywy są również przyjemne dla oczu, szczególnie amoled. Ale jedna sugestia, proszę dodać więcej opcji czcionek, takich jak Comic Sans lub fantazyjne. Dziękuję 😁"},
+      "5": { "description":"Wspaniałe!! Żadnych problemów z tego powodu :) Motywy są super słodkie i jest kompatybilne z innymi rozszerzeniami, które łączę ze Spotify ^_^ zdecydowanie polecam"}
     }
+    },
+    "MEMENTO": {
+      "description": "Konfigurowalne rozszerzenie strony startowej dla Twojej przeglądarki. Memento, będące open-source, lekkie i bezpieczne, ulepsza Twoje doświadczenie przeglądania dzięki intuicyjnej personalizacji i czystemu designowi.",
+      "preview_features": {
+      "0": { "title": "Konfigurowalne <br/>tła",  "description": "Wybieraj wysokiej jakości obrazy z Unsplash, przesyłaj własne lub zachowaj minimalizm z prostym tłem." },
+      "1": { "title": "Kontrolki <br/>wizualne", "description": "Dostosuj rozmycie, rozmiar zegara i ustawienia jasności, aby dopasować do swojej estetyki." },
+      "2": { "title": "Zlokalizowane <br/>doświadczenie", "description": "Obsługuje 12 języków oraz formaty zegara 12-godzinny i 24-godzinny dla spersonalizowanego doświadczenia." },
+      "3": { "title": "Bezpieczne i <br/>open-source", "description": "Memento jest open-source, co zapewnia przejrzystość i prywatność bez śledzenia danych." },
+      "4": { "title": "Szybkie i <br/>lekkie",  "description": "Zaprojektowane z myślą o szybkości i wydajności, utrzymując nową kartę płynną i wolną od rozpraszaczy." }
+      }
+    },
+    "GWARDAAPP": {
+      "description": "Odkrywaj informacje o produktach Amazon, znajdź najlepsze ceny, wykorzystaj słowa kluczowe SEO, zlokalizuj najlepszych dostawców za pomocą Reverse ASIN. Uzyskaj cenne informacje na temat wydajności produktu i analizy konkurencji dla Twojej strategii e-commerce."
+    },
+    "CHESSHELPER": {
+      "description": "Rozszerzenie Chess.com, które dodaje nowe motywy, figury, plansze, niestandardowe czcionki oraz funkcje, takie jak wyłączanie wyskakujących okienek, współrzędne na każdym polu i więcej.",
+      "preview_features": {
+       "0": { "title": "Niestandardowe <br/>motywy i figury", "description": "Zmień wygląd Chess.com dzięki 6 motywom, 39 zestawom figur i 40 planszom." },
+       "1": { "title": "Tryb pełnoekranowy <br/>i stały",  "description": "Ciesz się trybem pełnoekranowym i stałym układem planszy. Koniec z przeskakiwaniem w HyperBullet!" },
+       "2": { "title": "Oszczędzanie <br/>przepustowości",  "description": "Zmniejsz zużycie przepustowości, wyłączając strumień na stronie głównej." },
+       "3": { "title": "Wyłącz <br/>czat",  "description": "Koniec z trollami! Skup się na grze bez rozpraszaczy." },
+       "4": { "title": "Współrzędne <br/>na każdym polu",  "description": "Ucz się notacji szachowej szybciej dzięki współrzędnym na każdym polu." },
+       "5": { "title": "Podwójne kliknięcie <br/>aby poddać się",  "description": "Poddawaj się szybko prostym podwójnym kliknięciem. Mniej frustracji, więcej kontroli." }
+      }    
+    },
+    "LICHESSHELPER": {
+      "description": "Rozszerzenie Lichess.org, które dodaje nowe motywy, figury, plansze, czcionki i funkcje, takie jak wyłączanie wyskakujących okienek, współrzędne na każdym polu...",
+      "preview_features": {
+       "0": { "title": "Niestandardowe <br/>motywy i figury", "description": "Zmień wygląd Lichess dzięki 6 motywom, 39 zestawom figur i 40 planszom."},
+       "1": { "title": "Nowoczesny <br/>tryb układu",  "description": "Ciesz się eleganckim, unowocześnionym interfejsem dla lepszego doświadczenia z Lichess." },
+       "2": { "title": "Tryb pełnoekranowy <br/>i stały",  "description": "Ciesz się trybem pełnoekranowym i stałym układem planszy. Koniec z przeskakiwaniem w HyperBullet!"},
+       "3": { "title": "Wyłącz <br/>czat",  "description": "Koniec z trollami! Skup się na grze bez rozpraszaczy."},
+       "4": { "title": "Współrzędne <br/>na każdym polu",  "description": "Ucz się notacji szachowej szybciej dzięki współrzędnym na każdym polu."},
+       "5": { "title": "Zapobiegaj <br/>przewijaniu ruchów",  "description": "Zatrzymaj przypadkowe ruchy spowodowane przewijaniem, idealne dla szybkich gier." }
+      }
+    },
+    "DOHABIT": {
+      "description": "Aplikacja do śledzenia nawyków typu open-source dla iOS i Androida. Zaprojektowana, aby pomóc użytkownikom pozostać konsekwentnym i poprawić ich codzienną rutynę. Ułatwia śledzenie i osiąganie postępów w znacznie bardziej angażujący sposób."
+    },
+    "EASYCALC": {
+      "description": "Proste rozszerzenie kalkulatora do wykonywania podstawowych obliczeń arytmetycznych. Elegancki i wydajny design EasyCalc nie tylko świetnie wygląda, ale również maksymalizuje użyteczność.",
+      "preview_features": {
+      "0": { "title": "Tryb ciemny <br/>i jasny",  "description": "Przełączaj się między trybem ciemnym i jasnym dla komfortowego i spersonalizowanego doświadczenia."},
+      "1": { "title": "Elegancki <br/>design",  "description": "Czysty i wydajny interfejs, który maksymalizuje funkcjonalność bez rozpraszaczy."},
+      "2": { "title": "Trwałe <br/>przechowywanie wartości", "description": "Twoje wartości są zapisywane do czasu wyczyszczenia, ułatwiając odniesienie do poprzednich obliczeń."},
+      "3": { "title": "Podejście <br/>priorytetyzujące prywatność", "description": "EasyCalc nie zbiera danych osobowych, zapewniając Twoje bezpieczeństwo i spokój ducha."},
+      "4": { "title": "Open-Source <br/>i darmowy", "description": "Całkowicie open-source na GitHubie, pozwalając Ci na inspekcję, modyfikację i wnoszenie wkładu."}
+      }
+    }    
   }
 }

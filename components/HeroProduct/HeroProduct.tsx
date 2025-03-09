@@ -9,7 +9,7 @@ import "@/app/inriasans.css";
 import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/preloaded";
 import { EmblaOptionsType } from "embla-carousel";
 import clsx from "clsx";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 
 
@@ -25,7 +25,9 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
-  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/en/${i}.png`);
+  const locale = useLocale();
+  const SLIDES_LOCALE = ITEM?.details.available_slides_locales?.indexOf(locale) !== -1 ? locale : "en";
+  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/${SLIDES_LOCALE}/${i}.png`);
 
   
 const formatter = new Intl.NumberFormat('fr-FR');

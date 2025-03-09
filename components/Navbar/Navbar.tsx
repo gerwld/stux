@@ -1,11 +1,11 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./style.module.css";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation"; 
 import { ProductLinksExtras } from "@/app/[locale]/products/preloaded";
 import clsx from "clsx";
 import { SUPPORTED_LOCALES, Link } from "@/i18n";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 type Link = {
   href: string,
@@ -13,21 +13,23 @@ type Link = {
   n18?: string
 }
 
-const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
+const Navbar: React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLinks}) => {
   const [mobileMenu, isMobileMenu] = useState<boolean>(false);
   const m = menuLinks;
   const route = usePathname();
+  const router = useRouter();
+  const currentLocale = useLocale();
 
   const [links] = useState<Link[]>([
     {href: "/", title: 'Home', n18: 'home'},
     {href: "/products", title: 'All Products', n18: 'all_products'},
     {href: (m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSc8jGjwaVURaYxI0XPIEa9yW21H0CjeHfe19fcxMRBCkFsoPQ/viewform?usp=header"), title: 'Request Feature', n18: 'request_feature'}, 
     {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'support'},
-  ])
+  ]);
 
   const [scrolled, setScrolled] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -42,6 +44,12 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
 
   const t = useTranslations("Navbar");
   
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value;
+    const pathWithoutLocale = route.split('/').slice(2).join('/');
+    const newPath = `/${newLocale}${pathWithoutLocale ? `/${pathWithoutLocale}` : ''}`;
+    router.push(newPath);
+  };
 
   return (
     <>
@@ -66,6 +74,8 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
           className="btn_header lang_set emojiesfix"
           name="lang_set"
           id="lang_set"
+          value={currentLocale}
+          onChange={handleLanguageChange}
         >
           <option value="en">English</option>
           <option value="pl">Polish - polski</option>
