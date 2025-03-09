@@ -87,6 +87,9 @@ a {
   overflow: hidden;
   z-index: 100000; 
   cursor: pointer;
+  background-color: var(--background);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .lang_set_wrapper,
@@ -114,7 +117,7 @@ html .lang_set_wrapper {
   background-size: auto 100%;
   
   background-repeat: no-repeat;
-  background-color: #1a1d2e!important;
+  /* background-color: #1a1d2e!important; */
   font-size: 0rem !important;
   appearance: none;
   -moz-appearance: none;
@@ -122,22 +125,20 @@ html .lang_set_wrapper {
   user-select: none;
   pointer-events: none;
 
-  box-shadow: -2px 0 5px 5px var(--background)!important;
+  /* box-shadow: -2px 0 5px 5px var(--background)!important; */
   background-position: 0 0!important;
   border-radius: 3px;
 }
 
 .lang_set {
+  max-width: 78%;
   height: 38px;
   max-height: 38px;
   
   padding-left: 15px;
   padding-right: 5px;
   border: none;
-  background: var(--background);
-  background: rgba(27, 30, 47, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: transparent;
   
   color: #fff;
   font-size: 1em;
@@ -146,6 +147,7 @@ html .lang_set_wrapper {
 
   -webkit-appearance: none;
   -moz-appearance: none;
+  text-overflow: clip;
 }
 
 .lang_set:focus {
