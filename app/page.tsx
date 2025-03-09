@@ -9,10 +9,10 @@ import React from 'react'
 
 
 const MainPage = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('Navbar');
   return (
     <>
-    {t("title")}
+    
     <Hero/>
     <main>
     <JourneySection/>

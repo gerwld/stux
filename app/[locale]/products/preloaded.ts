@@ -73,7 +73,7 @@ export const products: Product[] = [
     alias: "CHESSHELPER",
     logoSrc: "/images/logos/ch.svg",
     title: "ChessHelper",
-    desc: "Chess.com extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
+    desc: "Chess.com extension that adds new themes, pieces, boards, custom fonts, and features such as disabling popups, coordinates on each square and more.",
     productType: "EXTENSION",
     colorScheme: "PURPLE",
     details: {
@@ -134,7 +134,7 @@ export const products: Product[] = [
     alias: "IGPLUS",
     title: "IGPlus",
     version: "3.0.1 Stable",
-    desc: "Hide Instagram Reels, recommendations, Stories, comments, trends, and other unnecessary elements, allowing you to focus on...",
+    desc: "Hide Instagram Reels, recommendations, Stories, comments, trends, and other unnecessary elements, allowing you to focus on what truly matters. Take control of your Instagram experience and tailor it to your preferences.  ",
     colorScheme: "PURPLE",
     productType: "EXTENSION",
     details: {
@@ -164,7 +164,7 @@ export const products: Product[] = [
            { author: 'Cailan Wiat', avatarUrl: '/images/pfp/6.jpg', description:"This extension was a perfect investment for me, i have instagram for its intended inspiration purpose and that's it i never spend more than 30 mins a week on the app and i don't have to battle the need to be on it anymore its incredible."},
       ],
       slides_count: 7,
-      available_slides_locales: ["en"]
+      available_slides_locales: ["en", "pl"]
     },
   },
   {

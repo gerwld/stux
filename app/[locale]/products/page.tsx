@@ -7,16 +7,18 @@ import React from "react";
 import style from "./style.module.css";
 import HeaderGradient from "@/components/HeaderGradient";
 import { products } from "./preloaded";
+import { useTranslations } from "next-intl";
 
 
 
 const ProductsPage = () => {
+  const t = useTranslations("ProductsPage");
   return (
     <>
       <HeaderGradient withTexture/>
       <Navbar />
       <main className="content_wrapper">
-        <PageTitle title="Our Products" />
+        <PageTitle title={t("title")} />
         <section className={style.content}>
           {products.map((p) => (
             <ProductBlock

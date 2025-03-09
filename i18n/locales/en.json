@@ -1,6 +1,166 @@
 {
-    "HomePage": {
-      "title": "Hello world en!",
-      "about": "Go to the about page"
+  "global": {
+    "explore_btn": "Explore All Products",
+    "install_btn": "Install",
+    "details_btn": "View Details",
+    "close_btn": "Close",
+    "ct_reviews": "reviews",
+    "ct_reviews_full": "20+ reviews",
+    "ct_users": "users",
+    "ct_users_full": "95 000 users",
+    "ct_rating": "rating",
+    "ct_rating_full": "4.9 rating"
+  },
+  "Navbar": {
+    "home": "Home",
+    "all_products": "All Products",
+    "request_feature": "Request Feature",
+    "support": "Support"
+  },
+  "HeroMain": {
+    "title": "Enhance Your Daily<br/>Experience With Our Products",
+    "subtitle": "From browser extensions and CLI tools to libraries and mobile applications, <br/>our solutions always focus on attention to detail and user experience."
+  },
+  "JourneySection": {
+    "header": {
+      "dash": "journey",
+      "title": "Our Journey of User Engagement",
+      "description": "Enhancing Digital Experiences Through User-Centric Innovations"
+    },
+    "sect_users": "Active weekly users",
+    "sect_install": "Monthly Installations",
+    "sect_reviews": "User reviews",
+    "sect_gitub_issues": "Resolved Github issues"
+  },
+  "TestimonialSection": {
+    "header": {
+      "dash": "testimonial",
+      "title": "What Our Users Say",
+      "title_product": "What users say about",
+      "title_product_full": "What users say about DoHabit",
+      "description": "Our projects receive over 150 reviews every month, with more than 4,000 reviews in total",
+      "description_product": "Serving over 50 reviews  every month, over than 1000 reviews in total"
     }
+  },
+  "FeaturesSection": {
+    "header": {
+      "title": "Explore it Amazing Features",
+      "description": "Some of the key features that you might find useful",
+      "dash": "features"
+    }
+  },
+  "CTASection": {
+    "title_part_1": "Enjoy What We Do?<br/>Together,",
+    "title_part_2": "We Can Do More",
+    "description": "Since all our projects are completely free and do not collect or sell your data, voluntary donations are their only source of funding. Your financial support is extremely important to us, as it allows us to continue developing and updating our projects.",
+    "button": "Support on Ko-Fi"
+  },
+  "MoreSection": {
+    "header": {
+      "title": "Other Extensions",
+      "description": "Maximize your productivity and streamline your web usage",
+      "dash": "explore"
+    }
+  },
+  "Footer": {
+    "releases": "Releases",
+    "contribute": "Contribute",
+    "bug_report": "Bug Report"
+  },
+  "ProductsPage": {
+    "title": "Our Products"
+  },
+  "ProductInstall": {
+    "download_for": "Download for",
+    "nt_btn": "Not your browser?",
+    "choose_platform": "Choose your platform"
+  },
+  "PRODUCTS": {
+    "IGPLUS": {
+      "description": "Hide Instagram Reels, recommendations, Stories, comments, trends, and other unnecessary elements, allowing you to focus on what truly matters. Take control of your Instagram experience and tailor it to your preferences.",
+      "preview_features": {
+        "0": { "title": "Hide <br/>Explore Page", "description": "Turn off the Explore page to focus only on the content that matters to you." },
+        "1": { "title": "Hide <br/>Recommendations", "description": "See only content from accounts you follow - no more unwanted suggestions." },
+        "2": { "title": "Personalize <br/>Fonts", "description": "Choose from various fonts like Montserrat, Poppins, and more to suit your style." },
+        "3": { "title": "Customize <br/>Notifications", "description": "Grayscale or disable the new message counter to reduce distractions." },
+        "4": { "title": "Disable <br/>Reels & Videos", "description": "Disable Reels and video content for a cleaner, distraction-free experience." },
+        "5": { "title": "Hide Like <br/>& Follower Counts", "description": "Make Instagram a more mindful space by hiding likes and follower numbers." }
+      },      
+      "preview_reviews": {
+        "0": {"description":"Very good extension. I like the ability to grayscale. One feature that would make this extension better would be the ability to disable suggested posts from the main page. They are very bothering for me"},
+        "1": {"description":"Hate falling into the shortform content trap.<br/> Love the apps that allow me to forget it exists."},
+        "2": {"description":"This extension is incredibly useful! It has significantly improved my productivity by removing unnecessary distractions, helping focus on what truly matters."},
+        "3": {"description":"Very good extension. The best and most affective one! Love all the features! Would request a similar for youtube as well"},
+        "4": {"description":"It really is an time saver, it is especially good for those people who drift off to reels section from message section unconsciously."},
+        "5": {"description":"This extension was a perfect investment for me, i have instagram for its intended inspiration purpose and that's it i never spend more than 30 mins a week on the app and i don't have to battle the need to be on it anymore its incredible."}
+      }
+    },
+    "SPOPLUS": {
+      "description": "Hide Spotify \"Now Playing\" View, bring back classic heart button, disable albums, change themes, fonts, disable videos to reduce bandwidth usage... ",
+      "preview_features": {
+       "0": { "title": "Bring Back <br/>Classic Heart Button", "description": "Bring back the old heart button for a nostalgic and familiar experience." },
+       "1": { "title": "Focus <br/>Mode", "description": "Enable a compact and distraction-free interface for a more immersive listening experience." },
+       "2": { "title": "Custom <br/>Themes & Fonts", "description": "Choose from various themes and fonts to personalize your Spotify experience." },
+       "3": { "title": "Albums <br/>Styling",  "description": "Transform album covers into a sleek rectangular design for a modern look." },
+       "4": { "title": "Hide <br/>\"Now Playing View\"",  "description": "Disable the \"Now Playing\" section to simplify the interface and stay focused." },
+       "5": { "title": "Block <br/>Images & Videos",  "description": "Reduce bandwidth usage by disabling images and videos while streaming music." }
+      },
+    "preview_reviews": {
+      "0": { "description":"This is most definitely one of the best extensions to get for Spotify, one thing I love about this extension the most, is the simple but highly effective change in instead of having the plus sign, you can change it back to the classic heart button. But even without that, the UI options are definitely very useful."},
+      "1": { "description":"This reduced my RAM usage with Spotify. The interface is looking clean too, great job!"},
+      "2": { "description":"I think the extension does what it needs to do. For being the seemingly only customization extension for spotify it works and has a good color selection. Works fine as day and totaly worth to install."},
+      "3": { "description":"adore this!!! was looking for a way to make spotify have a light mode for FOREVER and it acomplishes that and much more!!! 10/10 i can't wait for more ui features!!"},
+      "4": { "description":"Work pretty well. The themes are also soothing to the eyes, specially amoled one. But one suggestion, please add some more font options like Comic Sans, or like fancy ones. Thank you 😁"},
+      "5": { "description":"Awesome!! No problems from it at all :) The themes are super cute and it's compatible with the other extensions I connect to Spotify ^_^ definitely recommend"}
+    }
+    },
+    "MEMENTO": {
+      "description": "Customizable start page extension for your browser. Open-source, lightweight, and secure, Memento enhances your browsing experience with intuitive customization and a clean design.",
+      "preview_features": {
+      "0": { "title": "Customizable <br/>Backgrounds",  "description": "Choose high-quality Unsplash images, upload your own, or keep it minimal with a plain background." },
+      "1": { "title": "Visual <br/>Controls", "description": "Adjust blur, clock size, and brightness settings to match your aesthetic." },
+      "2": { "title": "Localized <br/>Experience", "description": "Supports 12 languages and both 12-hour and 24-hour clock formats for a personalized experience." },
+      "3": { "title": "Secure & <br/>Open-Source", "description": "Memento is open-source, ensuring transparency and privacy with no data tracking." },
+      "4": { "title": "Fast & <br/>Lightweight",  "description": "Designed for speed and efficiency, keeping your new tab smooth and distraction-free." }
+      }
+    },
+    "GWARDAAPP": {
+      "description": "Discover Amazon product info, find best prices, leverage SEO keywords, locate top suppliers with Reverse ASIN. Access valuable insights into product performance, competition analysis for your e-commerce strategy."
+    },
+    "CHESSHELPER": {
+      "description": "Chess.com extension that adds new themes, pieces, boards, custom fonts, and features such as disabling popups, coordinates on each square and more.",
+      "preview_features": {
+       "0": { "title": "Custom <br/>Themes & Pieces", "description": "Change Chess.com’s look with 6 themes, 39 pieces, and 40 boards." },
+       "1": { "title": "Fullscreen & <br/>Fixed Mode",  "description": "Enjoy fullscreen mode and a fixed board layout. No more jumping in HyperBullet!" },
+       "2": { "title": "Bandwidth <br/>Saver",  "description": "Reduce bandwidth usage by disabling the main page stream." },
+       "3": { "title": "Disable <br/>Chat",  "description": "No more trolls! Focus on the game without distractions." },
+       "4": { "title": "Coordinates <br/>on Each Square",  "description": "Learn chess notation faster with coordinates on every square." },
+       "5": { "title": "Double Click <br/>Resign",  "description": "Resign quickly with a simple double-click. Less frustration, more control." }
+      }    
+    },
+    "LICHESSHELPER": {
+      "description": "Lichess.org extension that adds new themes, pieces, boards, fonts, and features such as disabling popups,  coordinates on each square...",
+      "preview_features": {
+       "0": { "title": "Custom <br/>Themes & Pieces", "description": "Change Lichess look with 6 themes, 39 pieces, and 40 boards."},
+       "1": { "title": "Modern <br/>Layout Mode",  "description": "Enjoy a sleek, modernized interface for an improved Lichess experience." },
+       "2": { "title": "Fullscreen & <br/>Fixed Mode",  "description": "Enjoy fullscreen mode and a fixed board layout. No more jumping in HyperBullet!"},
+       "3": { "title": "Disable <br/>Chat",  "description": "No more trolls! Focus on the game without distractions."},
+       "4": { "title": "Coordinates <br/>on Each Square",  "description": "Learn chess notation faster with coordinates on every square."},
+       "5": { "title": "Prevent <br/>Scrolling Moves",  "description": "Stop accidental moves caused by scrolling, ideal for fast-paced games." }
+      }
+    },
+    "DOHABIT": {
+      "description": "Open-source habits tracker for both iOS and Android. Designed to help users stay consistent and improve their daily routine. It makes tracking and achieving progress easier and way more engaging."
+    },
+    "EASYCALC": {
+      "description": "A simple calculator extension for performing basic arithmetic calculations. EasyCalc sleek and efficient design not only looks great but also maximizes usability.",
+      "preview_features": {
+      "0": { "title": "Dark Mode <br/>& Light Mode",  "description": "Switch between dark and light modes for a comfortable and personalized experience."},
+      "1": { "title": "Sleek <br/>Design",  "description": "A clean and efficient interface that maximizes functionality without distractions."},
+      "2": { "title": "Persistent <br/>Value Storage", "description": "Your values are saved until cleared, making it easy to reference past calculations."},
+      "3": { "title": "Privacy-First <br/>Approach", "description": "EasyCalc does not collect personal data, ensuring your security and peace of mind."},
+      "4": { "title": "Open-Source <br/>& Free", "description": "Completely open-source on GitHub, allowing you to inspect, modify, and contribute."}
+      }
+    }    
   }
+}

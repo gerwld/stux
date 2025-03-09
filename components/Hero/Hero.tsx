@@ -1,11 +1,15 @@
 import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import style from "./style.module.css";
-import {Link} from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
+import TextWithFragment from "../TextWithFragments";
 
 
 const Hero = () => {
+  const t = useTranslations();
+
   const SHORTCUTS = [
     "SPOPLUS",
     "IGPLUS",
@@ -18,8 +22,8 @@ const Hero = () => {
       <div className={style.wrapper_texture}>
       <Navbar />
       <div className={clsx(style.content, "content_wrapper")}>
-        <h1 className={style.title}>Enhance Your Daily <br/>Experience With Our Products</h1>
-        <p className={style.desc}>From browser extensions and CLI tools to libraries and mobile applications, <br/>our solutions always focus on attention to detail and user experience.</p>
+        <h1 className={style.title}>{<TextWithFragment text={t("HeroMain.title")}/>}</h1>
+        <p className={style.desc}><TextWithFragment text={t("HeroMain.subtitle")}/></p>
         {/* <div className={style.img_preview}>
           <img src="/hero-preview.svg" alt="Preview" />
         </div> */}
@@ -29,7 +33,7 @@ const Hero = () => {
           </Link>)}
         </div>
         <div className={style.btn_sect}>
-          <Link href="/products" className={style.btn_1}>Explore All Products</Link>
+          <Link href="/products" className={style.btn_1}>{t("global.explore_btn")}</Link>
         </div>
       </div>
       </div>

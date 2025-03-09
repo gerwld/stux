@@ -5,6 +5,7 @@ import style from "./style.module.css";
 import ProductBlock from "@/components/ProductBlock/ProductBlock";
 import { Product, products } from "@/app/[locale]/products/preloaded";
 import {Link} from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 const getRandomItems = (
   array: Product[], 
@@ -18,7 +19,7 @@ const getRandomItems = (
 };
 
 const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
-
+  const t = useTranslations();
   const [data, setData] = useState<Product[]>([]);
 
   useEffect(() => {    
@@ -28,9 +29,9 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
   return (
     <section className={`content_wrapper ${style.section}`}>
       <SectionHeader
-        title="Other Extensions"
-        desc="Maximize your productivity and streamline your web usage"
-        dashTitle="explore"
+        title={t("MoreSection.header.title")}
+        desc={t("MoreSection.header.description")}
+        dashTitle={t("MoreSection.header.dash")}
         parentClassName={style.header_gap}
       />
       <div className={style.content}>
@@ -48,7 +49,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
           ))}
       </div>
       <div className={style.btn_sect}>
-          <Link href="/products" className={style.btn_1}>Explore All Products</Link>
+          <Link href="/products" className={style.btn_1}>{t("global.explore_btn")}</Link>
         </div>
     </section>
   );

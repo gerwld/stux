@@ -1,11 +1,12 @@
 import React, { FC, JSX } from "react";
 import style from "./style.module.css";
-import {Link} from "@/i18n/navigation";
+import {Link} from "@/i18n";
 import { ProductBrowserLinks, ProductLinks, ProductType } from "@/app/[locale]/products/preloaded";
 import { BrowserType, useBrowserType } from "@/hooks/useBrowserType";
 import toTitleCase from "@/tools/toTitleCase";
 import clsx from "clsx";
 import SelectBrowserModal from "./SelectBrowserModal";
+import { useTranslations } from "@/hooks/useTranslations";
 
 type DButtonProps = {
   links: ProductBrowserLinks | ProductLinks;
@@ -13,6 +14,7 @@ type DButtonProps = {
 };
 
 const DButton: FC<DButtonProps> = ({ links, productType }) => {
+  const t = useTranslations();
   let CONTENT: JSX.Element = <i />;
   let browser: BrowserType = useBrowserType();
 
@@ -43,7 +45,11 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
             <img src={`/icons/browsers/${browser}.svg`} alt={"Browser Icon"} />
           </div>
           <div className={style.section_2}>
-            <span>Download for</span>
+            <span>{
+            t("ProductInstall.download_for") == "ProductInstall.download_for" 
+              ? "Download for"
+              : t("ProductInstall.download_for")
+            }</span>
             <span>{isE ? "Microsoft Edge" : toTitleCase(browser)}</span>
           </div>
         </Link>

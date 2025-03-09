@@ -10,11 +10,11 @@ import { useTranslations } from "next-intl";
 
 const IGPlusPage = () => {
   const PRODUCT_KEY:string = "IGPLUS";
-  const t = useTranslations('HomePage');
+  const t = useTranslations('Navbar');
 
   return (
     <div className="schema-purple">
-      {t("title")}
+      
       <HeroProduct productAlias={PRODUCT_KEY}/>
       <main>
         <FeaturesSection productAlias={PRODUCT_KEY}/>

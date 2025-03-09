@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from "react";
 import style from "./style.module.css";
-import {Link} from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 import { ProductLinksExtras } from "@/app/[locale]/products/preloaded";
 import clsx from "clsx";
-import { SUPPORTED_LOCALES } from "@/i18n/routing";
+import { SUPPORTED_LOCALES, Link } from "@/i18n";
+import { useTranslations } from "next-intl";
 
 type Link = {
   href: string,
@@ -19,10 +19,10 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
   const route = usePathname();
 
   const [links] = useState<Link[]>([
-    {href: "/", title: 'Home', n18: 'header_home'},
-    {href: "/products", title: 'All Products', n18: 'header_home'},
-    {href: (m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSc8jGjwaVURaYxI0XPIEa9yW21H0CjeHfe19fcxMRBCkFsoPQ/viewform?usp=header"), title: 'Request Feature', n18: 'header_home'}, 
-    {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'header_home'},
+    {href: "/", title: 'Home', n18: 'home'},
+    {href: "/products", title: 'All Products', n18: 'all_products'},
+    {href: (m?.feature_request || "https://docs.google.com/forms/d/e/1FAIpQLSc8jGjwaVURaYxI0XPIEa9yW21H0CjeHfe19fcxMRBCkFsoPQ/viewform?usp=header"), title: 'Request Feature', n18: 'request_feature'}, 
+    {href: (m?.bug_report || "https://docs.google.com/forms/d/e/1FAIpQLSfs7hCNix98qt70fx_dhhBSF309hn5WBcavb2H_dMZgeT3CHg/viewform?usp=dialog"), title: "Support", n18: 'support'},
   ])
 
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -40,7 +40,7 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
     isMobileMenu(!mobileMenu);
   }
 
-  console.log(route);
+  const t = useTranslations("Navbar");
   
 
   return (
@@ -57,7 +57,7 @@ const Navbar:React.FC<{menuLinks?: ProductLinksExtras | undefined}> = ({menuLink
           key={link.href} 
           href={link.href}
           className={route == link.href || route.indexOf(link.href) !== -1 && link.href !== "/" || link.href == "/" && SUPPORTED_LOCALES.indexOf(route.slice(1)) !== -1 ? style.active : ""}
-          >{link.title}</Link>)}
+          >{t(link.n18)}</Link>)}
       </nav>
 
       <div className="lang_select">

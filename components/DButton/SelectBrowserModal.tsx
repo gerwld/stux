@@ -4,6 +4,8 @@ import withClickOutside, { WithClickOutsideProps } from '@/hocs/withClickOutside
 import { ProductBrowserLinks, ProductLinks } from '@/app/[locale]/products/preloaded';
 import clsx from 'clsx';
 import { BrowserType, useBrowserType } from '@/hooks/useBrowserType';
+import {useTranslations} from "@/hooks/useTranslations";
+
 
 type SelectBrowserModalProps = {
     blockScroll: boolean,
@@ -27,7 +29,7 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
     links,
     isEmbeded
   }) => {
-    
+  const t = useTranslations();
   const AVAILABLE_PLATFORMS = Object.keys(links);
   const ALL_PROVIDERS:Provider[] = [
     {
@@ -97,17 +99,17 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
       {isEmbeded 
       ?   <button onClick={toggleShow} className={style.install_btn}>
             <img src="/icons/download.svg" alt="ic" />
-            <span>Install</span>
+            <span>{t("global.install_btn")}</span>
           </button>
       :   <button onClick={toggleShow} className={style.wrongbrowser_btn}>
-            Not your browser?
+            {t("ProductInstall.nt_btn")}
           </button>
       }
 
     {isShow 
     ?  <div className={`${style.modal} ${isShow ? style.modal_visible : ""}`} aria-hidden={!isShow}>
             <div ref={refElement} className={style.modal_block}>
-              <h3 className={style.modal_title}>Choose your platform</h3>
+              <h3 className={style.modal_title}>{t("ProductInstall.choose_platform")}</h3>
               <div className={style.modal_content}>
                 {FILTERED_PROVIDERS.map(provider => <SelectProviderRadioItem 
                   selected={selected}
@@ -121,10 +123,10 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
                 />)}
                 
                   <div className={style.modal_buttons}>
-                    <button onClick={toggleShow}><span>Close</span></button>
+                    <button onClick={toggleShow}><span>{t("global.close_btn")}</span></button>
                     <button onClick={handleInstallClick} className={style.modal_btn_download}>
                       <img src="/icons/download.svg" alt="ic" />
-                      <span>Install</span>
+                      <span>{t("global.install_btn")}</span>
                     </button>
                   </div>
               </div>

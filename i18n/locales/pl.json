@@ -1,6 +1,93 @@
 {
-    "HomePage": {
-      "title": "Hello world222 pl!",
-      "about": "Go to the about page"
+  "global": {
+    "explore_btn": "Odkryj Wszystkie Produkty",
+    "install_btn": "Zainstaluj",
+    "details_btn": "Zobacz Szczegóły",
+    "close_btn": "Zamknij"
+  },
+  "Navbar": {
+    "home": "Strona Główna",
+    "all_products": "Wszystkie Produkty",
+    "request_feature": "Zaproponuj Funkcję",
+    "support": "Wsparcie"
+  },
+  "HeroMain": {
+    "title": "Ulepsz Swoje Codzienne<br/>Doświadczenie Dzięki Naszym Produktom",
+    "subtitle": "Od rozszerzeń przeglądarki i narzędzi CLI po biblioteki i aplikacje mobilne, <br/>nasze rozwiązania zawsze koncentrują się na dbałości o szczegóły i doświadczeniu użytkownika."
+  },
+  "JourneySection": {
+    "header": {
+      "dash": "podróż",
+      "title": "Nasza Droga do Zaangażowania Użytkowników",
+      "description": "Ulepszanie Doświadczeń Cyfrowych Poprzez Innowacje Skoncentrowane na Użytkowniku"
+    },
+    "sect_users": "Aktywni tygodniowi użytkownicy",
+    "sect_install": "Miesięczne instalacje",
+    "sect_reviews": "Opinie użytkowników",
+    "sect_gitub_issues": "Rozwiązane problemy na Githubie"
+  },
+  "TestimonialSection": {
+    "header": {
+      "dash": "opinia",
+      "title": "Co Mówią Nasi Użytkownicy",
+      "title_product": "Co użytkownicy mówią o",
+      "title_product_full": "Co użytkownicy mówią o DoHabit",
+      "description": "Nasze projekty otrzymują ponad 150 recenzji miesięcznie, a łącznie mamy ich ponad 4000",
+      "description_product": "Otrzymujemy ponad 50 recenzji miesięcznie, łącznie ponad 1000 recenzji"
+    }
+  },
+  "FeaturesSection": {
+    "header": {
+      "title": "Odkryj Niesamowite Funkcje",
+      "description": "Niektóre kluczowe funkcje, które mogą Ci się przydać",
+      "dash": "funkcje"
+    }
+  },
+  "CTASection": {
+    "title_part_1": "Podoba Ci Się To, Co Robimy?<br/>Razem,",
+    "title_part_2": "Możemy Zrobić Więcej",
+    "description": "Ponieważ wszystkie nasze projekty są całkowicie darmowe i nie zbierają ani nie sprzedają Twoich danych, dobrowolne darowizny są ich jedynym źródłem finansowania. Twoje wsparcie finansowe jest dla nas niezwykle ważne, ponieważ pozwala nam kontynuować rozwój i aktualizację naszych projektów.",
+    "button": "Wspieraj na Ko-Fi"
+  },
+  "Footer": {
+    "releases": "Wydania",
+    "contribute": "Współtwórz",
+    "bug_report": "Zgłoś Błąd"
+  },
+  "ProductsPage": {
+    "title": "Nasze Produkty"
+  },
+  "ProductInstall": {
+    "download_for": "Pobierz dla",
+    "nt_btn": "Nie Twoja przeglądarka?",
+    "choose_platform": "Wybierz swoją platformę"
+  },
+  "MoreSection": {
+    "header": {
+      "title": "Other Extensions blax",
+      "description": "Maximize your productivity and streamline your web usage 1",
+      "dash": "explore 1"
+    }
+  },
+  "PRODUCTS": {
+    "IGPLUS": {
+      "description": "Ukryj Instagram Reels, rekomendacje, Stories, komentarze, trendy i inne zbędne elementy, pozwalając Ci skupić się na tym, co naprawdę ważne. Przejmij kontrolę nad swoim doświadczeniem na Instagramie i dostosuj go do swoich preferencji.",
+      "preview_features": {
+        "0": { "title": "Ukryj <br/>Stronę Eksploruj", "description": "Wyłącz stronę Eksploruj, aby skupić się tylko na treściach, które Cię interesują." },
+        "1": { "title": "Ukryj <br/>Rekomendacje", "description": "Zobacz tylko treści z kont, które obserwujesz – koniec z niechcianymi sugestiami." },
+        "2": { "title": "Personalizuj <br/>Czcionki", "description": "Wybierz spośród różnych czcionek, takich jak Montserrat, Poppins i inne, aby dopasować styl do siebie." },
+        "3": { "title": "Dostosuj <br/>Powiadomienia", "description": "Zastosuj skale szarości lub wyłącz licznik nowych wiadomości, aby zmniejszyć rozpraszanie." },
+        "4": { "title": "Wyłącz <br/>Reels i Filmy", "description": "Wyłącz Reels i treści wideo, aby cieszyć się czystszym, wolnym od rozpraszaczy doświadczeniem." },
+        "5": { "title": "Ukryj Licznik <br/>Polubień i Obserwujących", "description": "Spraw, aby Instagram był bardziej świadomą przestrzenią, ukrywając liczbę polubień i obserwujących." }
+      },      
+      "preview_reviews": {
+        "0": {"description":"Bardzo dobre rozszerzenie. Podoba mi się możliwość zastosowania skali szarości. Jedna funkcja, która by je ulepszyła, to możliwość wyłączenia sugerowanych postów na głównej stronie. Bardzo mnie irytują."},
+        "1": {"description":"Nienawidzę wpadać w pułapkę krótkich filmików.<br/> Uwielbiam aplikacje, które pozwalają mi o nich zapomnieć."},
+        "2": {"description":"To rozszerzenie jest niesamowicie przydatne! Znacząco poprawiło moją produktywność, eliminując zbędne rozpraszacze i pomagając skupić się na tym, co naprawdę ważne."},
+        "3": {"description":"Bardzo dobre rozszerzenie. Najlepsze i najskuteczniejsze! Uwielbiam wszystkie funkcje! Chciałbym podobne rozszerzenie dla YouTube."},
+        "4": {"description":"To naprawdę oszczędza czas, zwłaszcza dla osób, które nieświadomie przechodzą do sekcji Reels z sekcji wiadomości."},
+        "5": {"description":"To rozszerzenie było dla mnie idealną inwestycją. Mam Instagrama tylko dla inspiracji i niczego więcej. Nie spędzam na nim więcej niż 30 minut tygodniowo i nie muszę już walczyć z pokusą, by na nim siedzieć. To niesamowite."}
+      }
     }
   }
+}
