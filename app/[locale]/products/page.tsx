@@ -22,7 +22,7 @@ const ProductsPage = () => {
         <section className={style.content}>
           {products.map((p) => (
             <ProductBlock
-              id={p.id}
+              id={p?.id}
               key={p.logoSrc}
               logoSrc={`/images/logos/${p.alias}.svg`}
               desc={p.desc}

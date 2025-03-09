@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-
 const PRODUCT_KEY:string = "CHESSHELPER";
 const PRODUCT_NAME = "ChessHelper"
 
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const resolvedParams = await params; 
+  
   // Load translations for metadata
-  const t = await getTranslations({ locale: params.locale, namespace: "" });
+  const t = await getTranslations({ locale: resolvedParams.locale, namespace: "" });
 
   return {
     title: `${PRODUCT_NAME} ${t("global.extension")} – WeblxApplications`,

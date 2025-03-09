@@ -6,11 +6,9 @@ import TestimonialSection from "@/components/sections/TestimonialSection/Testimo
 import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
-import { useTranslations } from "next-intl";
 
 const IGPlusPage = () => {
   const PRODUCT_KEY:string = "IGPLUS";
-  const t = useTranslations('Navbar');
 
   return (
     <div className="schema-purple">

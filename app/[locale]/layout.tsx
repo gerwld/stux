@@ -8,9 +8,10 @@ import "../globals.css";
 import "../schemas/schemas.css";
 import "../switzer.css";
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const resolvedParams = await params; 
   // Load translations for metadata
-  const t = await getTranslations({ locale: params.locale, namespace: '' });
+  const t = await getTranslations({ locale: resolvedParams.locale, namespace: '' });
 
   return {
     title: "Main Page – WebLX Applications",
@@ -23,13 +24,13 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: any;
+  params: { locale: string } | Promise<{ locale: string }>;
 }) {
   // Handle both Promise and direct object cases
-  const resolvedParams = params.then ? await params : params;
+  const resolvedParams = params instanceof Promise ? await params : params;
   const locale = resolvedParams.locale;
   
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
@@ -38,7 +39,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body >
+      <body>
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
         </NextIntlClientProvider>

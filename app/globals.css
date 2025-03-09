@@ -165,7 +165,27 @@ html .lang_set_wrapper {
   :root {
     --mv-header: 55px;
   }
+
+  .lang_select {
+    right: unset;
+    top: calc(var(--mv-header, 50px) / 2 - 19px);
+    left: var(--content-gap);
+  }
+
+  html .lang_set {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  html .lang_set_wrapper {
+      border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .lang_set_wrapper .lang_ic {
+      background-color: transparent !important;
+      box-shadow: none!important;
+  }
 }
+
 
 @media only screen and (max-width: 500px) {
   :root {

@@ -37,7 +37,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
       <div className={style.content}>
       {data.map((p) => (
             <ProductBlock
-              id={p.id}
+              id={p?.id}
               key={p.logoSrc}
               logoSrc={`/images/logos/${p.alias}.svg`}
               desc={p.desc}

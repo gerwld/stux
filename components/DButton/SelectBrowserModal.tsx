@@ -81,10 +81,10 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
   // change once, if value != seleted
   useEffect(() => {
     const currentOption = FILTERED_PROVIDERS.find(p => p.store == browser);
-    if(currentOption && selected.id !== currentOption.id) {
+    if(currentOption && selected?.id !== currentOption?.id) {
       setSelected(currentOption);
     }
-  }, [browser])
+  }, [browser, FILTERED_PROVIDERS, selected?.id])
 
 
   const handleInstallClick = () => {
@@ -114,8 +114,8 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
                 {FILTERED_PROVIDERS.map(provider => <SelectProviderRadioItem 
                   selected={selected}
                   setSelected={setSelected}
-                  id={provider.id}
-                  key={provider.id}
+                  id={provider?.id}
+                  key={provider?.id}
                   title={provider.title}  
                   store={provider.store}  
                   icon={provider.icon}  
@@ -158,7 +158,7 @@ const SelectProviderRadioItem:FC<Provider & {
   }
   
   return (
-  <div onClick={handleClick} className={clsx(style.modal_item, selected.id === id  && style.modal_item__selected)}>
+  <div onClick={handleClick} className={clsx(style.modal_item, selected?.id === id  && style.modal_item__selected)}>
     <div className={style.modal_item_content}>
       <div className={style.modal_item_logo}>
         <img src={`/icons/browsers/${icon}.svg`} alt="" />
@@ -168,7 +168,7 @@ const SelectProviderRadioItem:FC<Provider & {
     </div>
 
     <div className={style.checkbox}>
-      {selected.id === id 
+      {selected?.id === id 
       ? checked
       : unchecked}
     </div>
