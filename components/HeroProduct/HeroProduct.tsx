@@ -5,6 +5,7 @@ import DButton from "@/components/DButton/DButton";
 import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 
 import style from "./style.module.css";
+import "./style.css";
 import "@/app/inriasans.css";
 import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/preloaded";
 import { EmblaOptionsType } from "embla-carousel";

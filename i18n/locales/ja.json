@@ -9,7 +9,8 @@
         "ct_users": "ユーザー",
         "ct_users_full": "95,000人のユーザー",
         "ct_rating": "評価",
-        "ct_rating_full": "4.9の評価"
+        "ct_rating_full": "4.9の評価",
+        "extension": "Extension"
     },
     "Navbar": {
       "home": "ホーム",

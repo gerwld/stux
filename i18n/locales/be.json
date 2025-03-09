@@ -9,7 +9,8 @@
         "ct_users": "карыстальнікаў",
         "ct_users_full": "95 000 карыстальнікаў",
         "ct_rating": "рэйтынг",
-        "ct_rating_full": "рэйтынг 4.9"
+        "ct_rating_full": "рэйтынг 4.9",
+        "extension": "Додаток"
     },
     "Navbar": {
       "home": "Галоўная",

@@ -9,7 +9,8 @@
         "ct_users": "gebruikers",
         "ct_users_full": "95.000 gebruikers",
         "ct_rating": "waardering",
-        "ct_rating_full": "4,9 waardering"
+        "ct_rating_full": "4,9 waardering",
+        "extension": "Extension"
     },
     "Navbar": {
       "home": "Startpagina",

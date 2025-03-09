@@ -9,7 +9,8 @@
         "ct_users": "usuários",
         "ct_users_full": "95.000 usuários",
         "ct_rating": "classificação",
-        "ct_rating_full": "classificação 4,9"
+        "ct_rating_full": "classificação 4,9",
+        "extension": "Extension"
     },
     "Navbar": {
       "home": "Início",

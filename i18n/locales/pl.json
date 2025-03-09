@@ -9,7 +9,8 @@
       "ct_users": "użytkownicy",
       "ct_users_full": "95 000 użytkowników",
       "ct_rating": "ocena",
-      "ct_rating_full": "ocena 4.9"
+      "ct_rating_full": "ocena 4.9",
+      "extension": "Rozszerzenie"
   },
   "Navbar": {
     "home": "Główna",

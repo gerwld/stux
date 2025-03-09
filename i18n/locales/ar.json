@@ -9,7 +9,8 @@
         "ct_users": "مستخدمين",
         "ct_users_full": "95,000 مستخدم",
         "ct_rating": "تقييم",
-        "ct_rating_full": "تقييم 4.9"
+        "ct_rating_full": "تقييم 4.9",
+        "extension": "Extension"
     },
     "Navbar": {
       "home": "الرئيسية",

@@ -70,7 +70,9 @@
 }
 
 .button span {
-    padding-left: 2rem;
+    padding-left: 1rem;
+    min-width: 160px;
+    text-align: center;
 }
 
 .preview {

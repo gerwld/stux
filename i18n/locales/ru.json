@@ -9,7 +9,8 @@
         "ct_users": "пользователей",
         "ct_users_full": "95 000 пользователей",
         "ct_rating": "рейтинг",
-        "ct_rating_full": "рейтинг 4.9"
+        "ct_rating_full": "рейтинг 4.9",
+        "extension": "Расширение"
     },
     "Navbar": {
       "home": "Главная",

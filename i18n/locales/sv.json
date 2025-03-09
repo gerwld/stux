@@ -9,7 +9,8 @@
         "ct_users": "användare",
         "ct_users_full": "95 000 användare",
         "ct_rating": "betyg",
-        "ct_rating_full": "4,9 i betyg"
+        "ct_rating_full": "4,9 i betyg",
+        "extension": "Extension"
     },
     "Navbar": {
       "home": "Hem",
