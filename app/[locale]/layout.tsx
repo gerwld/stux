@@ -8,6 +8,26 @@ import "../globals.css";
 import "../schemas/schemas.css";
 import "../switzer.css";
 
+export function generateStaticParams() {
+  return [
+    { locale: 'ar' },
+    { locale: 'be' },
+    { locale: 'de' },
+    { locale: 'en' },
+    { locale: 'fr' },
+    { locale: 'hi' },
+    { locale: 'ja' },
+    { locale: 'nl' },
+    { locale: 'pl' },
+    { locale: 'pt' },
+    { locale: 'ru' },
+    { locale: 'sp' },
+    { locale: 'sv' },
+    { locale: 'uk' },
+    { locale: 'zh' }
+  ];
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const resolvedParams = await params; 
   // Load translations for metadata

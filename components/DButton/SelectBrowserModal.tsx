@@ -84,7 +84,7 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
     if(currentOption && selected?.id !== currentOption?.id) {
       setSelected(currentOption);
     }
-  }, [browser, FILTERED_PROVIDERS, selected?.id])
+  }, [browser])
 
 
   const handleInstallClick = () => {

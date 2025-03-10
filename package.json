@@ -5,10 +5,17 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "deploy": "pnpm opennextjs-cloudflare && pnpm wrangler deploy",
+    "preview": "pnpm opennextjs-cloudflare && pnpm wrangler dev",
+    "build:worker": "opennextjs-cloudflare",
+    "dev:worker": "wrangler dev --port 8771",
+    "preview:worker": "pnpm run build:worker && pnpm run dev:worker",
+    "deploy:worker": "pnpm run build:worker && wrangler deploy",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^0.5.10",
     "clsx": "^2.1.1",
     "embla-carousel": "^8.5.2",
     "embla-carousel-autoplay": "^8.5.2",
@@ -20,7 +27,8 @@
     "next-intl": "^3.26.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.4.1"
+    "react-i18next": "^15.4.1",
+    "wrangler": "^3.112.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
