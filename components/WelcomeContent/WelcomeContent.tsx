@@ -3,12 +3,14 @@ import clsx from "clsx";
 import style from './style.module.css';
 import SelectLang from '../Navbar/SelectLang';
 import { useTranslations } from '@/hooks/useTranslations';
+import { usePathname } from 'next/navigation';
 
 const PRODUCT_KEY = "CHESSHELPER";
 const PRODUCT_TITLE = "ChessHelper";
 
 const WelcomeContent = () => {
   const t = useTranslations();
+  const pathname = usePathname();
   
   return (
     <div className={clsx("schema-welcome", style.conent)}>
@@ -38,7 +40,7 @@ const WelcomeContent = () => {
 
 
         <p className={style.last_sent}><span>{t("WelcomePage.chess")}</span> 🎨 ♟️ </p>
-        <a href={`/products/${PRODUCT_KEY.toLowerCase()}/`} className={clsx(style.btn, style.btn_svg)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+        <a href={pathname.endsWith("/welcome") ? pathname.slice(0, -8) : pathname} className={clsx(style.btn, style.btn_svg)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                 viewBox="0 0 24 24">
                 <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2H7.825Z" />
             </svg><span>{t("WelcomePage.act_back_home")}</span></a>
