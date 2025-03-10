@@ -8,6 +8,8 @@ import "../globals.css";
 import "../schemas/schemas.css";
 import "../switzer.css";
 
+const RTL_LANGUAGES = new Set(["ar", "he", "fa", "ur"]);
+
 export function generateStaticParams() {
   return [
     { locale: 'ar' },
@@ -57,8 +59,11 @@ export default async function LocaleLayout({
   // Providing all messages to the client
   const messages = await getMessages().catch(() => ({}));
 
+  //rtl support
+  const dir = RTL_LANGUAGES.has(locale) ? "rtl" : "ltr";
+
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={dir}>
       <body>
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}

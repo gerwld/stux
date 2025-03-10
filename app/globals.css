@@ -146,6 +146,11 @@ html .lang_set_wrapper {
   border-radius: 3px;
 }
 
+[dir="rtl"] .lang_set_wrapper .lang_ic  {
+  right: unset;
+  left: 10px;
+}
+
 .lang_set {
   max-width: 78%;
   height: 38px;

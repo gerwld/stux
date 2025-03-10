@@ -1,12 +1,12 @@
 "use client";
 import WelcomeContent from '@/components/WelcomeContent/WelcomeContent';
-
-
-const PRODUCT_TITLE:string = "ChessHelper";
+import { Product } from '../../preloaded';
 
 const Welcome = () => {
+  const PRODUCT_KEY:Product["alias"] = "CHESSHELPER";
+  const PRODUCT_TITLE:Product["title"] = "ChessHelper";
 
-  return <WelcomeContent/>;
+  return <WelcomeContent PRODUCT_KEY={PRODUCT_KEY} PRODUCT_TITLE={PRODUCT_TITLE}/>;
 };
 
 export default Welcome;

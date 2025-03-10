@@ -78,12 +78,17 @@ h1 .major_update {
     margin: 1.5rem 0;
 }
 
+
 .content_wrapper h3 {
     font-weight: 600;
     font-size: 1.1rem;
     padding: 0 0 0 1em;
     color: #b9cdd6;
     margin-bottom: 0.2em;
+}
+
+.stb {
+    color: #808e97;
 }
 
 .content_wrapper ul {

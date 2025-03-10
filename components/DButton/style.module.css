@@ -219,6 +219,11 @@
     pointer-events: none;
 }
 
+[dir="rtl"] .modal_item_logo {
+    margin-left: 0.25rem;
+    margin-right: 0;
+  }
+
 .modal_item_logo img {
     height: 100%;
     width: 100%;
@@ -266,6 +271,11 @@ button.modal_btn_download {
     user-select: none;
 }
 
+[dir="rtl"] .modal_buttons button img {
+    margin-left: 0.25rem;
+    margin-right: 0;
+  }
+
 .install_btn * {
     pointer-events: none;
     user-select: none;
@@ -289,6 +299,11 @@ button.modal_btn_download {
 .install_btn img {
     height: 1em;
     margin-right: 0.5rem;
+}
+
+[dir="rtl"] .install_btn img {
+    margin-left: 0.5rem;
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 440px) {

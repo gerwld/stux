@@ -69,6 +69,10 @@
     width: 34px;
 }
 
+[dir="rtl"] .button img {
+    order: 1;
+}
+
 .button span {
     padding-left: 1rem;
     min-width: 160px;

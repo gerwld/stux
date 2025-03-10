@@ -85,9 +85,20 @@
     margin-left: 0.5em;
 }
 
+[dir="rtl"] .details_btn img {
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+
 .install_btn img {
     height: 1em;
     margin-right: 0.5rem;
+}
+
+[dir="rtl"] .install_btn img {
+    transform: rotate(180deg);
+    margin-left: 0.5rem;
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 1020px) {

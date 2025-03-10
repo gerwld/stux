@@ -4,13 +4,19 @@ import style from './style.module.css';
 import SelectLang from '../Navbar/SelectLang';
 import { useTranslations } from '@/hooks/useTranslations';
 import { usePathname } from 'next/navigation';
+import { Product, products } from '@/app/[locale]/products/preloaded';
 
-const PRODUCT_KEY = "CHESSHELPER";
-const PRODUCT_TITLE = "ChessHelper";
+type Props = {
+        PRODUCT_KEY: Product["alias"],
+        PRODUCT_TITLE: Product["title"],
+}
 
-const WelcomeContent = () => {
+const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
+  const ITEM = products.find(p => p.alias === PRODUCT_KEY);
   const t = useTranslations();
   const pathname = usePathname();
+
+  if(!ITEM) return "Error -0443: PRODUCT_KEY " + PRODUCT_KEY;
   
   return (
     <div className={clsx("schema-welcome", style.conent)}>
@@ -27,11 +33,11 @@ const WelcomeContent = () => {
                 target="_blank" rel="noreferrer"
                 href="https://ko-fi.com/patrykjaworski"><span>{t("WelcomePage.ct_link1")}</span></a> <span>{t("WelcomePage.ct_desc3_1")}</span> {PRODUCT_TITLE} <span>{t("WelcomePage.ct_desc3_2")}</span> <a
                 target="_blank" rel="noreferrer"
-                href="https://chrome.google.com/webstore/detail/ChessHelper-improve-chess/kdkckejnngdmlcephpnfaggaeofloode/">Chrome</a>,
+                href={ITEM.details.links?.CHROME || ""}>Chrome</a>,
             <a target="_blank" rel="noreferrer"
-                href="https://addons.mozilla.org/en-US/firefox/addon/ChessHelper/">Firefox</a><span>{t("WelcomePage.ct_desc4")}</span><a
-                href="https://microsoftedge.microsoft.com/addons/detail/piiencmafefnakeddeeecjkehmbgcjdg"
-                target="_blank" rel="noreferrer">MS Edge</a> <span>{t("WelcomePage.ct_link2")}</span>.
+                href={ITEM.details.links?.FIREFOX || ITEM.details.links?.CHROME || ""}>Firefox</a><span>{t("WelcomePage.ct_desc4")}</span><a
+                href={ITEM.details.links?.EDGE || ITEM.details.links?.CHROME || ""}
+                target="_blank" rel="noreferrer">MS Edge</a> <span>{t("WelcomePage.ct_link2")}.</span>
         </p>
 
         
