@@ -1,0 +1,79 @@
+
+.donate_nav {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px 0;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  
+  .donate_nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  
+    padding: 2px 4px;
+    padding-right: 1rem;
+    color: #ffffff;
+    border: 0px solid #315d96;
+    background-color: #5f7fff;
+    background: linear-gradient(90deg, #6570b8, #4799d3);
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    margin: 0 8px 0 0;
+    min-height: 44px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 129%;
+    box-shadow: 0px 2px 0 0 var(--shadow-color-1);
+    transition: 500ms ease;
+
+    width: auto;
+    flex: auto;
+    background-color: #33366f;
+    background: linear-gradient(11deg, #33366f, #4799d3);
+    background-size: 300% 300%;
+    margin: 0 12px 0 0;
+    border-radius: 14px;
+  }
+
+
+.donate_nav span.ic {
+    padding: 0;
+    display: block;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+  
+  .donate_nav span.ic svg,
+  .donate_nav span.ic img {
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin: 5px;
+    padding: 0;
+  }
+  
+  .donate_nav span.ic__pp img,
+  .donate_nav span.ic__cred img,
+  .donate_nav span.ic__pp svg,
+  .donate_nav span.ic__cred svg {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+  }
+
+ .donate_nav span {
+    padding: 0 8px 0 8px;
+    max-width: 100%;
+}

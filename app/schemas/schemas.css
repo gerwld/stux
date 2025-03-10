@@ -3,6 +3,7 @@
 .schema-purple {
     --active-text-color: #9980ff;
     --dash-background: #3b3963;
+    --sb-background: #171929;
     --dash-text-color: #bdbaff;
     --header-background: rgba(255, 255, 255, 0.032);
     --header-border-color: rgba(255, 255, 255, 0.072);
@@ -19,3 +20,7 @@
     --detail-medium-second: #7c7ab4;
     --detail-medium-third: #56557f;
 }
+/* 
+body:has(.schema-purple) {
+    --background: #171929;
+} */
