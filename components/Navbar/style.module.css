@@ -22,6 +22,16 @@
     max-width: 1240px;
 }
 
+.lang_left {
+    position: fixed;
+    left: 30px;
+    top: 20px;
+}
+
+.lang_left :global(.lang_set_wrapper) {
+    --background: transparent;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -33,10 +43,6 @@
     background-color: var(--header-background, rgba(40, 47, 72, 0.3));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    
-    /* active state
-    background-color: #282f48d9;
-    box-shadow: 0 2px 12px 3px #1c202e; */
 
     border: 1px solid var(--header-border-color, #404b68);
     border-radius: 50px;
@@ -53,9 +59,6 @@
 .active {
     color: var(--active-text-color, blue);
 }
-
-
-
 
 
 /* ~~~~~~ TABLET & MOBILE VIEWPORTS ~~~~~ */

@@ -21,7 +21,7 @@
 .title_block h1 {
     font-weight: 200;
     margin: 1rem 0 0.8rem;
-    font-size: 2.6rem;
+    font-size: 2.58rem;
     margin: 1rem 0;
     text-align: center;
     text-transform: capitalize;
@@ -33,8 +33,8 @@ h1 .major_update {
 
 .logo_box_anim {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 94px;
+    height: 94px;
 }
 
 .logo_box_anim img {
@@ -68,7 +68,9 @@ h1 .major_update {
 }
 
 .st {
-    color: #686c7b;
+    display: block;
+    color: #737278;
+    padding: 1rem 0 2rem;
 }
 
 .h2 {
@@ -78,9 +80,10 @@ h1 .major_update {
 
 .content_wrapper h3 {
     font-weight: 600;
+    font-size: 1.1rem;
     padding: 0 0 0 1em;
     color: #b9cdd6;
-    margin-bottom: 0;
+    margin-bottom: 0.2em;
 }
 
 .content_wrapper ul {

@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import Image from 'next/image'
 import clsx from "clsx";
@@ -9,9 +8,9 @@ import logo_rotate from "./logo_rotate.svg";
 
 import s from "@/app/[locale]/products/update.module.css";
 import DonateButtons from "@/components/DonateButtons/DonateButtons";
-import HeaderGradient from "@/components/HeaderGradient";
 
-const PRODUCT_KEY = "CHESSHELPER";
+
+
 const PRODUCT_TITLE:string = "ChessHelper";
 const CURRENT_VERSION  = "3.0.0";
 
@@ -40,7 +39,7 @@ const Update = () => {
 
         <DonateButtons/>
 
-        <span className={s.guarantee}>30-days money back guarantee. And you can keep using {PRODUCT_TITLE}</span>
+        <span id="changelog" className={s.guarantee}>30-days money back guarantee. And you can keep using {PRODUCT_TITLE}</span>
         <p>If you can't contribute financially, We'd love if you could share {PRODUCT_TITLE} with a few friends or leave a review on the Chrome, Firefox, or MS Edge stores.</p>
       
     
@@ -125,8 +124,6 @@ const Update = () => {
       </main>
 
       <span className={s.st}>Enjoy your new themes, presets, pieces and boards! 🎨 ♟️</span>
-
-      <Footer productAlias={PRODUCT_KEY}/>
     </div>
   );
 };

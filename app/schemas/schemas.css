@@ -20,7 +20,9 @@
     --detail-medium-second: #7c7ab4;
     --detail-medium-third: #56557f;
 }
-/* 
-body:has(.schema-purple) {
-    --background: #171929;
-} */
+
+
+
+body:has(.schema-welcome) {
+    --background: #171a1f;
+}
