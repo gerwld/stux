@@ -8,6 +8,7 @@ import logo_rotate from "./logo_rotate.svg";
 
 import s from "@/app/[locale]/products/update.module.css";
 import DonateButtons from "@/components/DonateButtons/DonateButtons";
+import { useTranslations } from "@/hooks/useTranslations";
 
 
 
@@ -16,9 +17,10 @@ const CURRENT_VERSION  = "3.0.0";
 
 
 const Update = () => {
+  const t = useTranslations();
 
-  const ot = <li data-i18n="update_andother">...and other changes</li>
-  const st = <span data-i18n="upd_stable_release">Stable Release</span>
+  const ot = <li>{t("UpdatePage.update_andother")}</li>
+  const st = <span>{t("UpdatePage.upd_stable_release")}</span>
 
   return (
     <div className={clsx("schema-purple", s.content_wrapper)}>
@@ -29,22 +31,21 @@ const Update = () => {
                 <Image src={logo_base} alt="logo-base"/>
                 <Image src={logo_rotate} className={s.set_rotate} alt="logo-rotate"/>
             </div>
-            <h1>{PRODUCT_TITLE} - <span className={s.major_update}>Major Update</span> {CURRENT_VERSION}!<span className="emoji confetti"></span></h1>
+            <h1>{PRODUCT_TITLE} - <span className={s.major_update}>{t("UpdatePage.major_update")}</span> {CURRENT_VERSION}!<span className="emoji confetti"></span></h1>
         </div>
 
         <p className="update_subl">
-            <span data-i18n="update_sbt_01">We spend hours every week fixing bugs, adding and improving features, and addressing user
-            feedback. Donations keep</span> {PRODUCT_TITLE} <span data-i18n="update_sbt_02">up and running.</span>
+            <span>{t("UpdatePage.update_sbt_01")}</span> {PRODUCT_TITLE} <span>{t("UpdatePage.update_sbt_02")}</span>
         </p>
 
         <DonateButtons/>
 
-        <span id="changelog" className={s.guarantee}>30-days money back guarantee. And you can keep using {PRODUCT_TITLE}</span>
-        <p>If you can't contribute financially, We'd love if you could share {PRODUCT_TITLE} with a few friends or leave a review on the Chrome, Firefox, or MS Edge stores.</p>
+        <span id="changelog" className={s.guarantee}>{t("UpdatePage.upd_guarantee")} {PRODUCT_TITLE}</span>
+        <p>{t("UpdatePage.chop_contribute_desc3_1")} {PRODUCT_TITLE} {t("WelcomePage.ct_desc3_2")} Chrome, Firefox{t("WelcomePage.ct_desc4")} MS Edge {t("WelcomePage.ct_link2")}</p>
       
     
         <div className="updates_log">
-        <h2 className={s.h2} data-i18n="upd_history">Update History</h2>
+        <h2 className={s.h2}>{t("UpdatePage.upd_history")}</h2>
 
 
         <h3>## Version 3.0.0 - {st}</h3>
@@ -123,7 +124,7 @@ const Update = () => {
       
       </main>
 
-      <span className={s.st}>Enjoy your new themes, presets, pieces and boards! 🎨 ♟️</span>
+      <span className={s.st}>{t("WelcomePage.chess")} 🎨 ♟️</span>
     </div>
   );
 };

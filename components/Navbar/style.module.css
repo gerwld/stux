@@ -28,6 +28,16 @@
     top: 20px;
 }
 
+@media only screen and (max-width: 432px) {
+    .lang_left {
+        position: fixed;
+        right: 10px;
+        left: auto;
+        top: 20px;
+    }
+}
+
+
 .lang_left :global(.lang_set_wrapper) {
     --background: transparent;
 }

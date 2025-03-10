@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+.gr_b,
 .main__page a {
     display: inline-block;
     color: #2dd4bf;
@@ -18,6 +19,7 @@
     margin: 0 -2px;
 }
 
+.gr_b:hover,
 .main__page a:hover {
     background-color: #3a393b;
     cursor: pointer;
@@ -270,6 +272,17 @@ a.btn_svg {
     height: 36px;
 }
 
+.w_extinfo__mobile {
+    display: none;
+    background-color: rgba(30, 34, 38, 0.7);
+    border: 4px solid rgb(79, 87, 91);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.35);
+    bottom: 20px;
+    top: unset;
+    font-size: 1.1rem;
+    backdrop-filter: blur(20px);
+}
+
 @media only screen and (max-width: 420px) {
 
     .logo_box_anim__igp {
@@ -327,5 +340,48 @@ a.btn_svg {
         right: 25px;
         height: 80px;
         width: 50px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .w_extinfo__mobile {
+        background-color: transparent;
+        overflow: hidden;
+        -webkit-backdrop-filter: blur(20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .w_extinfo__desktop,
+    .w_extinfo__arrow {
+        display: none;
+    }
+    
+    .w_extinfo__mobile {
+        display: block;
+        top: auto;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .w_extinfo__mobile {
+        padding: 6px 12px 12px;
+        width: 95%;
+        max-width: 95%;
+        left: 2.5%;
+    }
+
+    .donate_btn {
+        display: none !important;
+    }
+
+    .main__page h1 {
+        text-align: left;
+        width: 100%;
+        margin: 0 0 0.1em;
+    }
+
+    .main__page {
+        padding-bottom: 250px;
     }
 }
