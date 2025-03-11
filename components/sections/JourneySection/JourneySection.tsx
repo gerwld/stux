@@ -17,7 +17,6 @@ export interface JourneyBlock {
   n18: string
 }
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const JourneySection = () => {
@@ -29,8 +28,8 @@ useGSAP(() => {
     gsap.timeline({
         scrollTrigger: {
             trigger: "#cl",
-            start: "-20 bottom", // Starts when the section enters the viewport
-            end: "-20 top",
+            start: "-40 bottom", // Starts when the section enters the viewport
+            end: "-40 top",
             scrub: 1, // Smooth scrolling effect (scrub)
             // markers: true
         }
