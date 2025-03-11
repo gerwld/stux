@@ -6,21 +6,23 @@ import DonateButtons from './DonateButtons/DonateButtons'
 import { useTranslations } from '@/hooks/useTranslations'
 
 import s from '@/app/[locale]/products/update.module.css';
+import clsx from 'clsx'
 
 type Props = {
     PRODUCT_TITLE: Product["title"],
     CURRENT_VERSION: Product["version"],
     logo_base: string,
-    logo_rotate?: string
+    logo_rotate?: string,
+    logoClassName?: string
 }
 
-const UpdateBase:FC<Props> = ({PRODUCT_TITLE, CURRENT_VERSION, logo_base, logo_rotate}) => {
+const UpdateBase:FC<Props> = ({PRODUCT_TITLE, CURRENT_VERSION, logo_base, logo_rotate, logoClassName}) => {
   const t = useTranslations();
   return (
     <>
         <Navbar />
         <div className={s.title_block}>
-            <div className={s.logo_box_anim}>
+            <div className={clsx(s.logo_box_anim, logoClassName)}>
                 <Image src={logo_base} alt="logo-base"/>
                 {logo_rotate ? <Image src={logo_rotate} className={s.set_rotate} alt="logo-rotate"/> : ""}
             </div>

@@ -44,6 +44,11 @@ h1 .major_update {
     pointer-events: none;
 }
 
+.logo_box_anim img:nth-child(1) {
+    height: 100%;
+    width: 100%;
+}
+
 @keyframes theyseemerolling {
     0% { transform: rotate(0deg)}
     100% { transform: rotate(360deg)}
@@ -56,6 +61,69 @@ h1 .major_update {
     width: 50%;
     height: 50%;
     animation: theyseemerolling 4s linear both infinite;
+    transform: rotate(180deg);
+}
+
+@keyframes spmove {
+    0% {
+      transform: rotate(0.0deg)
+    }
+  
+    10% {
+      transform: rotate(34.0deg) translate(-20px)
+    }
+  
+    20% {
+      transform: rotate(-8.0deg)
+    }
+  
+    30% {
+      transform: rotate(14.0deg)
+    }
+  
+    40% {
+      transform: rotate(-4.0deg)
+    }
+  
+    50% {
+      transform: rotate(10.0deg)
+    }
+  
+    60% {
+      transform: rotate(0.0deg)
+    }
+  
+    100% {
+      transform: rotate(0.0deg)
+    }
+  }
+
+.logo_spoplus .set_rotate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+    height: 75%;
+    animation: none;
+    transform: none;
+    animation-name: spmove;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 30% 30%;
+}
+
+.logo_igplus {
+    height: 85px;
+    width: 85px;
+}
+
+.logo_igplus .set_rotate {
+    position: absolute;
+    right: 16.5%;
+    bottom: 15%;
+    width: 68%;
+    height: 68%;
+    animation: theyseemerolling 6s linear both infinite;
     transform: rotate(180deg);
 }
 

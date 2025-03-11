@@ -14,8 +14,8 @@
   },
   "Navbar": {
     "home": "Główna",
-    "all_products": "Wszystkie produkty",
-    "request_feature": "Zaproponuj funkcję",
+    "all_products": "Nasze produkty",
+    "request_feature": "Sugestie",
     "support": "Wsparcie"
   },
     "UpdatePage": {
@@ -37,10 +37,10 @@
       "ct_link2": "storach"
     },
     "WelcomePage": {
-      "hi": "Hej",
+      "hi": "Cześć",
       "th_part1": "Dziękuję za zainstalowanie ",
       "th_part2": "Ta strona zostanie wyświetlona tylko raz.",
-      "ct_title": "Wesprzyj",
+      "ct_title": "Wesprzyj ten projekt",
       "ct_desc1": "Wyslij darowizne poprzez",
       "ct_desc2": ", lub za pomocą",
       "ct_link1": "karty debetowej",
