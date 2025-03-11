@@ -28,6 +28,11 @@
     top: 20px;
 }
 
+[dir="rtl"] .lang_left {
+    left: 30px;
+    right: auto;
+}
+
 @media only screen and (max-width: 432px) {
     .lang_left {
         position: fixed;

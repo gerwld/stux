@@ -5,6 +5,10 @@
     color: #f3fbff;
 }
 
+.content_wrapper ul a {
+    color: #2dd4bf;
+}
+
 .content_wrapper p {
     color: #f3fbff;
     line-height: 180%;

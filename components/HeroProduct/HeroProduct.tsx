@@ -11,6 +11,7 @@ import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/p
 import { EmblaOptionsType } from "embla-carousel";
 import clsx from "clsx";
 import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n";
 
 
 
@@ -54,7 +55,7 @@ const formattedTestimonial = ITEM?.details?.stats
               <img src={`/images/logos/${ITEM?.alias}.svg`} alt="Logo"/>
             </div>
             <h1 className={style.title}>{ITEM?.title.split(" ")[0]}</h1>
-            {ITEM?.version ? <span className={style.version}>v.{ITEM.version}</span> : ''}
+            {ITEM?.version ? <Link href={`/products/${ITEM.alias.toLowerCase()}/update#changelog`} className={style.version}>v.{ITEM.version}</Link> : ''}
           </div>
           <p className={style.desc}>
             {

@@ -7,10 +7,14 @@ import UpdateBase from "@/components/UpdateBase";
 
 import logo_base from "./logo_base.svg";
 import logo_rotate from "./logo_rotate.svg";
+import KofiPost from "@/components/KofiPost/KofiPost";
+import { Product, products } from "../../preloaded";
 
 
+const PRODUCT_KEY:Product["alias"] = "IGPLUS";
 const PRODUCT_TITLE:string = "IGPlus";
-const CURRENT_VERSION  = "2.4.0";
+const CURRENT_VERSION  = products.find(p => p.alias === PRODUCT_KEY)?.version?.split(" ")[0];
+
 
 
 const Update = () => {
@@ -30,76 +34,159 @@ const Update = () => {
           logoClassName={s.logo_igplus}
         />
 
-        <h3>## {t("UpdatePage.upd_version")} 3.0.0 - {st}</h3>
+      <KofiPost 
+        title="Just released IGPlus v3.0.1 - Major Update!"
+        imageUrl="https://storage.ko-fi.com/cdn/useruploads/display/5270e735-3de3-4ed2-98a9-3fe8bda66c8a_320viewport.png"
+        link="https://ko-fi.com/post/Just-released-IGPlus-v3-0-0--Major-Update-P5P71A6AJP/">
+         <ul>
+            <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/18">extension panel was inaccessible</a> on mobile viewports.</li>
+            <li>- Fixed an issue where <a href="https://github.com/gerwld/igplus-extension/issues/20">counters were still visible on the Reels screen</a> when the "Disable Likes and Followers Counts" option was enabled.</li>
+            <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/15">comments section was still accessible on the Reels screen</a> despite the "Disable Comments" option being enabled.</li>
+          </ul>
+      </KofiPost>
+
+        <h3>## Version 2.5.2 - {st}</h3>
+      <ul>
+        <li>- Added New Themes: Matrix Purple, Matrix Green</li>
+        <li>- Updated themes: Kimbie Dark, Dimmed Red, Light Green</li>
+        <li>- Updated <kbd/> look (vintage & modern)</li>
+        <li>- Improved Classic heart button functionality</li>
+        {ot}
+      </ul>
+
+      <h3>## Version 2.3.0 - {st}</h3>
+      <ul>
+        <li>- Fixed the issue where the <a target="_blank"
+            href="https://github.com/gerwld/igplus-extension/issues/14">Reels section button was still visible</a>on profiles.</li>
+        <li>- Fixed the issue where <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/13">"View
+            all comments"</a>was shown.</li>
+        <li>- Fixed <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/12">double redirection
+            when clicking on profile pictures</a></li>
+        <li>- Added improved comments hiding rules.</li>
+        <li>- Fixed <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/15">the likes and
+            comments counter still being visible in the mouseover state</a></li>
+        {ot}
+        <li><strong>Full Changelog:</strong> <a
+            href="https://github.com/gerwld/igplus-extension/compare/v.2.2.0...v.2.3.0"
+            target="_blank">v.2.2.0...v.2.3.0</a></li>
+      </ul>
+
+
+      <h3>## Version 2.2.0 - {st}</h3>
+      <ul>
+        <li>- Fixed the issue where <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/11">the
+            New Post and Notification buttons disappear on mobile</a>. </li>
+        <li>- Added the <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/7">suggested
+            feature</a> to replace the `Explore button` with `Search` on the mobile viewport. </li>
+        <li>- Added the <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/10">suggested
+            feature</a> to hide Notes in Direct and the profile page. </li>
+        {ot}
+        <li><strong>Full Changelog:</strong> <a
+            href="https://github.com/gerwld/igplus-extension/compare/v.2.1.0...v.2.2.0"
+            target="_blank">v.2.1.0...v.2.2.0</a></li>
+      </ul>
+
+
+      <h3>## Version 2.1.0.1 - Hotfix</h3>
+      <ul>
+        <li>- Fixed Threads icon hide option (mobile viewport).</li>
+      </ul>
+
+
+      <h3>## Version 2.1.0 - {st}</h3>
+      <ul>
+        <li>- Added Threads button hiding feature.</li>
+        <li>- New interface languages: French, Japanese, Chinese, and others.</li>
+        <li>- Improved grayscale mode.</li>
+        <li>- Resolved issues with hiding stories (mobile viewport & desktop).</li>
+        <li>- Fixed inconsistencies in hiding elements on mobile viewports.</li>
+        <li>- Corrected elements rendering incorrectly in dark mode.</li>
+        <li>- Improved translations for Polish and English.</li>
+        {ot}
+      </ul>
+
+
+      <h3>## Version 1.2.6 - {st}</h3>
+      <ul>
+        <li>- Fixed stories disabling (Main page / everywhere).</li>
+        <li>- Added comments section disabling.</li>
+        <li>- Added Belarusian (BE) locale.</li>
+        <li>- Fixed "Rectangle" mode.</li>
+        <li>- Fixed links.</li>
+        {ot}
+      </ul>
+
+      <h3>## Version 1.2.4 - {st}</h3>
+      <ul>
+        <li>- Fixed recommendations disabling on the main page.</li>
+        <li>- Fixed error where the font disappears in Firefox ver. {"<"} 120.1.</li>
+        <li>- Updated locales (German, Swedish).</li>
+        <li>- Updated popup UI.</li>
+        {ot}
+      </ul>
+
+      <h3>## Version 1.2.2 - {st}</h3>
+      <ul>
+        <li>- Added i18n language support (x7).</li>
+        <li>- Added Contribute option.</li>
+        <li>- Updated UI, Dark Mode, and RTL locales.</li>
+        <li>- Improved font switching.</li>
+        {ot}
+      </ul>
+
+        <h3>## Version 1.1.6 - {st}</h3>
         <ul>
-            <li>- Added new themes (x2): Frutiger Aero Green, Frutiger Aero Dimmed</li>
-            <li>- Updated themes: Frutiger Aero</li>
-            <li>- Fixed double-click resign</li>
-            <li>- Improved locales: English, Swedish, Polish</li>
-            <li>- Fixed frame drops caused by false mount DOM inj.</li>
-            <li>- Updated fullscreen button</li>
-            {ot}
+          <li>- Added feed disabling option.</li>
+          <li>- Improved recommendations-free feed.</li>
+          <li>- Fixed the issue with highlighting elements on the page even when stories were turned off.</li>
+          <li>- Fixed turning off stories.</li>
+          <li>- Fixed most layout issues.</li>
+          {ot}
         </ul>
 
-          <h3>## {t("UpdatePage.upd_version")} 2.1.4.5 - {st}</h3>
-          <ul>
-              <li>- Fixed fonts not appearing properly on some devices</li>
-              <li>- Added new themes (x6): Frutiger Aero, Glitter, Dark Purple</li>
-              {ot}
-          </ul>
-          <h3>## {t("UpdatePage.upd_version")} 1.0.4.1 - {st}</h3>
-          <ul>
-            <li>- Added Android Support (Mozilla)</li>
-            <li>- Fixed Welcome page appear every time</li>
-            <li>- Fixed Light Mode in themes</li>
-            <li>- Fixed bug when online status dissapear</li>
-            <li>- Added new theme - Amoled</li>
-            <li>- Added Contribute option</li>
-            <li>- Updated extension UI & Logo</li>
-            {ot}
-          </ul>
-          <h3>## {t("UpdatePage.upd_version")} 1.0.4 - {st}</h3>
-          <ul>
-            <li>- Added new languages (x98) i18n support</li>
-            <li>- Fixed RTL in Hewbrew, Sindhi, Persian</li>
-            <li>- Updated Extension Logo & UI</li>
-            <li>- Added Contribute Option</li>
-            {ot}
-          </ul>
-          <h3>## {t("UpdatePage.upd_version")} 1.0.3 - {st}</h3>
-          <ul>
-            <li>- Added i18n languages (x8) support</li>
-            <li>- Added new pieces (x16)</li>
-            <li>- Added new theme: Amoled</li>
-            <li>- Fixed RTL in Arabic</li>
-            {ot}
-          </ul>
-          <h3>## {t("UpdatePage.upd_version")} 1.0.2 - {st}</h3>
-          <ul>
-            <li>- Fixed 3D Mode (Pieces & Boards Change)</li>
-            <li>- Added x2 new Boards (Emerald, Industrial)</li>
-            <li>- Updated Popup UI</li>
-            {ot}
-          </ul>
-          <h3>## {t("UpdatePage.upd_version")} 1.0.1 - {st}</h3>
-          <ul>
-            <li>- Fixed Dark Mode on Mozilla Firefox</li>
-            <li>- Fixed Background on Analysis Page</li>
-            <li>- Improved Highlight colors</li>
-            {ot}
-          </ul>
-            <h3>## {t("UpdatePage.upd_version")} 1.0.0 - {st}</h3>
-          <ul>
-            <li>- **Support of Firefox, MS Edge & Chrome**</li>
-            <li>- Added Focus Mode</li>
-            <li>- Added Custom Fonts support</li>
-            <li>- Added double-click resign</li>
-            <li>- Fixed layout bouncing</li>
-            <li>- Added Pieces Assets (x18), Boards (x17)</li>
-            <li>- Added themes (x5)</li>
-            {ot}
-          </ul>
+        <h3>## Version 1.1.5 - {st}</h3>
+        <ul>
+          <li>- Fixed Focus Mode.</li>
+          <li>- Updated popup UI.</li>
+          <li>- Added Opera support.</li>
+          {ot}
+        </ul>
 
+        <h3>## Version 1.1.4 - {st}</h3>
+        <ul>
+          <li>- Added Firefox & Microsoft Edge support.</li>
+          <li>- Extension popup dark mode.</li>
+          <li>- Toggle-All functional button.</li>
+          <li>- Added new fonts (x6).</li>
+          <li>- Improved support page & others.</li>
+          <li>- Fixed: Stories disabling, Cyrillic support, re-render bugs, etc.</li>
+          {ot}
+        </ul>
+
+        <h3>## Version 1.0.4 - {st}</h3>
+        <ul>
+          <li>- Changed naming & UI to resolve Meta trademark claim.</li>
+          <li>- Fixed font change.</li>
+          <li>- Added minor improvements.</li>
+          {ot}
+        </ul>
+
+        <h3>## Version 1.0.3 - {st}</h3>
+        <ul>
+          <li>- Fixed issues in Chrome ver.{"<"} 71.0.</li>
+          <li>- Added minor improvements.</li>
+          {ot}
+        </ul>
+
+        <h3>## Version 1.0.2 - {st}</h3>
+        <ul>
+          <li>- Added Classic Mode.</li>
+          <li>- Fixed aside width functionality.</li>
+          <li>- Added Reels, Explore, and Stories disabling feature.</li>
+          <li>- Added image/video disabling to reduce bandwidth usage.</li>
+          <li>- Added fonts: Poppins, Playfair, Noto Sans & others.</li>
+          {ot}
+        </ul>
       
       
       </main>
