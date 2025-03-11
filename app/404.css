@@ -51,7 +51,9 @@
   .page404_description {
     margin-top: 1rem;
     margin-bottom: 2rem;
-    color: #6c757d;
+    font-size: 1.04rem;
+    line-height: 180%;
+    color: #a4a8c9;
   }
   
   .page404_button {
