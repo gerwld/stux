@@ -21,6 +21,7 @@
     "embla-carousel": "^8.5.2",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
+    "gsap": "^3.12.7",
     "i18next": "^24.2.2",
     "i18next-resources-to-backend": "^1.2.1",
     "next": "15.1.7",
@@ -29,6 +30,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
+    "sass": "^1.85.1",
+    "scss": "^0.2.4",
     "wrangler": "^3.112.0"
   },
   "devDependencies": {
