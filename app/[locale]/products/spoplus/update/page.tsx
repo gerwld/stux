@@ -39,7 +39,7 @@ const Update = () => {
           imageUrl="https://storage.ko-fi.com/cdn/useruploads/post/588fea9d-04b4-4e75-b7b5-d51d936ff1fa_pastedgraphic1.png"
           link="https://ko-fi.com/post/Just-updated-SpoPlus-to-v-2-6-0-E1E719WWVB">
           <ul>
-            <li>– Fixed "Keep Aside Width Static" option <a
+            <li>– Fixed &quot;Keep Aside Width Static&quot; option <a
                 href="https://github.com/gerwld/spoplus-extension/issues/11">(#11)</a> not working properly</li>
             <li>– Fixed incorrect tone in <a href="https://github.com/gerwld/spoplus-extension/issues/9">(#9)</a> skeleton
               loader</li>
@@ -71,12 +71,12 @@ const Update = () => {
       <ul>
         <li>- Fixed multiple issues in Focus Mode, including compact view and transcript display errors.</li>
         <li>- Resolved problems with heart icons feature not functioning correctly.</li>
-        <li>- Fixed progress bar issues in "Your Episodes" for light themes.</li>
+        <li>- Fixed progress bar issues in &quot;Your Episodes&quot; for light themes.</li>
         <li>- Fixed fullscreen mode issues across light themes.</li>
         <li>- Corrected overflow issues with some tippyjs tooltips.</li>
         <li>- Fixed layout issues on the Premium page when using light themes.</li>
         <li>- Updated placeholders to reduce GPU usage.</li>
-        <li>- Resolved resizing problems when the "Aside" section is set to static.</li>
+        <li>- Resolved resizing problems when the &quot;Aside&quot; section is set to static.</li>
         <li>- Fixed color issues with lyrics display in light themes.</li>
         {ot}
       </ul>
@@ -96,17 +96,17 @@ const Update = () => {
 
       <h3>## Version 2.0.0 - {st}</h3>
       <ul>
-        <li>- Fixed the issue where disabling "Now Playing View" didn't work properly or caused other issues.</li>
+        <li>- Fixed the issue where disabling &quot;Now Playing View&quot; didn&apos;t work properly or caused other issues.</li>
         <li>- Added general performance improvements.</li>
         <li>- Improved code injection & state validation.</li>
         <li>- Updated Focus Mode layout and features.</li>
-        <li>- Improved the "Make Aside Width Static" feature.</li>
-        <li>- Fixed the "Make Navbar Bigger" issue occurring on Chromium and some versions of Firefox.</li>
+        <li>- Improved the &quot;Make Aside Width Static&quot; feature.</li>
+        <li>- Fixed the &quot;Make Navbar Bigger&quot; issue occurring on Chromium and some versions of Firefox.</li>
         <li>- Updated light mode themes: Light Green, Light Purple.</li>
-        <li>- Updated the performance and visuals of "placeholders."</li>
+        <li>- Updated the performance and visuals of &quot;placeholders.&quot;</li>
         <li>- Fixed issues related to the Amoled theme.</li>
-        <li>- Fixed the issue where the symbol "•" in pseudo blocks didn't display correctly.</li>
-        <li>- Fixed the issue where "Make Navbar Bigger" suddenly stopped working on Firefox.</li>
+        <li>- Fixed the issue where the symbol &quot;•&quot; in pseudo blocks didn&apos;t display correctly.</li>
+        <li>- Fixed the issue where &quot;Make Navbar Bigger&quot; suddenly stopped working on Firefox.</li>
         <li>- Updated color SVG animation (add to favorites) for themes.</li>
         <li>- Added light themes navigation.</li>
         <li>- Minor visual improvements: Dark Purple, Dark Red, Dark Yellow, etc.</li>
@@ -117,15 +117,15 @@ const Update = () => {
       <ul>
         <li>- Added Belarusian and Arabic i18n support.</li>
         <li>- Improved themes: Dark Purple, Dark Red, Dark Yellow, Light Purple, and Light Green.</li>
-        <li>- Fixed the issue with aside "collapse" in Fixed Mode.</li>
-        <li>- Added "Contribute" menu option.</li>
+        <li>- Fixed the issue with aside &quot;collapse&quot; in Fixed Mode.</li>
+        <li>- Added &quot;Contribute&quot; menu option.</li>
         <li>- Fixed window.reload issues caused by a faulty event handler.</li>
-        <li>- Improved the "Add Button" animation and color.</li>
+        <li>- Improved the &quot;Add Button&quot; animation and color.</li>
         <li>- Fixed the Amoled Theme issue where the old background persisted.</li>
-        <li>- Fixed the overflow issue in aside when "List mode" view was selected.</li>
-        <li>- Fixed the "Hide header buttons" functionality.</li>
+        <li>- Fixed the overflow issue in aside when &quot;List mode&quot; view was selected.</li>
+        <li>- Fixed the &quot;Hide header buttons&quot; functionality.</li>
         <li>- Added RTL support.</li>
-        <li>- Improved "Focus Mode."</li>
+        <li>- Improved &quot;Focus Mode.&quot;</li>
         {ot}
       </ul>
 
@@ -167,7 +167,7 @@ const Update = () => {
         <h3>## Version 1.0.2 - {st}</h3>
         <ul>
           <li>- Stability improvements.</li>
-          <li>- Fixed the font issue after toggling "Classic mode."</li>
+          <li>- Fixed the font issue after toggling &quot;Classic mode.&quot;</li>
           {ot}
         </ul>
 
@@ -176,7 +176,7 @@ const Update = () => {
           <li>- Added themes: Light Green, Dark Purple, Kittens.</li>
           <li>- Added fonts: Poppins, Playfair, Noto Sans, and others.</li>
           <li>- Fixed the aside collapsing issue.</li>
-          <li>- Fixed the app crash when using "Now Playing View."</li>
+          <li>- Fixed the app crash when using &quot;Now Playing View.&quot;</li>
           {ot}
         </ul>
 

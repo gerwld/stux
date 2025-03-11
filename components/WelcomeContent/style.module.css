@@ -92,7 +92,7 @@ a.btn_svg {
     display: flex;
     display: inline-flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 40px;
     font-weight: 500;
 }

@@ -40,8 +40,8 @@ const Update = () => {
         link="https://ko-fi.com/post/Just-released-IGPlus-v3-0-0--Major-Update-P5P71A6AJP/">
          <ul>
             <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/18">extension panel was inaccessible</a> on mobile viewports.</li>
-            <li>- Fixed an issue where <a href="https://github.com/gerwld/igplus-extension/issues/20">counters were still visible on the Reels screen</a> when the "Disable Likes and Followers Counts" option was enabled.</li>
-            <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/15">comments section was still accessible on the Reels screen</a> despite the "Disable Comments" option being enabled.</li>
+            <li>- Fixed an issue where <a href="https://github.com/gerwld/igplus-extension/issues/20">counters were still visible on the Reels screen</a> when the &quot;Disable Likes and Followers Counts&quot; option was enabled.</li>
+            <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/15">comments section was still accessible on the Reels screen</a> despite the &quot;Disable Comments&quot; option being enabled.</li>
           </ul>
       </KofiPost>
 
@@ -58,8 +58,8 @@ const Update = () => {
       <ul>
         <li>- Fixed the issue where the <a target="_blank"
             href="https://github.com/gerwld/igplus-extension/issues/14">Reels section button was still visible</a>on profiles.</li>
-        <li>- Fixed the issue where <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/13">"View
-            all comments"</a>was shown.</li>
+        <li>- Fixed the issue where <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/13">&quot;View
+            all comments&quot;</a>was shown.</li>
         <li>- Fixed <a target="_blank" href="https://github.com/gerwld/igplus-extension/issues/12">double redirection
             when clicking on profile pictures</a></li>
         <li>- Added improved comments hiding rules.</li>
@@ -111,7 +111,7 @@ const Update = () => {
         <li>- Fixed stories disabling (Main page / everywhere).</li>
         <li>- Added comments section disabling.</li>
         <li>- Added Belarusian (BE) locale.</li>
-        <li>- Fixed "Rectangle" mode.</li>
+        <li>- Fixed &quot;Rectangle&quot; mode.</li>
         <li>- Fixed links.</li>
         {ot}
       </ul>

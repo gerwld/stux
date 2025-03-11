@@ -5,7 +5,6 @@ import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import TextWithFragment from "../TextWithFragments";
-import AnimatedText from "./AnimatedText";
 
 
 const Hero = () => {
