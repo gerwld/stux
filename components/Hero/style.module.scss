@@ -55,7 +55,20 @@
         transform: translate(0px, 0px) scale(1);
     }
     100% {
-        opacity: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes title-anim-next {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translate(0px, 5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        filter: blur(0);
+        opacity: 1;
     }
 }
 
@@ -74,6 +87,13 @@ $delay-step: 0.2s;
   }
 }
 
+
+.title span:nth-last-child(2),
+.title span:nth-last-child(1) {
+    animation: title-anim-next 1s ease-out forwards;
+    animation-delay: 8 * $delay-step + 0.1!important;
+}
+
 .title {
     font-size: 2.8rem;
     text-align: center;
@@ -84,7 +104,7 @@ $delay-step: 0.2s;
 @keyframes appear-from-bottom {
     0% {
         opacity: 0;
-        transform: scale(0.5) translateY(100px);
+        transform: scale(0.8) translateY(50px);
     }
     50% {
         transform:  scale(1) translateY(0px);
@@ -100,7 +120,7 @@ $delay-items-step: 3s;
 
 @for $i from 1 through $hero-items-count-end {
     .content>*:nth-last-child(#{$i}) {
-        animation: appear-from-bottom 2s ease 1 both;
+        animation: appear-from-bottom 1.5s ease 1 both;
       animation-delay: $delay-items-step - $i * 0.5;
     }
   }
