@@ -192,7 +192,8 @@ $delay-items-step: 3s;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem 0 1rem;
+    max-width: fit-content;
+    margin: 2rem auto 1rem;
 }
 
 .shortcuts:hover .shortcuts_act {

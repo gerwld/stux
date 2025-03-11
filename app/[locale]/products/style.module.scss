@@ -1,3 +1,14 @@
+@keyframes appear-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +16,51 @@
     margin: 0 auto;
     padding-bottom: 150px;
     margin-right: -0.1%;
+    animation: appear-from-bottom 0.5s ease 1 both;
 }
+
+
+
+// @keyframes appear-from-bottom {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(50px);
+//     }
+//     100% {
+//         transform: translateY(0px);
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes appear-from-bottom-2 {
+//     0% {
+//         opacity: 0;
+//         transform: scale(0.9) translateY(50px);
+//     }
+//     50% {
+//         transform:  scale(1) translateY(0px);
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// $hero-items-count-end: 30;
+// $delay-items-step: 0.2s;
+// $delay-items-content-step: 1s;
+
+// @for $i from 1 through $hero-items-count-end {
+//     .content article:nth-child(#{$i}) {
+//         animation: appear-from-bottom 0.5s ease 1 both;
+//         animation-delay: $i * $delay-items-step;
+//     }
+
+//     .content article>*:nth-last-child(#{$i}) {
+//         animation: appear-from-bottom-2 0.5s ease 1 both;
+//         animation-delay: $delay-items-content-step - $i * 0.2;
+//     }
+//   }
+
 
 .wrapper_texture {
     position: absolute;

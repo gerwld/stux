@@ -66,9 +66,9 @@
       "ipart3_2__mobile": "Na urządzeniach mobilnych ta opcja jest dostępna dopiero po odwiedzeniu",
       "ipart3_3__mobile": "Enjoy!"
     },
-  "HeroMain": {
-    "title": "Ulepsz swoje codzienne<br/>doświadczenia dzięki naszym produktom",
-    "subtitle": "Od rozszerzeń przeglądarki i narzędzi CLI po biblioteki i aplikacje mobilne,<br/>nasze rozwiązania zawsze koncentrują się na dbałości o szczegóły i doświadczeniu użytkownika."
+  "HeroMain": {  
+    "title": "Ulepsz swoje codzienne<br/>doświadczenia dzięki naszym produktom",  
+    "subtitle": "Od rozszerzeń przeglądarkowych i narzędzi CLI po biblioteki i aplikacje mobilne –<br/> nasze rozwiązania zawsze koncentrują się na dbałości o detale i doświadczeniu użytkownika."  
   },
   "JourneySection": {
     "header": {

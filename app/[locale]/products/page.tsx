@@ -4,7 +4,7 @@ import ProductBlock from "@/components/ProductBlock/ProductBlock";
 import Navbar from "@/components/Navbar/Navbar";
 import PageTitle from "@/components/PageTitle";
 import React from "react";
-import style from "./style.module.css";
+import style from "./style.module.scss";
 import HeaderGradient from "@/components/HeaderGradient";
 import { products } from "./preloaded";
 import { useTranslations } from "next-intl";
