@@ -18,7 +18,7 @@ export default function Custom404() {
                 <span className="page404_srOnly">Error</span>404
               </h2>
               <p className="page404_message">
-                Sorry, we couldn't find this page.
+                Sorry, we couldn&apos;t find this page.
               </p>
               <p className="page404_description">
                 But dont worry, you can find plenty of other things on our

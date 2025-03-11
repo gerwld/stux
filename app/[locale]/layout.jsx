@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -30,7 +29,7 @@ export function generateStaticParams() {
   ];
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }) {
   const resolvedParams = await params; 
   // Load translations for metadata
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: '' });
@@ -44,9 +43,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function LocaleLayout({
   children,
   params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string } | Promise<{ locale: string }>;
 }) {
   // Handle both Promise and direct object cases
   const resolvedParams = params instanceof Promise ? await params : params;
