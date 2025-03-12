@@ -8,6 +8,9 @@ import { useTranslations } from "next-intl";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import clsx from "clsx";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export interface TestimonialBlock {
   iconUrl: string,
@@ -29,8 +32,9 @@ const TestimonialSection:React.FC<{productAlias: Product["alias"], isMainPage?: 
         scrollTrigger: {
           trigger: group,
           start: `top-=${index * 150} 80%`, // Offset each group’s start
-          end: `bottom-=${index * 100} 20%`, // Adjust exit timing
+          end: `bottom+=${index * 150} 20%`, // Adjust exit timing
           scrub: 2,
+          // markers: true
         }
       })
       .fromTo(
@@ -40,12 +44,12 @@ const TestimonialSection:React.FC<{productAlias: Product["alias"], isMainPage?: 
       )
       .to(
         group,  // то что на end - завершение
-        { opacity: 0, y: -50, duration: 1, ease: "power2.in" }
+        { opacity: 0, y: -100, duration: 1, ease: "power2.in" }
       );
     });
     
 
-    //  RELATED TO SCROLL APPEAR ONE BY ONE - PERFECT
+  //  RELATED TO SCROLL APPEAR ONE BY ONE - PERFECT
   //   gsap.timeline({
   //     scrollTrigger: {
   //         trigger: "#testimonial-section",
@@ -124,9 +128,6 @@ const TestimonialSection:React.FC<{productAlias: Product["alias"], isMainPage?: 
     const columnPosts = TESTIMONIALS.slice(firstIndex, lastIndex); // gets posts for this column
 
 
-
-   
-    
 
     return (
     <div className={clsx(style.column, "bblock")} key={`tscolumn_${i}`}>

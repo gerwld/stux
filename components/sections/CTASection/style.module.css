@@ -1,13 +1,26 @@
 .wrapper {
-    padding-top: 100px;
+    padding-top: 120px;
     background-image: url('/images/cta-background.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw 450px;
+    background-size: 120vw 450px;
     background-position: 0% 0%;
 }
 
 :global(.schema-purple) .wrapper {
     background-image: url('/images/cta-background-purple.jpg');
+}
+
+@keyframes bgmove {
+    0%{
+        background-position: 0% 0%;
+    }
+     100% {
+        background-position: -20vw 10%;
+     }
+}
+
+.wrapper {
+    animation: bgmove 5s ease infinite alternate;
 }
 
 .content {
@@ -239,9 +252,20 @@
         margin-bottom: 0.5rem;
     }
 
+    @keyframes bgmove-mobile {
+        0%{
+            opacity: 0.8;
+            background-position: 0% 0%;
+        }
+         100% {
+            background-position: 80% 10%;
+         }
+    }
+
     .wrapper {
+        animation: bgmove-mobile 8s ease infinite alternate;
         background-size: 160vw 280px;
-        padding-top: 50px;
+        padding-top: 68px;
         margin-top: 10px;
     }
 

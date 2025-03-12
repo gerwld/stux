@@ -1,3 +1,4 @@
+"use client"
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import CTASection from "@/components/sections/CTASection/CTASection";
@@ -6,7 +7,6 @@ import TestimonialSection from "@/components/sections/TestimonialSection/Testimo
 import React from "react";
 
 const MainPage = () => {
-
   return (
     <>
       <Hero />

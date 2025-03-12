@@ -5,6 +5,11 @@ import style from "./style.module.css";
 import Block from "./Block";
 import { Product, products } from "@/app/[locale]/products/preloaded";
 import { useTranslations } from "next-intl";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export interface FeaturesBlock {
   iconUrl: string;
@@ -18,6 +23,33 @@ const FeaturesSection: React.FC<{ productAlias: Product["alias"] }> = ({
   const t = useTranslations();
   const ITEM = products.find((p) => p.alias === productAlias);
   const FEATURES = ITEM?.details.preview_features;
+
+  useGSAP(() => {
+
+    gsap.utils.toArray<HTMLElement>(".glblock").forEach((group) => {
+      if (!(group instanceof HTMLElement)) return;
+    
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: group,
+          start: `top-=180 80%`, // Offset each group’s start
+          end: `bottom+=200 20%`, // Adjust exit timing
+          scrub: 2,
+          // markers: true
+        }
+      })
+      .fromTo(
+        group, // то что появляется (от и до)
+        { scale: 0.8, opacity: 0, x: 0 }, 
+        { scale: 1, opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
+      .to(
+        group,  // то что на end - завершение
+        { opacity: 0, y: -100, duration: 1, ease: "power2.in" }
+      );
+    });
+    
+  })
 
  
 

@@ -7,6 +7,13 @@ import { Product, products } from "@/app/[locale]/products/preloaded";
 import {Link} from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import clsx from "clsx";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const getRandomItems = (
   array: Product[], 
   count: number, 
@@ -25,7 +32,31 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
   useEffect(() => {    
     setData(getRandomItems(products, 3, excludeAlias, "APPLICATION")); // 3 random products in "Other Extensions" section
   }, [excludeAlias]);
+
+  useGSAP(() => {
+    gsap.utils.toArray<HTMLElement>(".ctt>*").forEach((group, index) => {
+      if (!(group instanceof HTMLElement)) return;
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: group,
+            start: `top-=${index * 180} 80%`,
+            end: `bottom+=200 20%`,
+            scrub: 2,
+            // markers: true,
+          },
+        })
+        .fromTo(
+          group,
+          { scale: 0.8, opacity: 0, x: 500 },
+          { scale: 1, opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+        )
+        .to(group, { opacity: 0, y: -100, duration: 1, ease: "power2.in" });
+    });
+  }, [data]); 
   
+
   return (
     <section className={`content_wrapper ${style.section}`}>
       <SectionHeader
@@ -34,7 +65,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
         dashTitle={t("MoreSection.header.dash")}
         parentClassName={style.header_gap}
       />
-      <div className={style.content}>
+      <div className={clsx("ctt", style.content)}>
       {data.map((p) => (
             <ProductBlock
               id={p?.id}

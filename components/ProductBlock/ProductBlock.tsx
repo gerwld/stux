@@ -5,14 +5,13 @@ import { Link } from "@/i18n/navigation";
 import { Product } from "@/app/[locale]/products/preloaded";
 import SelectBrowserModal from "../DButton/SelectBrowserModal";
 import { useTranslations } from "next-intl";
+import clsx from "clsx";
 
 
 
 const ProductBlock: FC<Product> = (props) => {
   const t = useTranslations();
   const { logoSrc, title, desc, alias, details } = props;
-
-  console.log(props.alias);
 
   const trDescription = 
     t(`PRODUCTS.${props.alias}.description`) == `PRODUCTS.${props.alias}.description` 
@@ -22,7 +21,7 @@ const ProductBlock: FC<Product> = (props) => {
   
   const truncateDescription = (str:string) => (str.length > 129 ? str.slice(0, 129) + "..." : str);
   return (
-    <article className={style.block}>
+    <article className={clsx("zbblock", style.block)}>
       <div className={style.header}>
         <div className={style.preview_img}>
           <img src={logoSrc} alt="Logo" />

@@ -2,10 +2,11 @@ import React, { FC } from "react";
 import style from "./style.module.css";
 import TextWithFragment from "@/components/TextWithFragments";
 import { PrevFeature } from "@/app/[locale]/products/preloaded";
+import clsx from "clsx";
 
 const Block: FC<PrevFeature> = ({ icon, description, title }) => {
   return (
-    <article className={style.block}>
+    <article className={clsx(style.block, "glblock")}>
       <div className={style.header}>
         <div className={style.icon}>
           {icon}

@@ -25,6 +25,7 @@
     "gsap": "^3.12.7",
     "i18next": "^24.2.2",
     "i18next-resources-to-backend": "^1.2.1",
+    "lenis": "^1.2.3",
     "locomotive-scroll": "^4.1.4",
     "next": "15.1.7",
     "next-i18next": "^15.4.2",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/locomotive-scroll": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

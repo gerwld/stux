@@ -24,6 +24,17 @@
   --gradient-pp: linear-gradient(90deg, #6B89C1, #3C4DA4);
 }
 
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  cursor: grabbing;
+}
+
+[data-scroll-container] {
+  will-change: transform;
+}
 
 body::-webkit-scrollbar {
   display: none;

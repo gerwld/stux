@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import DButton from "@/components/DButton/DButton";
 import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 
-import style from "./style.module.css";
+import style from "./style.module.scss";
 import "./style.css";
 import "@/app/inriasans.css";
 import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/preloaded";
@@ -59,9 +59,9 @@ const formattedTestimonial = ITEM?.details?.stats
           </div>
           <p className={style.desc}>
             {
-              t("description") === `PRODUCTS.${productAlias}.description` 
+              (t("description") === `PRODUCTS.${productAlias}.description` 
                 ? ITEM?.desc 
-                : t("description")
+                : t("description"))?.split(" ").map((word, i) => <span className={style.wr} key={word + i}>{word}</span>)
             }
             </p>
           <div className={style.btn_sect}>
