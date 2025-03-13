@@ -58,7 +58,7 @@
     width: 88%;
     height: 88%;
     margin: 6%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .icon, 

@@ -157,7 +157,7 @@ export const products: Product[] = [
       ],      
       preview_reviews: [
            { author: 'ZachHere', avatarUrl: '/images/pfp/1.jpg', description:'Very good extension. I like the ability to grayscale. One feature that would make this extension better would be the ability to disable suggested posts from the main page. They are very bothering for me'},
-           { author: 'Barbora Viski', avatarUrl: '/images/pfp/2.jpg', description:'Hate falling into the shortform content trap.<br> Love the apps that allow me to forget it exists.'},
+           { author: 'Hannah Kohler', avatarUrl: '/images/pfp/2.jpg', description:'Hate falling into the shortform content trap.<br> Love the apps that allow me to forget it exists.'},
            { author: 'Cristiano Nunes', avatarUrl: '/images/pfp/3.jpg', description:'This extension is incredibly useful! It has significantly improved my productivity by removing unnecessary distractions, helping focus on what truly matters.'},
            { author: 'Akram Mohamed', avatarUrl: '/images/pfp/4.jpg', description:'Very good extension. The best and most affective one! Love all the features! Would request a similar for youtube as well'},
            { author: 'Martin Hublar', avatarUrl: '/images/pfp/5.jpg', description:'It really is an time saver, it is especially good for those people who drift off to reels section from message section unconsciously.'},
