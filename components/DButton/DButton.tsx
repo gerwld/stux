@@ -7,6 +7,7 @@ import toTitleCase from "@/tools/toTitleCase";
 import clsx from "clsx";
 import SelectBrowserModal from "./SelectBrowserModal";
 import { useTranslations } from "@/hooks/useTranslations";
+import Image from "next/image";
 
 type DButtonProps = {
   links: ProductBrowserLinks | ProductLinks;
@@ -42,7 +43,7 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
       <div className={clsx(style.block, isE && style.is_edge)}>
         <Link href={linkValue} className={style.btn_download}>
           <div className={style.section_1}>
-            <img src={`/icons/browsers/${browser}.svg`} alt={"Browser Icon"} />
+            <Image width={42} height={42} src={`/icons/browsers/${browser}.svg`} alt={"Browser Icon"} />
           </div>
           <div className={style.section_2}>
             <span>{

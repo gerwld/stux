@@ -10,7 +10,9 @@ import {useTranslations} from "@/hooks/useTranslations";
 type SelectBrowserModalProps = {
     blockScroll: boolean,
     links: ProductBrowserLinks | ProductLinks,
-    isEmbeded?: boolean
+    isEmbeded?: boolean,
+    toggleShow?: () => void,
+    isShow?: boolean
 }
 
 type Provider = {
@@ -97,10 +99,7 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
   return (
     <div className={style.content}>
       {isEmbeded 
-      ?   <button onClick={toggleShow} className={style.install_btn}>
-            <img src="/icons/download.svg" alt="ic" />
-            <span>{t("global.install_btn")}</span>
-          </button>
+      ?   ""
       :   <button onClick={toggleShow} className={style.wrongbrowser_btn}>
             {t("ProductInstall.nt_btn")}
           </button>

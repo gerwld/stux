@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import TextWithFragment from "../TextWithFragments";
+import Image from "next/image";
 
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
 
         <div className={style.shortcuts}>
           {SHORTCUTS.map(item => <Link key={item} href={"/products/" + item.toLowerCase()} className={style.shortcuts_act}>
-            <img src={`/images/logos/${item}.svg`} alt={item} className={clsx(style.shortcuts_act_image, style["shortcuts_act_image__" + item])} />
+            <Image width={65} height={65} src={`/images/logos/${item}.svg`} alt={item} className={clsx(style.shortcuts_act_image, style["shortcuts_act_image__" + item])} />
           </Link>)}
         </div>
         <div className={style.btn_sect}>

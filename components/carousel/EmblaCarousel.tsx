@@ -46,7 +46,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <div className={clsx("embla__slide__image", isVertical && "embla__slide__image__vertical")}>
               {isVertical 
               ? <img src={slide} alt="Slide Image"/>
-              :  <Image width={550} height={352} src={slide} alt="Slide Image"/>}
+              :  <Image width={495} height={317} src={slide} alt="Slide Image"/>}
               </div>
             </div>
           ))}
