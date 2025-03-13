@@ -22,7 +22,7 @@ export function generateStaticParams() {
     { locale: 'pl' },
     { locale: 'pt' },
     { locale: 'ru' },
-    { locale: 'sp' },
+    { locale: 'es' },
     { locale: 'sv' },
     { locale: 'uk' },
     { locale: 'zh' }

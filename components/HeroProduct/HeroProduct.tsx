@@ -12,6 +12,7 @@ import { EmblaOptionsType } from "embla-carousel";
 import clsx from "clsx";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n";
+import Image from "next/image";
 
 
 
@@ -52,7 +53,7 @@ const formattedTestimonial = ITEM?.details?.stats
         <div className={style.content_group1}>
           <div className={style.title_group}>
             <div className={style.title_logo}>
-              <img src={`/images/logos/${ITEM?.alias}.svg`} alt="Logo"/>
+              <Image width={70} height={70} src={`/images/logos/${ITEM?.alias}.svg`} alt="Logo"/>
             </div>
             <h1 className={style.title}>{ITEM?.title.split(" ")[0]}</h1>
             {ITEM?.version ? <Link href={`/products/${ITEM.alias.toLowerCase()}/update#changelog`} className={style.version}>v.{ITEM.version}</Link> : ''}

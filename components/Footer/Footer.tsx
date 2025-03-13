@@ -5,6 +5,7 @@ import { Link } from "@/i18n";
 import { usePathname } from "next/navigation";
 import { Product, products } from "@/app/[locale]/products/preloaded";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 type Link = {
   href: string;
@@ -44,7 +45,7 @@ const Footer: React.FC<{ productAlias?: Product["alias"] }> = ({ productAlias })
         <div className={style.credentials}>
           <span>
             Made with
-            <img title="Heart Icon" src="/icons/heart.svg" alt=" love " />
+            <Image width={17} height={17} title="Heart Icon" src="/icons/heart.svg" alt=" love " />
             by
           </span>
           <Link target="_blank" href="http://github.com/gerwld">Patryk Jaworski</Link> and{" "}

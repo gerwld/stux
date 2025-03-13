@@ -36,7 +36,7 @@ const Update = () => {
 
       <KofiPost 
         title="Just released IGPlus v3.0.1 - Major Update!"
-        imageUrl="https://storage.ko-fi.com/cdn/useruploads/display/5270e735-3de3-4ed2-98a9-3fe8bda66c8a_320viewport.png"
+        imageUrl="/images/posts/kofi/0.webp"
         link="https://ko-fi.com/post/Just-released-IGPlus-v3-0-0--Major-Update-P5P71A6AJP/">
          <ul>
             <li>- Fixed an issue where the <a href="https://github.com/gerwld/igplus-extension/issues/18">extension panel was inaccessible</a> on mobile viewports.</li>

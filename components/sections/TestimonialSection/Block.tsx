@@ -3,6 +3,7 @@ import style from "./style.module.css";
 import TextWithFragment from "@/components/TextWithFragments";
 import { PrevReview } from "@/app/[locale]/products/preloaded";
 import clsx from "clsx";
+import Image from "next/image";
 
 
 const Block: FC<PrevReview> = ({ avatarUrl, description, author }) => {
@@ -10,7 +11,7 @@ const Block: FC<PrevReview> = ({ avatarUrl, description, author }) => {
     <article className={clsx(style.block, "tblock")}>
       <div className={style.author}>
         <div className={style.icon}>
-          <img src={avatarUrl} alt={author} />
+          <Image width={45} height={45} src={avatarUrl} alt={author} />
         </div>
         <h3 className={style.author_title}>{author}</h3>
       </div>

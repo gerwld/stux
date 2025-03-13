@@ -30,7 +30,7 @@ const ProductBlock: FC<Product> = (props) => {
     <article className={clsx("zbblock", style.block)}>
       <div className={style.header}>
         <div className={style.preview_img}>
-          <img src={logoSrc} alt="Logo" />
+          <Image width={54} height={58} src={logoSrc} alt="Logo" />
         </div>
         {/* Install link */}
         <button onClick={toggleInstallShow} className={style.install_btn}>
@@ -49,7 +49,7 @@ const ProductBlock: FC<Product> = (props) => {
 
       <Link href={`/products/${alias?.toLowerCase()}`} className={style.details_btn}>
         <span>{t("global.details_btn")}</span>
-        <img src="/icons/right-arrow.svg" alt="ic" />
+        <Image width={19} height={15} src="/icons/right-arrow.svg" alt="ic" />
       </Link>
     </article>
     <SelectBrowserModal isShow={isShow} toggleShow={toggleInstallShow} blockScroll={true} links={details.links} isEmbeded={true} />

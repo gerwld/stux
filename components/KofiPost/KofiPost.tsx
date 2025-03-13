@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './style.module.css';
+import Image from 'next/image';
 
 type Props = {
     title: string
@@ -23,8 +24,10 @@ const onNavigate = () => {
     <div className={style.kofipost__header}>
       <div className={style.kofipost_author}>
         <div className={style.kofipost_author__pfp}>
-          <img
-            src="https://storage.ko-fi.com/cdn/useruploads/post/2ea00568-1072-4f07-a8c5-74ff6f4181ba_4b1464-acb5-4b48-88c5-ec4de45905e0.png"
+          <Image
+            width={32}
+            height={32}
+            src="/images/posts/kofi/author0.webp"
             alt="Patryk Jaworski"/>
         </div>
         <a href="https://ko-fi.com/patrykjaworski" className={style.kofipost_author__fullname}>Patryk Jaworski</a>
@@ -37,9 +40,11 @@ const onNavigate = () => {
     <section className={style.kofipost__content}>
     {imageUrl 
         ? <div onClick={onNavigate} className={style.kofipost__preview}>
-            <img
+            <Image
+            width={518}
+            height={321}
             src={imageUrl}
-            alt="Update"/>
+            alt={"Image to post: " + title}/>
         </div> 
         : ""}
       <h3 className={style.kofipost__title}>{title}</h3>

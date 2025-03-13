@@ -36,7 +36,7 @@ const Update = () => {
 
         <KofiPost 
           title="Just updated SpoPlus to v.2.6.0!"
-          imageUrl="https://storage.ko-fi.com/cdn/useruploads/post/588fea9d-04b4-4e75-b7b5-d51d936ff1fa_pastedgraphic1.png"
+          imageUrl="/images/posts/kofi/1.webp"
           link="https://ko-fi.com/post/Just-updated-SpoPlus-to-v-2-6-0-E1E719WWVB">
           <ul>
             <li>– Fixed &quot;Keep Aside Width Static&quot; option <a

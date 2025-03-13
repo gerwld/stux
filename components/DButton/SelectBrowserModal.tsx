@@ -5,6 +5,7 @@ import { ProductBrowserLinks, ProductLinks } from '@/app/[locale]/products/prelo
 import clsx from 'clsx';
 import { BrowserType, useBrowserType } from '@/hooks/useBrowserType';
 import {useTranslations} from "@/hooks/useTranslations";
+import Image from 'next/image';
 
 
 type SelectBrowserModalProps = {
@@ -124,7 +125,7 @@ const SelectBrowserModal: FC<SelectBrowserModalProps & WithClickOutsideProps> = 
                   <div className={style.modal_buttons}>
                     <button onClick={toggleShow}><span>{t("global.close_btn")}</span></button>
                     <button onClick={handleInstallClick} className={style.modal_btn_download}>
-                      <img src="/icons/download.svg" alt="ic" />
+                      <Image width={19} height={19} src="/icons/download.svg" alt="ic" />
                       <span>{t("global.install_btn")}</span>
                     </button>
                   </div>
@@ -160,7 +161,7 @@ const SelectProviderRadioItem:FC<Provider & {
   <div onClick={handleClick} className={clsx(style.modal_item, selected?.id === id  && style.modal_item__selected)}>
     <div className={style.modal_item_content}>
       <div className={style.modal_item_logo}>
-        <img src={`/icons/browsers/${icon}.svg`} alt="" />
+        <Image width={36} height={36} src={`/icons/browsers/${icon}.svg`} alt={title + " platform icon"} />
       </div>
       <span className={style.modal_item_title}>{title}</span>
       <span className={style.modal_item_platform}>({ uniqueSubtitle ? uniqueSubtitle : STORE_NAME[store as keyof typeof STORE_NAME]})</span>

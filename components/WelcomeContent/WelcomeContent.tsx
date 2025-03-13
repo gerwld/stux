@@ -5,6 +5,7 @@ import SelectLang from '../Navbar/SelectLang';
 import { useTranslations } from '@/hooks/useTranslations';
 import { usePathname } from 'next/navigation';
 import { Product, products } from '@/app/[locale]/products/preloaded';
+import Image from 'next/image';
 
 type Props = {
         PRODUCT_KEY: Product["alias"],
@@ -62,7 +63,7 @@ const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
             <path fill="none" d="M0 0h36v36H0z" />
         </svg>
 
-        <span>{t("WelcomePage.ipart2")}</span> <img draggable="false" src={`/images/logos/${PRODUCT_KEY}.svg`} alt="" /> <span>{t("WelcomePage.ipart3_1")}</span> {PRODUCT_TITLE}. <span>{t("WelcomePage.ipart3_2")}</span>
+        <span>{t("WelcomePage.ipart2")}</span> <Image width={28} height={28} draggable="false" src={`/images/logos/${PRODUCT_KEY}.svg`} alt="" /> <span>{t("WelcomePage.ipart3_1")}</span> {PRODUCT_TITLE}. <span>{t("WelcomePage.ipart3_2")}</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <path fill="currentColor"
                 d="M14 4v5c0 1.12.37 2.16 1 3H9c.65-.86 1-1.9 1-3V4h4m3-2H7c-.55 0-1 .45-1 1s.45 1 1 1h1v5c0 1.66-1.34 3-3 3v2h5.97v7l1 1l1-1v-7H19v-2c-1.66 0-3-1.34-3-3V4h1c.55 0 1-.45 1-1s-.45-1-1-1z" />
@@ -89,7 +90,7 @@ const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
             </svg>
         </span>
 
-        <span>{t("WelcomePage.ipart3_1")} <img draggable="false" src={`/images/logos/${PRODUCT_KEY}.svg`} alt={PRODUCT_TITLE} /> {PRODUCT_TITLE}. </span> 
+        <span>{t("WelcomePage.ipart3_1")} <Image width={28} height={28} draggable="false" src={`/images/logos/${PRODUCT_KEY}.svg`} alt={PRODUCT_TITLE} /> {PRODUCT_TITLE}. </span> 
         <span>{t("WelcomePage.ipart3_2__mobile")} </span> 
         <a href="https://open.spotify.com" className={style.gr_b}>open.spotify.com</a>. 
         <span> {t("WelcomePage.ipart3_3__mobile")}</span>
@@ -99,7 +100,7 @@ const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
 
     <div className={style.w_extinfo__arrow}></div>
 
-    <a href="https://ko-fi.com/patrykjaworski" target="_blank" className={style.donate_btn}><img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee"/></a>   
+    <a href="https://ko-fi.com/patrykjaworski" target="_blank" className={style.donate_btn}><Image width={36} height={36} src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="Buy Me A Coffee"/></a>   
     </div>
   )
 }
