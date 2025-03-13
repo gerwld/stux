@@ -71,32 +71,32 @@ const nextConfig: NextConfig = {
 
 
       {
-        source: "/ch/",
+        source: "/ch",
         destination: "/products/chesshelper/",
         permanent: true, 
       },
       {
-        source: "/lc/",
+        source: "/lc",
         destination: "/products/lichesshelper/",
         permanent: true, 
       },
       {
-        source: "/igp/",
+        source: "/igp",
         destination: "/products/igplus/",
         permanent: true, 
       },
       {
-        source: "/sp/",
+        source: "/sp",
         destination: "/products/spoplus/",
         permanent: true, 
       },
       {
-        source: "/ec/",
+        source: "/ec",
         destination: "/products/easycalc/",
         permanent: true,
       },
       {
-        source: "/memento/",
+        source: "/memento",
         destination: "/products/memento/",
         permanent: true,
       },
