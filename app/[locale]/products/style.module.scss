@@ -119,14 +119,14 @@
 
 @media only screen and (max-width: 498px) {
     .content {
-        margin-right: -0.5%;
+        width: 102%;
         padding-bottom: 50px;
+        justify-content: space-between;
     }
     .content > article {
-        max-width: 48%;
-        flex: 0 0 48%;
-        margin-right: 2%;
-        margin-bottom: 2%;
+        max-width: 47.5%;
+        flex: 0 0 47.5%;
+        margin: 0 0 3%;
         overflow: hidden;
     }
 

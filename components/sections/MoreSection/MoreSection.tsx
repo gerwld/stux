@@ -37,22 +37,25 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
     gsap.utils.toArray<HTMLElement>(".zbblock").forEach((group, index) => {
       if (!(group instanceof HTMLElement)) return;
 
+      const fromX = index == 0 ? -150 : index == 1 ? 0 : 150;
+      const fromDeg = index == 0 ? 5 : index == 1 ? 0 : -5;
+
       gsap
         .timeline({
           scrollTrigger: {
             trigger: group,
-            start: `top-=${index * 180} 80%`,
-            end: `bottom+=200 20%`,
+            start: `top-=${600} 50%`,
+            end: `top+=${400} 50%`,
             scrub: 2,
             // markers: true,
           },
         })
         .fromTo(
           group,
-          { scale: 0.8, opacity: 0, x: 500 },
-          { scale: 1, opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          { scale: 0.8, rotate: fromDeg, opacity: 0, x: fromX, y: 80, },
+          { scale: 1, rotate: 0, opacity: 1, x: 0, y: 0, duration: 1, ease: "power2.out" }
         )
-        .to(group, { opacity: 0, y: -100, duration: 1, ease: "power2.in" });
+        .to(group, { opacity: 0, y: 0, duration: 0.5, ease: "power2.in" });
     });
   }, [data]); 
   

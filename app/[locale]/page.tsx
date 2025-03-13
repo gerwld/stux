@@ -10,7 +10,7 @@ const MainPage = () => {
   return (
     <>
       <Hero />
-      <main>
+      <main className="main-page">
         <JourneySection />
         <TestimonialSection productAlias="IGPLUS" isMainPage={true} />
         <CTASection />

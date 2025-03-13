@@ -21,7 +21,7 @@ const HeaderGradient:FC<Props> = ({keyProp = "MAIN", withTexture}) => {
 
   return (
     <>
-    <div style={{
+    <div className='hg_product' style={{
         position: "absolute",
         left: 0,
         top: 0,
@@ -31,22 +31,10 @@ const HeaderGradient:FC<Props> = ({keyProp = "MAIN", withTexture}) => {
         zIndex: -2,
         pointerEvents: "none",
         userSelect: "none",
-        opacity: 0.9
+        opacity: 0.8
     }}/>
     {withTexture ?  
-    <div style={{
-        position: "absolute",
-        left: 0,
-        top: 0,
-        height: "100vh",
-        width: "100vw",
-        background: 'url("/texture-1.png")',
-        backgroundPosition: '0% 0%',
-        backgroundSize: '100% 100%',
-        zIndex: -1,
-        pointerEvents: "none",
-        userSelect: "none"
-    }}/> : ''}
+    <div className='texture_lbw'/> : ''}
     </>
   )
 }

@@ -133,6 +133,10 @@
         display: block;
     } */
 
+    .content {
+        justify-content: space-between;
+    }
+
     .content > article {
         margin-right: 0;
         margin-bottom: 3%;
@@ -140,9 +144,13 @@
 
     .content > article:nth-child(1),
     .content > article{
-        flex: 0 0 48%;
-        margin: 0 1% 3%!important;
+        flex: 1 0 47%;
+        margin: 0 0 2%!important;
         border-radius: 0.5rem;
+    }
+
+    .content > article:nth-last-child(2) {
+        display: none;
     }
     .content {
         margin-right: -1%;

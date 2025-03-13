@@ -127,8 +127,8 @@
 
 @media only screen and (max-width: 690px) {
     .column {
-        flex: 0 0 48%;
-        margin-right: 2%;
+        flex: 0 0 47%;
+        margin-right: 3%;
     }
     .content {
         margin-right: -2%;
@@ -138,7 +138,7 @@
     }
 
     .block {
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
     }
 }
 
