@@ -40,6 +40,11 @@
     padding-right: 1rem;
 }
 
+[dir="rtl"] .content_group1 {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
 .content_group2 {
     flex: 1;
 }

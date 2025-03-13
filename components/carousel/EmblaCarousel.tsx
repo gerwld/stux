@@ -10,6 +10,7 @@ import {
 } from './EmblaCarouselArrowButtons'
 import "./embla.css"
 import clsx from 'clsx'
+import Image from 'next/image'
 
 type PropType = {
   slides: string[]
@@ -37,13 +38,15 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   
 
   return (
-    <div className={clsx("embla", isVertical && "embla__vertical")}>
+    <div dir='ltr' className={clsx("embla", isVertical && "embla__vertical")}>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide) => (
             <div className="embla__slide" key={slide}>
               <div className={clsx("embla__slide__image", isVertical && "embla__slide__image__vertical")}>
-                <img src={slide} alt="Slide Image"/>
+              {isVertical 
+              ? <img src={slide} alt="Slide Image"/>
+              :  <Image width={550} height={352} src={slide} alt="Slide Image"/>}
               </div>
             </div>
           ))}
