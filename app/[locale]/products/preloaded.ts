@@ -96,7 +96,7 @@ export const products: Product[] = [
         { title: 'Double Click <br>Resign', icon: '⚡', description: 'Resign quickly with a simple double-click. Less frustration, more control.', },
       ],      
       slides_count: 5,
-      available_slides_locales: ["en", "pl", "de", "uk", "ru", "sp"]
+      available_slides_locales: ["en", "pl", "de", "uk", "ru", "es"]
     },
   },
   {
@@ -211,7 +211,7 @@ export const products: Product[] = [
       { author: 'Sombra', avatarUrl: '/images/pfp/7.jpg', description:"Awesome!! No problems from it at all :) The themes are super cute and it's compatible with the other extensions I connect to Spotify ^_^ definitely recommend"}
     ],
       slides_count: 5,
-      available_slides_locales: ["de", "en", "sp", "fr", "hi", "ja", "nl", "pl" ,"ru" ,"sv" ,"uk"]
+      available_slides_locales: ["de", "en", "es", "fr", "hi", "ja", "nl", "pl" ,"ru" ,"sv" ,"uk"]
     },
   },
   {

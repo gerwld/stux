@@ -15,7 +15,7 @@ export default function middleware(req: NextRequest) {
  
   
   // Checks if the path already has a locale
-  const localeMatch = pathname.match(/^\/(pl|en|uk|ru|fr|ar|be|de|hi|ja|nl|pt|sp|sv|zh)(\/|$)/);
+  const localeMatch = pathname.match(/^\/(pl|en|uk|ru|fr|ar|be|de|hi|ja|nl|pt|es|sv|zh)(\/|$)/);
   
   if (!localeMatch) {
     //detect user language from headers

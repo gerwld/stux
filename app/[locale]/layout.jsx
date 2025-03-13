@@ -59,7 +59,7 @@ export default async function LocaleLayout({
   const dir = RTL_LANGUAGES.has(locale) ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale == "es" ? "sp" : locale} dir={dir}>
       <body>
         <div>
         <NextIntlClientProvider messages={messages} locale={locale}>

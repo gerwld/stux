@@ -92,6 +92,8 @@
 
 .install_btn img {
     height: 1em;
+    width: auto;
+    max-width: 1.4em;
     margin-right: 0.5rem;
 }
 

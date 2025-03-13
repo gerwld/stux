@@ -32,7 +32,7 @@ const SelectLang: React.FC = () => {
           <option value="en">English</option>
           <option value="pl">Polish - polski</option>
           <option value="fr">French - français</option>
-          <option value="sp">Spanish - español</option>
+          <option value="es">Spanish - español</option>
           <option value="de">German - Deutsch</option>
           <option value="nl">Dutch - Nederlands</option>
           <option value="uk">Ukrainian - українська</option>

@@ -86,7 +86,7 @@ const nextConfig: NextConfig = {
         permanent: true, 
       },
       {
-        source: "/sp",
+        source: "/sp/",
         destination: "/products/spoplus/",
         permanent: true, 
       },
