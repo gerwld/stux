@@ -34,7 +34,7 @@ const MoreSection:React.FC<{ excludeAlias: string }> = ({excludeAlias}) => {
   }, [excludeAlias]);
 
   useGSAP(() => {
-    gsap.utils.toArray<HTMLElement>(".ctt>*").forEach((group, index) => {
+    gsap.utils.toArray<HTMLElement>(".zbblock").forEach((group, index) => {
       if (!(group instanceof HTMLElement)) return;
 
       gsap

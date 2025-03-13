@@ -13,11 +13,11 @@ const withClickOutside = <P extends object>(
   WrappedComponent: ComponentType<P>
 ): FC<P & WithClickOutsideProps> => {
   return ({ blockScroll = false, ...props }) => {
-    const [isShow, setShow] = useState(false);
+    const [isShow, setShow] = useState(!!props.isShow);
     const ref = useRef<HTMLDivElement>(null);
     const ignoreRef = useRef<HTMLDivElement>(null);
 
-    const toggleShow = () => setShow((prev) => !prev);
+    const toggleShow = () =>{setShow((prev) => !prev)};
 
     useEffect(() => {
       const onClickOutside = (event: MouseEvent) => {
@@ -28,6 +28,7 @@ const withClickOutside = <P extends object>(
           !ref.current.contains(target) &&
           (!ignoreRef.current || !ignoreRef.current.contains(target))
         ) {
+          if(props.toggleShow) props.toggleShow();
           setShow(false);
         }
       };
@@ -38,10 +39,10 @@ const withClickOutside = <P extends object>(
 
     useEffect(() => {
       if (blockScroll) {
-        document.documentElement.style.overflow = isShow ? "hidden" : "";
-        document.documentElement.style.height = isShow ? "100vh" : "";        
+        document.documentElement.style.overflow = (props.isShow || isShow) ? "hidden" : "";
+        document.documentElement.style.height = (props.isShow || isShow) ? "100vh" : "";        
       }
-    }, [isShow, blockScroll]);
+    }, [props.isShow, isShow, blockScroll]);
 
     return (
       <WrappedComponent
@@ -49,8 +50,8 @@ const withClickOutside = <P extends object>(
         refElement={ref}
         ignoreRef={ignoreRef}
         setShow={setShow}
-        isShow={isShow}
-        toggleShow={toggleShow}
+        isShow={props.isShow ? props.isShow : isShow}
+        toggleShow={props.toggleShow ? props.toggleShow : toggleShow}
       />
     );
   };

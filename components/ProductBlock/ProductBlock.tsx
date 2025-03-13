@@ -1,17 +1,22 @@
 "use client"
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import style from "./style.module.css";
 import { Link } from "@/i18n/navigation";
 import { Product } from "@/app/[locale]/products/preloaded";
 import SelectBrowserModal from "../DButton/SelectBrowserModal";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
+import Image from "next/image";
 
 
 
 const ProductBlock: FC<Product> = (props) => {
   const t = useTranslations();
   const { logoSrc, title, desc, alias, details } = props;
+
+  const [isShow, setShow] = useState<boolean>(false);
+
+  const toggleInstallShow = () => setShow((prev) => !prev);
 
   const trDescription = 
     t(`PRODUCTS.${props.alias}.description`) == `PRODUCTS.${props.alias}.description` 
@@ -21,13 +26,18 @@ const ProductBlock: FC<Product> = (props) => {
   
   const truncateDescription = (str:string) => (str.length > 129 ? str.slice(0, 129) + "..." : str);
   return (
+    <>
     <article className={clsx("zbblock", style.block)}>
       <div className={style.header}>
         <div className={style.preview_img}>
           <img src={logoSrc} alt="Logo" />
         </div>
         {/* Install link */}
-        <SelectBrowserModal blockScroll={true} links={details.links} isEmbeded={true} />
+        <button onClick={toggleInstallShow} className={style.install_btn}>
+          <Image width={17} height={17} src="/icons/download.svg" alt="ic" />
+          <span>{t("global.install_btn")}</span>
+        </button>
+       
       </div>
 
       <h3 className={style.title}>
@@ -42,6 +52,8 @@ const ProductBlock: FC<Product> = (props) => {
         <img src="/icons/right-arrow.svg" alt="ic" />
       </Link>
     </article>
+    <SelectBrowserModal isShow={isShow} toggleShow={toggleInstallShow} blockScroll={true} links={details.links} isEmbeded={true} />
+    </>
   );
 };
 
