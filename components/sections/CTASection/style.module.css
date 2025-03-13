@@ -1,5 +1,5 @@
 .wrapper {
-    padding-top: 120px;
+    padding-top: 110px;
     background-image: url('/images/cta-background.jpg');
     background-repeat: no-repeat;
     background-size: 120vw 450px;
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -67,9 +67,9 @@
     width: 300px;
     align-items: center;
     align-self: flex-start;
-    margin-left: 2%;
+    margin: 0 auto;
     height: 54px;
-    padding: 0.8rem 5rem 0.8rem 2rem;
+    padding: 0.8rem 4rem 0.8rem 2rem;
 
     font-size: 1.02rem;
     font-weight: 600;
@@ -94,7 +94,8 @@
 
 .preview {
     width: 330px;
-    margin-top: -140px;
+    height: 280px;
+    object-fit: contain;
     margin-left: 10px;
     pointer-events: none;
     user-select: none;
@@ -264,7 +265,7 @@
 
     .wrapper {
         animation: bgmove-mobile 8s ease infinite alternate;
-        background-size: 160vw 280px;
+        background-size: 160vw 200px;
         padding-top: 68px;
         margin-top: 10px;
     }
