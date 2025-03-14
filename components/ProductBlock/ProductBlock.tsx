@@ -7,6 +7,7 @@ import SelectBrowserModal from "../DButton/SelectBrowserModal";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import Image from "next/image";
+import { useLocalizedNavigation } from "@/hooks/useLocalizedNavigation";
 
 
 
@@ -18,10 +19,16 @@ const ProductBlock: FC<Product> = (props) => {
 
   const toggleInstallShow = () => setShow((prev) => !prev);
 
+  const nav = useLocalizedNavigation();
+
   const trDescription = 
     t(`PRODUCTS.${props.alias}.description`) == `PRODUCTS.${props.alias}.description` 
     ? desc 
     : t(`PRODUCTS.${props.alias}.description`);
+
+  const onNavigateToProd = () => {
+    nav(`/products/${alias?.toLowerCase()}`);
+  }
   
   
   const truncateDescription = (str:string) => (str.length > 129 ? str.slice(0, 129) + "..." : str);
@@ -29,7 +36,7 @@ const ProductBlock: FC<Product> = (props) => {
     <>
     <article className={clsx("zbblock", style.block)}>
       <div className={style.header}>
-        <div className={style.preview_img}>
+        <div onClick={onNavigateToProd} className={style.preview_img}>
           <Image width={54} height={58} src={logoSrc} alt="Logo" />
         </div>
         {/* Install link */}
@@ -43,7 +50,7 @@ const ProductBlock: FC<Product> = (props) => {
       <h3 className={style.title}>
         <Link href={`/products/${alias?.toLowerCase()}`} className={style.details_btn}>{title}</Link>
       </h3>
-      <p className={style.desc}>
+      <p onClick={onNavigateToProd} className={style.desc}>
         {truncateDescription(trDescription)}
       </p>
 
