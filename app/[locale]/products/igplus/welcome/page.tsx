@@ -6,7 +6,7 @@ const Welcome = () => {
   const PRODUCT_KEY:Product["alias"] = "IGPLUS";
   const PRODUCT_TITLE:Product["title"] = "IGPlus";
 
-  return <WelcomeContent PRODUCT_KEY={PRODUCT_KEY} PRODUCT_TITLE={PRODUCT_TITLE}/>;
+  return <WelcomeContent PRODUCT_KEY={PRODUCT_KEY} PRODUCT_TITLE={PRODUCT_TITLE} GREETING='igp' GRETING_EMOJIES='💫'/>;
 };
 
 export default Welcome;

@@ -4,15 +4,17 @@ import style from './style.module.css';
 import SelectLang from '../Navbar/SelectLang';
 import { useTranslations } from '@/hooks/useTranslations';
 import { usePathname } from 'next/navigation';
-import { Product, products } from '@/app/[locale]/products/preloaded';
+import { Greeting, Product, products } from '@/app/[locale]/products/preloaded';
 import Image from 'next/image';
 
 type Props = {
         PRODUCT_KEY: Product["alias"],
         PRODUCT_TITLE: Product["title"],
+        GREETING?: Greeting,
+        GRETING_EMOJIES?: string
 }
 
-const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
+const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE, GREETING, GRETING_EMOJIES}) => {
   const ITEM = products.find(p => p.alias === PRODUCT_KEY);
   const t = useTranslations();
   const pathname = usePathname();
@@ -46,7 +48,7 @@ const WelcomeContent:React.FC<Props> = ({PRODUCT_KEY, PRODUCT_TITLE}) => {
         <p><span>{t("WelcomePage.bugs_desc1")}</span> <a href="mailto:pjaworski.dev@gmail.cmo">pjaworski.dev@gmail.com</a> <span>{t("WelcomePage.bugs_desc2")}</span></p>
 
 
-        <p className={style.last_sent}><span>{t("WelcomePage.chess")}</span> 🎨 ♟️ </p>
+        {GREETING ? <p className={style.last_sent}><span>{t(`WelcomePage.${GREETING}`)}</span> {GRETING_EMOJIES ? GRETING_EMOJIES : ""} </p> : ""}
         <a href={pathname.endsWith("/welcome") ? pathname.slice(0, -8) : pathname} className={clsx(style.btn, style.btn_svg)}><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                 viewBox="0 0 24 24">
                 <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2H7.825Z" />

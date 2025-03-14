@@ -6,7 +6,7 @@ const Welcome = () => {
   const PRODUCT_KEY:Product["alias"] = "CHESSHELPER";
   const PRODUCT_TITLE:Product["title"] = "ChessHelper";
 
-  return <WelcomeContent PRODUCT_KEY={PRODUCT_KEY} PRODUCT_TITLE={PRODUCT_TITLE}/>;
+  return <WelcomeContent PRODUCT_KEY={PRODUCT_KEY} PRODUCT_TITLE={PRODUCT_TITLE} GREETING='chess' GRETING_EMOJIES='🎨 ♟️'/>;
 };
 
 export default Welcome;

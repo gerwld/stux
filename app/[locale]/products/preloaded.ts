@@ -40,6 +40,8 @@ export type ProductDetails = {
   available_slides_locales?: string[],
 }
 
+export type Greeting = "chess" | "sp" | "igp";
+
 export type Stats = {
   users: number;
   reviews: number;
