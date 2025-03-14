@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: '' });
 
   return {
-    title: "Main Page – WebLX Applications",
+    title: "WebLX Applications",
     description: t('HeroMain.subtitle').replace("<br/>", " ").replace("<br>", " "),
   };
 }
