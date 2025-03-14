@@ -115,7 +115,7 @@ export const products: Product[] = [
       stats: {
         users: 220,
         reviews: 10,
-        rating: 4.9
+        rating: 4.6
       },
       preview_features: [
         { title: 'Customizable <br>Backgrounds', icon: '🖼️', description: 'Choose high-quality Unsplash images, upload your own, or keep it minimal with a plain background.' },
