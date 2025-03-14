@@ -149,6 +149,14 @@
         height: 42px;
     }
 
+    .details_btn {
+        font-size: 0.92rem;
+    }
+    
+    .details_btn img {
+        height: 0.8em;
+    }
+
     .block {
         padding: 0.8rem;
         padding-right: 0.5rem;
@@ -164,6 +172,8 @@
 
     .title a {
         text-wrap: nowrap;
+        font-size: 1.2rem;
+        margin: 0.2em 0 0;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
