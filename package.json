@@ -38,7 +38,7 @@
     "sass": "^1.85.1",
     "scss": "^0.2.4",
     "sharp": "^0.33.5",
-    "wrangler": "^3.112.0"
+    "wrangler": "^4.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

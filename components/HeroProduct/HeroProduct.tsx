@@ -13,9 +13,10 @@ import clsx from "clsx";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n";
 import Image from "next/image";
+import { getBlurDataURL } from "../imgLoader/generateBlur";
 
-import { getPlaiceholder } from "plaiceholder";
-import fs from 'node:fs/promises';
+// import { getPlaiceholder } from "plaiceholder";
+// import fs from 'node:fs/promises';
 
 
 type HeroProductProps = {
@@ -38,8 +39,8 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map(async (_, i) => {
     const src = `/images/previews/${productAlias}/${SLIDES_LOCALE}/${i}.png`;
 
-    const buffer = await fs.readFile(`./public/${src}`);
-    const {base64} = await getPlaiceholder(buffer);
+    // const buffer = await fs.readFile(`./public/${src}`);
+    // const {base64} = await getPlaiceholder(buffer);
   
     return  <Image
               key={i}
@@ -48,7 +49,7 @@ const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
               height={IS_VERTICAL_SLIDE ? 416 : 317} 
               alt={"Image"}
               placeholder='blur'
-              blurDataURL={base64}
+              blurDataURL={await getBlurDataURL(`./public${src}`)}
           />;
   });
 
