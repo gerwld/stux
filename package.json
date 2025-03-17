@@ -30,6 +30,7 @@
     "next": "15.2.2",
     "next-i18next": "^15.4.2",
     "next-intl": "^3.26.5",
+    "plaiceholder": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
