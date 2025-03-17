@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/components/Footer/Footer";
 import ProductBlock from "@/components/ProductBlock/ProductBlock";
 import Navbar from "@/components/Navbar/Navbar";

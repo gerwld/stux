@@ -1,3 +1,4 @@
+"use client"
 import React, { FC, JSX } from "react";
 import style from "./style.module.css";
 import {Link} from "@/i18n";

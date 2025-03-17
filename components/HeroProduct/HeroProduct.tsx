@@ -14,6 +14,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n";
 import Image from "next/image";
 
+import { getPlaiceholder } from "plaiceholder";
+import fs from 'node:fs/promises';
 
 
 type HeroProductProps = {
@@ -24,13 +26,31 @@ type HeroProductProps = {
 const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   const t = useTranslations("PRODUCTS." + productAlias);
   const ITEM = products.find(p => p.alias === productAlias);
+  const IS_VERTICAL_SLIDE = ITEM!.productType === "APPLICATION";
   const menuLinks = ITEM?.details.linksExtras;
   
 
   const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
   const locale = useLocale();
   const SLIDES_LOCALE = ITEM?.details.available_slides_locales?.indexOf(locale) !== -1 ? locale : "en";
-  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map((_, i) => `/images/previews/${productAlias}/${SLIDES_LOCALE}/${i}.png`);
+  
+  //TODO: better server side blur placeholder for Embla
+  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map(async (_, i) => {
+    const src = `/images/previews/${productAlias}/${SLIDES_LOCALE}/${i}.png`;
+
+    const buffer = await fs.readFile(`./public/${src}`);
+    const {base64} = await getPlaiceholder(buffer);
+  
+    return  <Image
+              key={i}
+              src={src}
+              width={IS_VERTICAL_SLIDE ? 240 : 495} 
+              height={IS_VERTICAL_SLIDE ? 416 : 317} 
+              alt={"Image"}
+              placeholder='blur'
+              blurDataURL={base64}
+          />;
+  });
 
   
 const formatter = new Intl.NumberFormat('fr-FR');
@@ -69,6 +89,7 @@ const formattedTestimonial = ITEM?.details?.stats
             <DButton links={ITEM!.details.links} productType={ITEM!.productType}/>
           </div>
         </div>
+
         
         <div className={style.content_group2}>
           {!ITEM?.details.slides_count || ITEM?.details.slides_count === 0 
@@ -76,7 +97,7 @@ const formattedTestimonial = ITEM?.details?.stats
           : <EmblaCarousel 
               slides={SLIDES} 
               options={OPTIONS} 
-              isVertical={ITEM.productType === "APPLICATION"}
+              isVertical={IS_VERTICAL_SLIDE}
               embededItem={
                 formattedTestimonial ? 
                   <HeroTestimonial 

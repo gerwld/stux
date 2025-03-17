@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/components/Footer/Footer";
 import React from "react";
 import CTASection from "@/components/sections/CTASection/CTASection";

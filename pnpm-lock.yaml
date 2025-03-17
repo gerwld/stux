@@ -53,6 +53,9 @@ importers:
       next-intl:
         specifier: ^3.26.5
         version: 3.26.5(next@15.2.2(@babel/core@7.26.9)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+      optional:
+        specifier: ^0.1.4
+        version: 0.1.4
       plaiceholder:
         specifier: ^3.0.0
         version: 3.0.0(sharp@0.33.5)
@@ -71,6 +74,9 @@ importers:
       scss:
         specifier: ^0.2.4
         version: 0.2.4
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
       wrangler:
         specifier: ^3.112.0
         version: 3.112.0
@@ -3641,6 +3647,9 @@ packages:
   onetime@5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
     engines: {node: '>=6'}
+
+  optional@0.1.4:
+    resolution: {integrity: sha512-gtvrrCfkE08wKcgXaVwQVgwEQ8vel2dc5DDBn9RLQZ3YtmtkBss6A2HY6BnJH4N/4Ku97Ri/SF8sNWE2225WJw==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -8967,6 +8976,8 @@ snapshots:
   onetime@5.1.2:
     dependencies:
       mimic-fn: 2.1.0
+
+  optional@0.1.4: {}
 
   optionator@0.9.4:
     dependencies:

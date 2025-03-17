@@ -30,12 +30,14 @@
     "next": "15.2.2",
     "next-i18next": "^15.4.2",
     "next-intl": "^3.26.5",
+    "optional": "^0.1.4",
     "plaiceholder": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
     "sass": "^1.85.1",
     "scss": "^0.2.4",
+    "sharp": "^0.33.5",
     "wrangler": "^3.112.0"
   },
   "devDependencies": {

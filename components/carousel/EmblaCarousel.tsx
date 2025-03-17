@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { ReactNode } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
@@ -10,10 +11,11 @@ import {
 } from './EmblaCarouselArrowButtons'
 import "./embla.css"
 import clsx from 'clsx'
-import Image from 'next/image'
+
+
 
 type PropType = {
-  slides: string[]
+  slides: ReactNode[]
   options?: EmblaOptionsType
   isVertical: boolean
   embededItem?: string | React.ReactNode
@@ -24,6 +26,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({ playOnInit: true, delay: 3500, stopOnMouseEnter: false })
   ])
+  
 
   const {
     prevBtnDisabled,
@@ -41,12 +44,19 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div dir='ltr' className={clsx("embla", isVertical && "embla__vertical")}>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((slide) => (
-            <div className="embla__slide" key={slide}>
+          {slides.map((slide, i) => (
+            <div className="embla__slide" key={i}>
               <div className={clsx("embla__slide__image", isVertical && "embla__slide__image__vertical")}>
-              {isVertical 
-              ? <Image width={240} height={416} src={slide} alt="Slide Image"/>
-              :  <Image width={495} height={317} src={slide} alt="Slide Image"/>}
+                {slide}
+
+              {/* <Image 
+                width={isVertical ? 240 : 495} 
+                height={isVertical ? 416 : 317} 
+                placeholder='blur'
+                src={slide.src} 
+                blurDataURL={slide.blurDataURL}
+                alt="Slide Image"/>
+               */}
               </div>
             </div>
           ))}
