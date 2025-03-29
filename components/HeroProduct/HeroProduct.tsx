@@ -1,22 +1,19 @@
+export const dynamic = 'force-static';
 import React, { FC } from "react";
 import HeaderGradient from "@/components/HeaderGradient";
 import Navbar from "@/components/Navbar/Navbar";
 import DButton from "@/components/DButton/DButton";
-import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 
 import style from "./style.module.scss";
-import "./style.css";
 import "@/app/inriasans.css";
 import { Product, ProductLinksExtras, products } from "@/app/[locale]/products/preloaded";
-import { EmblaOptionsType } from "embla-carousel";
+
 import clsx from "clsx";
-import { useLocale, useTranslations } from "next-intl";
+import {  useTranslations } from "next-intl";
 import { Link } from "@/i18n";
 import Image from "next/image";
-import { getBlurDataURL } from "../imgLoader/generateBlur";
 
-// import { getPlaiceholder } from "plaiceholder";
-// import fs from 'node:fs/promises';
+import Slider from "./Slider";
 
 
 type HeroProductProps = {
@@ -27,31 +24,9 @@ type HeroProductProps = {
 const HeroProduct:React.FC<HeroProductProps> = ({productAlias}) => {
   const t = useTranslations("PRODUCTS." + productAlias);
   const ITEM = products.find(p => p.alias === productAlias);
-  const IS_VERTICAL_SLIDE = ITEM!.productType === "APPLICATION";
+
   const menuLinks = ITEM?.details.linksExtras;
   
-
-  const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true }
-  const locale = useLocale();
-  const SLIDES_LOCALE = ITEM?.details.available_slides_locales?.indexOf(locale) !== -1 ? locale : "en";
-  
-  //TODO: better server side blur placeholder for Embla
-  const SLIDES = Array.from(Array(ITEM?.details.slides_count)).map(async (_, i) => {
-    const src = `/images/previews/${productAlias}/${SLIDES_LOCALE}/${i}.png`;
-
-    // const buffer = await fs.readFile(`./public/${src}`);
-    // const {base64} = await getPlaiceholder(buffer);
-  
-    return  <Image
-              key={i}
-              src={src}
-              width={IS_VERTICAL_SLIDE ? 240 : 495} 
-              height={IS_VERTICAL_SLIDE ? 416 : 317} 
-              alt={"Image"}
-              placeholder='blur'
-              blurDataURL={await getBlurDataURL(`./public${src}`)}
-          />;
-  });
 
   
 const formatter = new Intl.NumberFormat('fr-FR');
@@ -95,20 +70,7 @@ const formattedTestimonial = ITEM?.details?.stats
         <div className={style.content_group2}>
           {!ITEM?.details.slides_count || ITEM?.details.slides_count === 0 
           ? "" 
-          : <EmblaCarousel 
-              slides={SLIDES} 
-              options={OPTIONS} 
-              isVertical={IS_VERTICAL_SLIDE}
-              embededItem={
-                formattedTestimonial ? 
-                  <HeroTestimonial 
-                  users={formattedTestimonial.users} 
-                  reviews={formattedTestimonial.reviews} 
-                  rating={formattedTestimonial.rating} 
-                  isMobile={true}
-                  /> : ""
-              }
-            />}
+          : <Slider productAlias={productAlias}/>}
         </div>
 
       </div>
@@ -124,7 +86,7 @@ const formattedTestimonial = ITEM?.details?.stats
 
 
 // string as it was formatted
-const HeroTestimonial:FC<{users: string, reviews: string, rating: string, isMobile?: boolean}> = ({users, reviews, rating, isMobile}) => {
+export const HeroTestimonial:FC<{users: string, reviews: string, rating: string, isMobile?: boolean}> = ({users, reviews, rating, isMobile}) => {
   const t = useTranslations("global")
   return (
     <div className={clsx(style.stats, isMobile ? style.stats_mobile : style.stats_desktop)}>

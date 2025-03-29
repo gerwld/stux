@@ -61,7 +61,7 @@ const DButton: FC<DButtonProps> = ({ links, productType }) => {
   }
   // ** IF APPLICATION ** //
   else if (productType === "APPLICATION") {
-      CONTENT = <span>productType === APPLICATION</span>;
+      CONTENT = <span></span>;
   }
 
   return CONTENT;

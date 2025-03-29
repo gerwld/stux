@@ -6,7 +6,10 @@ import HeroProduct from "@/components/HeroProduct/HeroProduct";
 import FeaturesSection from "@/components/sections/FeaturesSection/FeaturesSection";
 import MoreSection from "@/components/sections/MoreSection/MoreSection";
 
-const IGPlusPage = () => {
+
+
+
+const IGPlusPage = async () => {
   const PRODUCT_KEY:string = "IGPLUS";
 
   return (

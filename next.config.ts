@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import withPlaiceholder from "@plaiceholder/next";
 
 const nextConfig: NextConfig = {
   images: {
@@ -396,4 +397,5 @@ const nextConfig: NextConfig = {
 };
 
 const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
-export default withNextIntl(nextConfig);
+
+export default withPlaiceholder(withNextIntl(nextConfig));
